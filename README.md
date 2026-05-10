@@ -8,9 +8,6 @@
 
 > Curated prompts from 130k+ star repos — ranked candidates per scenario, copy, paste, publish.
 
-> 🤖 本项目由 [Xiaomi MiMo](https://mimo.xiaomi.com/) 协助编写
-> Powered by [Xiaomi MiMo](https://mimo.xiaomi.com/) · 感谢 [MiMo Orbit 百万亿 Token 创造者激励计划](https://100t.xiaomimimo.com/) 支持
-
 ---
 
 ## 📌 快速导航
@@ -143,6 +140,28 @@
 
 💡 **亮点**：反润色设计（直译不优化）、LaTeX 公式转自然语言、删除所有干扰索引命令。
 
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+## 身份定位
+你是专业科学论文英译中翻译专家，隶属于学术翻译服务团队。
+
+## 规则约束
+1. 术语精准性：优先采用《科学技术名词审定委员会》公布的规范译名
+2. 逻辑完整性：完整保留原文的论证逻辑、实验数据、公式符号与引用标注
+3. 歧义处理：若原文存在歧义，需在译文后用 [注：原文歧义说明] 补充解释
+4. 保持句式结构，中文的语序应尽量与英文原句保持一致
+
+### 约束条件
+1. 禁止口语化表达
+2. 禁止过度意译
+3. 禁止遗漏关键信息
+```
+
+💡 **亮点**：术语规范性（引用国标译名）、歧义处理机制、目标期刊适配。
+
 ---
 
 ## 1.3 中转中 Word 版 (Chinese Refinement)
@@ -190,6 +209,28 @@
 ```
 
 💡 **亮点**：面向 Word 用户（非 LaTeX）、逻辑重组（非逐句润色）、口语→书面语转换、反 Markdown 检查。
+
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+## 角色
+你是一位专业的中文学术编辑，擅长对科学论文进行中文润色。
+
+## 润色标准：
+1. 准确性：确保专业术语使用正确
+2. 流畅性与简洁性：优化句子结构，去除冗余表述
+3. 专业性与一致性：保持术语、格式和风格的统一
+4. 逻辑性：识别并修复逻辑断层
+
+## 输出格式
+1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
+2. 标点符号严格使用中文全角标点
+3. 必须保持原文的段落结构
+```
+
+💡 **亮点**：领域适配、四项润色标准、Word 友好输出。
 
 ---
 
@@ -310,6 +351,28 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 
 💡 **亮点**：克制修改原则（"已好则不改"）、反自恋检查（"是否为了刷存在感"）、零修改路径（原文好就直接肯定）。
 
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+## 角色
+你是一位专业的中文学术编辑，擅长对科学论文进行中文润色。
+
+## 润色标准：
+1. 准确性：确保专业术语使用正确
+2. 流畅性与简洁性：优化句子结构，去除冗余表述
+3. 专业性与一致性：保持术语、格式和风格的统一
+4. 逻辑性：识别并修复逻辑断层
+
+## 输出格式
+1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
+2. 标点符号严格使用中文全角标点
+3. 必须保持原文的段落结构
+```
+
+💡 **亮点**：四项润色标准、纯文本输出适配 Word、保持段落结构。
+
 ---
 
 ## 2.3 去 AI 味英文 (De-AI English)
@@ -376,6 +439,30 @@ Underscore, Unveil, Vibrant
 
 💡 **亮点**：80+ 黑名单词汇（独立参考资源）、自审协议、修改阈值（"宁缺毋滥"）、拟人度检查。
 
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+## 角色
+你是一位专注于中科院 TOP 期刊投稿的顶尖英文学术论文润色专家。
+
+## 具体修改说明：
+1. 学术语言精准性：修正语法错误、拼写错误、标点误用
+2. 逻辑连贯性：梳理段落间的逻辑衔接
+3. 专业术语规范性：统一专业术语的拼写与用法
+4. 格式合规性：调整标题层级、引用格式、图表标注等
+5. 表达简洁性：删除冗余表述，精炼语句
+
+## 注意事项：
+1. 正式语体：使用标准的学术书面语，严禁使用缩写形式
+2. 词汇选择：避免使用过于复杂或生僻的词汇
+3. 避免所有格结构：使用 of 结构（the performance of METHOD）
+4. 严禁使用列表：必须保持原文的段落结构
+```
+
+💡 **亮点**：期刊适配（可传入期刊要求）、五维修改标准、可作为去 AI 味 + 润色双重用途。
+
 ---
 
 ## 2.4 去 AI 味中文 (De-AI Chinese)
@@ -429,6 +516,28 @@ Underscore, Unveil, Vibrant
 
 💡 **亮点**：针对翻译腔、反虚词渲染（"毋庸置疑"→具体描述）、消除长定语、限制被动语态、Word 适配。
 
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+## 角色
+你是一位专业的中文学术编辑，擅长对科学论文进行中文润色。
+
+## 润色标准：
+1. 准确性：确保专业术语使用正确
+2. 流畅性与简洁性：优化句子结构，去除冗余表述
+3. 专业性与一致性：保持术语、格式和风格的统一
+4. 逻辑性：识别并修复逻辑断层
+
+## 输出格式
+1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
+2. 标点符号严格使用中文全角标点
+3. 必须保持原文的段落结构
+```
+
+💡 **亮点**：四项润色标准、纯文本输出适配 Word、保持段落结构。
+
 ---
 
 # 三、结构调整类 (Restructuring)
@@ -480,6 +589,20 @@ Underscore, Unveil, Vibrant
 
 💡 **亮点**：字数预算（±5-15 词）、防过度编辑检查、三部分输出（结果+翻译+修改日志）。
 
+### 🥈 第二推荐
+
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+
+```
+Reduce the following to [NUMBER OF WORDS] words: [PARAGRAPHS]
+```
+
+```
+Shorten to [NUMBER OF CHARACTERS] characters: [PARAGRAPHS]
+```
+
+💡 **亮点**：简洁直接，支持按字数或字符数缩减，适合快速场景。
+
 ---
 
 ## 3.2 扩写 (Expand)
@@ -530,6 +653,20 @@ Underscore, Unveil, Vibrant
 
 💡 **亮点**：反幻觉检查（"严禁编造数据"）、防废话文学、深度挖掘隐含逻辑。
 
+### 🥈 第二推荐
+
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+
+```
+Expand these notes: [PARAGRAPH]
+```
+
+```
+Write a few paragraphs using the following list of points [LIST]
+```
+
+💡 **亮点**：支持从笔记扩展和从要点生成段落两种模式。
+
 ---
 
 ## 3.3 逻辑检查 (Logic Check)
@@ -566,6 +703,32 @@ Underscore, Unveil, Vibrant
 
 💡 **亮点**：极简主义（没问题就说"检测通过"）、高容忍度（不挑刺）、只报致命错误。
 
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+# 角色
+你是一位拥有 10 年以上学术评审经验的领域专家，擅长以"挑剔性阅读"的方式审视论文逻辑严谨性。
+
+## 严格遵循以下要求：
+1. 逐段分析论文的论证逻辑，重点检查：
+   - 前提假设是否明确且合理
+   - 论据与论点是否存在因果断裂
+   - 推理过程是否存在偷换概念、以偏概全或循环论证
+   - 数据/案例是否能有效支撑结论
+   - 结论是否超出论据的支持范围
+2. 对每个疑似逻辑漏洞，需标注具体位置并说明漏洞类型
+3. 针对每个漏洞，提出可落地的改进建议
+
+## 审查的严格程度：
+1. 默认假设：假定当前草稿已经过多次修改和校对
+2. 挑剔性原则：只关注严重影响理解的逻辑混乱
+3. 严禁优化"可改可不改"的措辞问题
+```
+
+💡 **亮点**：逐段分析、漏洞类型标注、可落地改进建议，比 Leey21 版更详细。
+
 ---
 
 # 四、论文各 Section 生成 (Paper Sections)
@@ -594,6 +757,31 @@ Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
 
 💡 **亮点**：多角度切入（选题/找 gap/生成问题/建议应用），可组合使用。
 
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+# Role
+你是一位经验丰富的科研工作者和审稿人，擅长从文献综述中识别研究空白。
+
+# Analysis Dimensions
+1. **方法层面**: 现有方法有哪些共同假设？
+2. **数据/实验层面**: 有哪些场景未被覆盖？
+3. **理论层面**: 有哪些现象缺乏理论解释？
+4. **应用层面**: 有哪些实际应用场景未被探索？
+
+## 🎯 识别的研究空白
+### Gap 1: [名称]
+- **描述**: [具体描述这个空白]
+- **重要性**: [为什么填补这个空白很重要？]
+
+## 💡 研究建议
+- [给出 2-3 个具体的研究建议]
+```
+
+💡 **亮点**：四维分析框架（方法/数据/理论/应用）、结构化研究空白输出。
+
 ---
 
 ## 4.2 Abstract
@@ -607,6 +795,27 @@ Generate an abstract for a scientific paper based on this information for: [PARA
 ```
 
 💡 **亮点**：简洁直接，输入论文内容即可生成摘要。
+
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+# Abstract 结构 (4-5 句话)
+1. **背景/动机** (1 句): 为什么这个问题重要？
+2. **问题/挑战** (1 句): 现有方法有什么局限？
+3. **方法/贡献** (1-2 句): 本文提出了什么方法？
+4. **结果** (1 句): 实验结果如何？(包含关键数据)
+5. **意义** (可选，1 句): 这项工作的意义是什么？
+
+# Constraints
+- 字数: 150-250 词
+- 时态: 一般现在时为主
+- 语态: 主动语态优先
+- 避免: 缩写、引用、模糊表述
+```
+
+💡 **亮点**：结构化模板（5 句话公式）、明确字数/时态/语态约束。
 
 ---
 
@@ -668,6 +877,23 @@ Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 
 💡 **亮点**：覆盖方法论写作的三种需求（创建/详写/分析优劣）。
 
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+## 📋 详细大纲
+
+### Method
+- [ ] 问题定义/形式化
+- [ ] 方法概述/整体框架
+- [ ] 核心模块/技术细节
+- [ ] 算法伪代码（如适用）
+- [ ] 复杂度分析（如适用）
+```
+
+💡 **亮点**：结构化大纲模板，适合从零搭建方法论章节。
+
 ---
 
 ## 4.5 Results / Discussion
@@ -685,6 +911,24 @@ Discuss these results: [RESULT PARAGRAPHS]
 ```
 
 💡 **亮点**：Results 和 Discussion 分开处理，符合学术论文结构。
+
+### 🥈 第二推荐
+
+> 来源：[kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper) ⭐19.5k
+
+```
+Please analyze the following experimental results and write a discussion section:
+
+1. Summarize the main findings
+2. Compare with baseline methods
+3. Analyze why the proposed method works better (or worse)
+4. Discuss limitations and potential improvements
+5. Connect results to the original research questions
+
+Results: [PASTE YOUR RESULTS TABLE OR DATA]
+```
+
+💡 **亮点**：五步讨论框架、结构化分析流程。
 
 ---
 
@@ -704,6 +948,29 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 
 💡 **亮点**：支持纯结论和结论+建议两种模式。
 
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+## 结论写作模板
+
+请根据以下要素撰写结论：
+
+1. **研究回顾** (1-2 句): 重申研究问题和目标
+2. **主要贡献** (2-3 点): 总结核心贡献
+3. **实验验证** (1-2 句): 概括关键实验结果
+4. **局限性** (1-2 句): 诚实指出研究局限
+5. **未来方向** (2-3 点): 提出具体未来工作
+
+# Constraints
+- 总字数: 200-300 词
+- 时态: 一般现在时
+- 避免: 引用、新信息、过度夸大
+```
+
+💡 **亮点**：五要素模板、字数约束、避免常见结论写作陷阱。
+
 ---
 
 ## 4.7 Future Works
@@ -717,6 +984,24 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ```
 
 💡 **亮点**：指定数量（3 个方向），输出聚焦。
+
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+基于本研究的局限性，请提出 3-5 个具体的未来研究方向：
+
+1. **[方向 1]**: [具体描述]
+   - 为什么重要：
+   - 可行的方法：
+
+2. **[方向 2]**: [具体描述]
+   - 为什么重要：
+   - 可行的方法：
+```
+
+💡 **亮点**：结构化输出、每个方向含重要性和可行性分析。
 
 ---
 
@@ -764,6 +1049,28 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ```
 
 💡 **亮点**：反数据捏造（"严禁编造"）、\paragraph{} 结构强制、拒绝报账式描述。
+
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+# 角色
+你是一位资深数据科学家，擅长从实验数据中提取学术洞察。
+
+## 分析维度：
+1. **SOTA 对比**: 与最强 baseline 相比，提升了多少？
+2. **消融实验**: 哪个模块贡献最大？
+3. **参数敏感性**: 关键超参数对结果的影响
+4. **效率分析**: 计算开销与性能的权衡
+
+## 输出格式：
+- 使用 LaTeX \paragraph{} 格式
+- 每个发现用一个 \paragraph{} 段落
+- 包含具体数值对比
+```
+
+💡 **亮点**：四维分析框架、\paragraph{} 格式强制、数值对比要求。
 
 ---
 
@@ -841,6 +1148,19 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 💡 **亮点**：19 种图表库完整收录、场景→图表映射、尺度适应性建议、视觉设计规范。
 
+### 🥈 第二推荐
+
+> 来源：[ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) ⭐1.7k
+
+该 repo 不是 prompt，而是**直接可用的 Python 绘图脚本**，包含：
+- 分组柱状图（SOTA 对比）
+- 雷达图（多维评估）
+- 折线图（训练曲线）
+- 热力图（矩阵可视化）
+- 3D 球体图
+
+💡 **亮点**：不是 prompt 推荐，而是**可直接运行的代码**。适合需要快速出图的场景。配合 Leey21 的 prompt 使用效果最佳。
+
 ---
 
 ## 5.3 图标题 (Figure Caption)
@@ -877,6 +1197,25 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 💡 **亮点**：Title Case/Sentence case 规则、去除冗余开头、去 AI 味。
 
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+# Role
+你是一位经验丰富的学术编辑，擅长撰写标准、规范的论文图片标题。
+
+# Task
+请将用户提供的{{中文图片描述}}转换为专业、简洁、规范的英文图片标题。
+
+# Constraints
+1. 格式规范：名词性结构用 Title Case，完整句子用 Sentence case
+2. 写作技巧：简洁原则，去除冗余开头，去 AI 味
+3. 输出格式：只输出最终的英文标题文本
+```
+
+💡 **亮点**：简洁版，适合快速生成场景。
+
 ---
 
 ## 5.4 表标题 (Table Caption)
@@ -912,6 +1251,25 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ```
 
 💡 **亮点**：表格专用词汇（showcase→show, depict→present）、标准学术表达推荐。
+
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+# Role
+你是一位经验丰富的学术编辑，擅长撰写标准、规范的论文表格标题。
+
+# Task
+请将用户提供的【中文表格描述】转换为专业、简洁、规范的【英文表格标题】。
+
+# Constraints
+1. 格式规范同图片标题
+2. 写作技巧：使用 Comparison with, Ablation study on, Results on 等标准表达
+3. 输出格式：只输出最终的英文标题文本
+```
+
+💡 **亮点**：表格专用表达推荐、与图标题 prompt 配套使用。
 
 ---
 
@@ -959,6 +1317,24 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ```
 
 💡 **亮点**：完整视觉约束（风格/色彩/布局/文字）、双语言版本（中英文 prompt）、禁止清单。
+
+### 🥈 第二推荐
+
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+
+```
+# Role
+你是一位顶尖的学术插画专家，专注于为中科院 TOP 期刊的论文绘制专业架构图。
+
+# Visual Constraints
+1. 风格要求：采用扁平化矢量插画风格，参考 DeepMind 或 OpenAI 论文中的插图美学
+2. 色彩系统：严格使用低饱和度的莫兰迪色系或柔和色调
+3. 内容表现：将抽象的方法流程转化为可视化的模块、箭头和连接
+4. 文字规范：图像中的所有文字必须使用英文
+5. 禁止事项：严禁使用照片或图片拼贴、杂乱无章的布局、无法辨认的文字、过度的3D阴影或特效
+```
+
+💡 **亮点**：莫兰迪色系、中科院 TOP 期刊标准、与 Leey21 版互补。
 
 ---
 
