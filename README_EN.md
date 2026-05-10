@@ -1,38 +1,37 @@
-🇨🇳 中文 | [English](README_EN.md)
+[中文](README.md) | 🇺🇸 English
 
 ---
 
 # Best Prompts for AI Research Writing
 
-> 从 130k+ stars 的 GitHub repo 中精选的论文写作 prompt — 每个场景多个候选，按排名对比，复制即用。
+> Curated prompts from 130k+ star GitHub repos — ranked candidates per scenario, copy, paste, publish.
 
 > Curated prompts from 130k+ star repos — ranked candidates per scenario, copy, paste, publish.
 
-> 🤖 本项目由 [Xiaomi MiMo](https://mimo.xiaomi.com/) 协助编写
-> Powered by [Xiaomi MiMo](https://mimo.xiaomi.com/) · 感谢 [MiMo Orbit 百万亿 Token 创造者激励计划](https://100t.xiaomimimo.com/) 支持
+> 🤖 Powered by [Xiaomi MiMo](https://mimo.xiaomi.com/) · Thanks to [MiMo Orbit 100T Token Creator Incentive Program](https://100t.xiaomimimo.com/)
 
 ---
 
-## 📌 快速导航
+## 📌 Quick Navigation
 
-| 类别 | 场景 |
+| Category | Scenarios |
 |------|------|
-| [一、翻译类](#一翻译类-translation) | [1.1 中转英](#11-中转英-chinese--english) · [1.2 英转中](#12-英转中-english--chinese) · [1.3 中转中 Word](#13-中转中-word-版-chinese-refinement) |
-| [二、润色类](#二润色类-polishing) | [2.1 英文润色](#21-英文润色-english-polish) · [2.2 中文润色](#22-中文润色-chinese-polish) · [2.3 去AI味英文](#23-去-ai-味英文-de-ai-english) · [2.4 去AI味中文](#24-去-ai-味中文-de-ai-chinese) |
-| [三、结构调整类](#三结构调整类-restructuring) | [3.1 缩写](#31-缩写-shorten) · [3.2 扩写](#32-扩写-expand) · [3.3 逻辑检查](#33-逻辑检查-logic-check) |
-| [四、论文 Section 生成](#四论文各-section-生成-paper-sections) | [4.1 研究选题](#41-研究选题-brainstorming) · [4.2 Abstract](#42-abstract) · [4.3 Literature Review](#43-literature-review) · [4.4 Methodology](#44-methodology) · [4.5 Results](#45-results--discussion) · [4.6 Conclusion](#46-conclusion) · [4.7 Future Works](#47-future-works) |
-| [五、实验与图表](#五实验与图表-experiments--figures) | [5.1 实验分析](#51-实验分析-experiment-analysis) · [5.2 绘图推荐](#52-绘图推荐-figure-recommendation) · [5.3 图标题](#53-图标题-figure-caption) · [5.4 表标题](#54-表标题-table-caption) · [5.5 架构图](#55-架构图-architecture-diagram) |
-| [六、审稿](#六审稿-review) | [6.1 Reviewer 审稿](#61-reviewer-视角审稿) |
+| [I. Translation](#i-translation) | [1.1 Chinese → English](#11-chinese--english) · [1.2 English → Chinese](#12-english--chinese) · [1.3 Chinese Refinement (Word)](#13-chinese-refinement-word) |
+| [II. Polishing](#ii-polishing) | [2.1 English Polish](#21-english-polish) · [2.2 Chinese Polish](#22-chinese-polish) · [2.3 De-AI English](#23-de-ai-english) · [2.4 De-AI Chinese](#24-de-ai-chinese) |
+| [III. Restructuring](#iii-restructuring) | [3.1 Shorten](#31-shorten) · [3.2 Expand](#32-expand) · [3.3 Logic Check](#33-logic-check) |
+| [IV. Paper Sections](#iv-paper-sections) | [4.1 Brainstorming](#41-brainstorming) · [4.2 Abstract](#42-abstract) · [4.3 Literature Review](#43-literature-review) · [4.4 Methodology](#44-methodology) · [4.5 Results / Discussion](#45-results--discussion) · [4.6 Conclusion](#46-conclusion) · [4.7 Future Works](#47-future-works) |
+| [V. Experiments & Figures](#v-experiments--figures) | [5.1 Experiment Analysis](#51-experiment-analysis) · [5.2 Figure Recommendation](#52-figure-recommendation) · [5.3 Figure Caption](#53-figure-caption) · [5.4 Table Caption](#54-table-caption) · [5.5 Architecture Diagram](#55-architecture-diagram) |
+| [VI. Review](#vi-review) | [6.1 Reviewer-Perspective Review](#61-reviewer-perspective-review) |
 
 ---
 
-# 一、翻译类 (Translation)
+# I. Translation
 
-## 1.1 中转英 (Chinese → English)
+## 1.1 Chinese → English
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -73,11 +72,11 @@
 [在此处粘贴你的中文草稿]
 ```
 
-💡 **亮点**：含自审协议（模型先自查再输出）、禁止列表（不加粗/不用破折号/不列表）、双输出（英文+中文直译核对）。
+💡 **Highlights**: Includes self-review protocol, prohibition list (no bold / no dashes / no lists), dual output (English + Chinese literal translation for verification).
 
-### 🥈 第二推荐
+### 🥈 Runner-Up
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) ⭐147
 
 ```
 # Role
@@ -105,15 +104,15 @@
 [在此处粘贴你的中文段落]
 ```
 
-💡 **亮点**：更简洁，适合快速翻译场景。含翻译决策说明，便于理解术语选择。
+💡 **Highlights**: More concise, suitable for quick translation scenarios. Includes translation decision notes for understanding terminology choices.
 
 ---
 
-## 1.2 英转中 (English → Chinese)
+## 1.2 English → Chinese
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -141,15 +140,15 @@
 [在此处粘贴你的英文 LaTeX 代码]
 ```
 
-💡 **亮点**：反润色设计（直译不优化）、LaTeX 公式转自然语言、删除所有干扰索引命令。
+💡 **Highlights**: Anti-polishing design (literal translation, no optimization), LaTeX formulas converted to natural language, removes all distracting index commands.
 
 ---
 
-## 1.3 中转中 Word 版 (Chinese Refinement)
+## 1.3 Chinese Refinement (Word)
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -189,17 +188,17 @@
 [在此处粘贴你的中文草稿、零散的想法或要点]
 ```
 
-💡 **亮点**：面向 Word 用户（非 LaTeX）、逻辑重组（非逐句润色）、口语→书面语转换、反 Markdown 检查。
+💡 **Highlights**: Word-oriented (non-LaTeX), logic restructuring (not sentence-by-sentence polishing), colloquial → formal conversion, anti-Markdown check.
 
 ---
 
-# 二、润色类 (Polishing)
+# II. Polishing
 
-## 2.1 英文润色 (English Polish)
+## 2.1 English Polish
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -240,11 +239,11 @@
 [在此处粘贴你的英文 LaTeX 代码]
 ```
 
-💡 **亮点**：零错误原则、禁所有格（METHOD's → the performance of METHOD）、禁缩写展开、三部分输出（润色结果+中文翻译+修改日志）。
+💡 **Highlights**: Zero-error principle, possessive prohibition (METHOD's → the performance of METHOD), no abbreviation expansion, triple output (polished result + Chinese translation + modification log).
 
-### 🥈 第二推荐
+### 🥈 Runner-Up
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
 
 ```
 Rewrite this paragraph in an academic language: [PARAGRAPH]
@@ -254,15 +253,15 @@ Rewrite this paragraph in an academic language: [PARAGRAPH]
 Paraphrase the text using more academic and scientific language. Use a neutral tone and avoid repetitions of words and phrases. [PARAGRAPH]
 ```
 
-💡 **亮点**：简洁直接，适合快速润色。可组合使用多个 prompt 迭代优化。
+💡 **Highlights**: Concise and direct, suitable for quick polishing. Can be combined with multiple prompts for iterative refinement.
 
 ---
 
-## 2.2 中文润色 (Chinese Polish)
+## 2.2 Chinese Polish
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -308,15 +307,15 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 [在此处粘贴你的中文论文段落]
 ```
 
-💡 **亮点**：克制修改原则（"已好则不改"）、反自恋检查（"是否为了刷存在感"）、零修改路径（原文好就直接肯定）。
+💡 **Highlights**: Restrained modification principle ("no change if already good"), anti-narcissism check ("am I modifying just to prove my existence"), zero-change path (directly affirm if original is fine).
 
 ---
 
-## 2.3 去 AI 味英文 (De-AI English)
+## 2.3 De-AI English
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -374,15 +373,15 @@ Reconcile, Rectify, Rekindle, Reimagine, Scrutinize, Substantiate, Tailor, Testa
 Underscore, Unveil, Vibrant
 ```
 
-💡 **亮点**：80+ 黑名单词汇（独立参考资源）、自审协议、修改阈值（"宁缺毋滥"）、拟人度检查。
+💡 **Highlights**: 80+ blacklist words (standalone reference resource), self-review protocol, modification threshold ("less is more"), human-likeness check.
 
 ---
 
-## 2.4 去 AI 味中文 (De-AI Chinese)
+## 2.4 De-AI Chinese
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -427,17 +426,17 @@ Underscore, Unveil, Vibrant
 [在此处粘贴你的中文学术文本]
 ```
 
-💡 **亮点**：针对翻译腔、反虚词渲染（"毋庸置疑"→具体描述）、消除长定语、限制被动语态、Word 适配。
+💡 **Highlights**: Targets translationese, anti-filler expression ("毋庸置疑" → concrete description), eliminates long modifiers, limits passive voice, Word-compatible.
 
 ---
 
-# 三、结构调整类 (Restructuring)
+# III. Restructuring
 
-## 3.1 缩写 (Shorten)
+## 3.1 Shorten
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -478,15 +477,15 @@ Underscore, Unveil, Vibrant
 [在此处粘贴你的英文 LaTeX 代码]
 ```
 
-💡 **亮点**：字数预算（±5-15 词）、防过度编辑检查、三部分输出（结果+翻译+修改日志）。
+💡 **Highlights**: Word budget (±5-15 words), anti-over-editing check, triple output (result + translation + modification log).
 
 ---
 
-## 3.2 扩写 (Expand)
+## 3.2 Expand
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -528,15 +527,15 @@ Underscore, Unveil, Vibrant
 [在此处粘贴你的英文 LaTeX 代码]
 ```
 
-💡 **亮点**：反幻觉检查（"严禁编造数据"）、防废话文学、深度挖掘隐含逻辑。
+💡 **Highlights**: Anti-hallucination check ("no fabrication of data"), anti-fluff writing, deep mining of implicit logic.
 
 ---
 
-## 3.3 逻辑检查 (Logic Check)
+## 3.3 Logic Check
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -564,17 +563,17 @@ Underscore, Unveil, Vibrant
 [在此处粘贴你的英文 LaTeX 代码]
 ```
 
-💡 **亮点**：极简主义（没问题就说"检测通过"）、高容忍度（不挑刺）、只报致命错误。
+💡 **Highlights**: Minimalist approach ("检测通过" if no issues), high tolerance, reports only fatal errors.
 
 ---
 
-# 四、论文各 Section 生成 (Paper Sections)
+# IV. Paper Sections
 
-## 4.1 研究选题 (Brainstorming)
+## 4.1 Brainstorming
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
 
 ```
 Find a research topic for a PhD in the area of [TOPIC]
@@ -592,29 +591,29 @@ Generate 10 academic research questions about [PARAGRAPHS]
 Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
 ```
 
-💡 **亮点**：多角度切入（选题/找 gap/生成问题/建议应用），可组合使用。
+💡 **Highlights**: Multi-angle entry (topic selection / gap identification / question generation / application suggestion), combinable.
 
 ---
 
 ## 4.2 Abstract
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
 
 ```
 Generate an abstract for a scientific paper based on this information for: [PARAGRAPHS]
 ```
 
-💡 **亮点**：简洁直接，输入论文内容即可生成摘要。
+💡 **Highlights**: Concise and direct — paste paper content to generate an abstract.
 
 ---
 
 ## 4.3 Literature Review
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
 
 ```
 Conduct a literature review on [TOPIC SENTENCE] and provide review paper references
@@ -628,11 +627,11 @@ Summarize the scholarly literature, including in text citations on [PARAGRAPHS]
 Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]
 ```
 
-💡 **亮点**：覆盖文献综述的三种主要任务（综述/总结/对比）。
+💡 **Highlights**: Covers the three main tasks of literature review (review / summarize / compare).
 
-### 🥈 第二推荐
+### 🥈 Runner-Up
 
-> 来源：[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ⭐5.4k
+> Source: [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ⭐5.4k
 
 ```
 请对 [TOPIC] 进行系统性文献综述，使用 PRISMA 方法论：
@@ -644,15 +643,15 @@ Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]
 6. 生成结构化综述报告
 ```
 
-💡 **亮点**：PRISMA 方法论、结构化流程、适合正式综述论文。
+💡 **Highlights**: PRISMA methodology, structured workflow, suitable for formal review papers.
 
 ---
 
 ## 4.4 Methodology
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
 
 ```
 Create objectives and methodology for [TOPIC SENTENCE]
@@ -666,15 +665,15 @@ Write a detailed methodology for the topic: [TOPIC SENTENCE]
 Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 ```
 
-💡 **亮点**：覆盖方法论写作的三种需求（创建/详写/分析优劣）。
+💡 **Highlights**: Covers three needs of methodology writing (create / detail / analyze pros & cons).
 
 ---
 
 ## 4.5 Results / Discussion
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
 
 ```
 Write a result section for the following paragraphs. Please write this in the third person. [PARAGRAPHS]
@@ -684,15 +683,15 @@ Write a result section for the following paragraphs. Please write this in the th
 Discuss these results: [RESULT PARAGRAPHS]
 ```
 
-💡 **亮点**：Results 和 Discussion 分开处理，符合学术论文结构。
+💡 **Highlights**: Results and Discussion handled separately, matching academic paper structure.
 
 ---
 
 ## 4.6 Conclusion
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
 
 ```
 Generate a conclusion for this: [PARAGRAPHS]
@@ -702,31 +701,31 @@ Generate a conclusion for this: [PARAGRAPHS]
 Give recommendations and conclusion for: [PARAGRAPHS]
 ```
 
-💡 **亮点**：支持纯结论和结论+建议两种模式。
+💡 **Highlights**: Supports both standalone conclusion and conclusion + recommendations modes.
 
 ---
 
 ## 4.7 Future Works
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
 
 ```
 Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ```
 
-💡 **亮点**：指定数量（3 个方向），输出聚焦。
+💡 **Highlights**: Specified quantity (3 directions), focused output.
 
 ---
 
-# 五、实验与图表 (Experiments & Figures)
+# V. Experiments & Figures
 
-## 5.1 实验分析 (Experiment Analysis)
+## 5.1 Experiment Analysis
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -763,15 +762,15 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 [在此处粘贴你的 Excel 数据或实验结果文本]
 ```
 
-💡 **亮点**：反数据捏造（"严禁编造"）、\paragraph{} 结构强制、拒绝报账式描述。
+💡 **Highlights**: Anti-data fabrication ("严禁编造"), enforced \paragraph{} structure, rejects boilerplate-style descriptions.
 
 ---
 
-## 5.2 绘图推荐 (Figure Recommendation)
+## 5.2 Figure Recommendation
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -839,15 +838,15 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 [在此处粘贴你的实验数据（推荐直接复制 Excel/CSV 原始表格，保持行列结构），并请简述你想通过这张图强调的核心结论]
 ```
 
-💡 **亮点**：19 种图表库完整收录、场景→图表映射、尺度适应性建议、视觉设计规范。
+💡 **Highlights**: 19 chart types fully catalogued, scenario-to-chart mapping, scale adaptability recommendations, visual design specifications.
 
 ---
 
-## 5.3 图标题 (Figure Caption)
+## 5.3 Figure Caption
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -875,15 +874,15 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 [在此处粘贴你的中文描述]
 ```
 
-💡 **亮点**：Title Case/Sentence case 规则、去除冗余开头、去 AI 味。
+💡 **Highlights**: Title Case / Sentence case rules, removes redundant openings, de-AI-ified language.
 
 ---
 
-## 5.4 表标题 (Table Caption)
+## 5.4 Table Caption
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -911,15 +910,15 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 [在此处粘贴你的中文描述]
 ```
 
-💡 **亮点**：表格专用词汇（showcase→show, depict→present）、标准学术表达推荐。
+💡 **Highlights**: Table-specific vocabulary (showcase→show, depict→present), standard academic expressions recommended.
 
 ---
 
-## 5.5 架构图 (Architecture Diagram)
+## 5.5 Architecture Diagram
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -958,17 +957,17 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 [在此处粘贴你的论文摘要(Abs) + 方法部分描述]
 ```
 
-💡 **亮点**：完整视觉约束（风格/色彩/布局/文字）、双语言版本（中英文 prompt）、禁止清单。
+💡 **Highlights**: Full visual constraints (style / color / layout / text), bilingual versions (Chinese & English prompt), prohibition list.
 
 ---
 
-# 六、审稿 (Review)
+# VI. Review
 
-## 6.1 Reviewer 视角审稿
+## 6.1 Reviewer-Perspective Review
 
-### 🥇 第一推荐
+### 🥇 Top Pick
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) ⭐22.5k
 
 ```
 # Role
@@ -1005,11 +1004,11 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 [在此处粘贴论文 PDF 或完整 LaTeX 源码]
 ```
 
-💡 **亮点**：双部分输出（审稿报告+策略建议）、可修复性判断、具体行动指南。
+💡 **Highlights**: Dual-part output (review report + strategic advice), fixability assessment, concrete action guides.
 
-### 🥈 第二推荐
+### 🥈 Runner-Up
 
-> 来源：[kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper) ⭐19.5k
+> Source: [kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper) ⭐19.5k
 
 ```
 你是一位严格的学术审稿人，请从以下维度评审这篇论文：
@@ -1023,96 +1022,95 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 8. 修改建议（3条具体可操作的建议）
 ```
 
-💡 **亮点**：评分量表清晰、结构化输出、适合快速评审。
+💡 **Highlights**: Clear scoring rubric, structured output, suitable for quick reviews.
 
 ---
 
-# 📐 评分标准
+# 📐 Scoring Criteria
 
-本 repo 中的排名基于以下维度：
+The rankings in this repo are based on the following dimensions:
 
-| 维度 | 权重 | 1分 | 3分 | 5分 |
+| Dimension | Weight | 1 (Low) | 3 (Medium) | 5 (High) |
 |------|------|-----|-----|-----|
-| **输出质量** | 40% | 无差异或更差 | 略有提升 | 明显更优 |
-| **Prompt 结构** | 20% | 仅一句话指令 | 部分要素缺失 | 四要素完整（Role/Task/Constraints/Output） |
-| **边界约束** | 20% | 无约束 | 有基本约束 | 防幻觉+防过度修改+防格式破坏 |
-| **可复现性** | 10% | 不稳定 | 1-2组示例稳定 | 3+组均稳定 |
-| **独特价值** | 10% | 高度重叠 | 子场景差异化 | 全新场景或解决痛点 |
+| **Output Quality** | 40% | No difference or worse | Slightly improved | Significantly better |
+| **Prompt Structure** | 20% | One-line instruction | Partial elements missing | All four elements present (Role/Task/Constraints/Output) |
+| **Boundary Constraints** | 20% | No constraints | Basic constraints | Anti-hallucination + anti-over-editing + anti-format-breaking |
+| **Reproducibility** | 10% | Unstable | 1-2 examples stable | 3+ examples stable |
+| **Unique Value** | 10% | Highly overlapping | Sub-scenario differentiation | New scenario or pain-point resolution |
 
-**合并门槛**：加权总分 ≥ 3.5 且无单项 ≤ 2
+**Inclusion threshold**: Weighted total score ≥ 3.5 and no single dimension ≤ 2
 
 ---
 
-# 🤝 贡献指南
+# 🤝 Contributing Guide
 
-欢迎贡献更好的 prompt！
+Better prompts are welcome!
 
-## 如何贡献
+## How to Contribute
 
-1. Fork 本仓库
-2. 按 PR 模板填写内容
-3. 提交 PR，等待评审
+1. Fork this repository
+2. Fill out the PR template
+3. Submit the PR and wait for review
 
-## PR 要求
+## PR Requirements
 
-- 必须包含 prompt 原文
-- 必须包含至少 1 组示例对比（输入 + 现有 prompt 输出 + 你的 prompt 输出）
-- 必须说明为什么更好（至少选 2 个角度）
+- Must include the original prompt text
+- Must include at least 1 example comparison (input + existing prompt output + your prompt output)
+- Must explain why it's better (from at least 2 perspectives)
 
-## "更好"的评判标准
+## "Better" Evaluation Criteria
 
-| 维度 | 说明 |
+| Dimension | Description |
 |------|------|
-| 输出质量 | 更准确/更自然/更符合学术规范 |
-| Prompt 结构 | Role/Task/Constraints/Output Format 更完整 |
-| 边界约束 | 防幻觉/防过度修改/防格式破坏 |
-| 可复现性 | 不同输入都能稳定产出高质量结果 |
-| 独特价值 | 覆盖新场景/解决现有痛点 |
+| Output Quality | More accurate / more natural / more academically compliant |
+| Prompt Structure | More complete Role/Task/Constraints/Output Format |
+| Boundary Constraints | Anti-hallucination / anti-over-editing / anti-format-breaking |
+| Reproducibility | Stable high-quality output across different inputs |
+| Unique Value | Covers new scenario / resolves existing pain point |
 
-详细 PR 模板见 [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md)
+Detailed PR template at [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md)
 
 ---
 
-# 🗳️ 社区投票机制
+# 🗳️ Community Voting Mechanism
 
-| 机制 | 说明 |
+| Mechanism | Description |
 |------|------|
-| **PR 投票** | 每个 PR 开启 Discussion，社区成员可 👍/👎 + 留言 |
-| **投票权重** | Maintainer 2票 + Contributor 各1票 |
-| **通过门槛** | 👍 ≥ 3 且 👍:👎 ≥ 2:1 |
-| **争议处理** | Maintainer 最终裁决 |
+| **PR Voting** | Each PR opens a Discussion, community members can 👍/👎 + leave comments |
+| **Voting Weight** | Maintainer 2 votes + Contributors 1 vote each |
+| **Passing Threshold** | 👍 ≥ 3 and 👍:👎 ≥ 2:1 |
+| **Dispute Resolution** | Maintainer makes final decision |
 
 ---
 
-# 🔄 季度更新计划
+# 🔄 Quarterly Update Plan
 
-| 时间 | 动作 |
+| Time | Action |
 |------|------|
-| 每季度初 | Review 所有 PR，清理过期/重复 |
-| 每季度初 | 检查原 repo 是否有新 prompt |
-| 每季度初 | 更新 `Last updated: YYYY-MM` |
-| 每季度初 | 发布季度更新日志 |
+| Beginning of each quarter | Review all PRs, clean up stale/duplicate entries |
+| Beginning of each quarter | Check original repos for new prompts |
+| Beginning of each quarter | Update `Last updated: YYYY-MM` |
+| Beginning of each quarter | Publish quarterly update log |
 
 ---
 
-# 📚 来源与致谢
+# 📚 Sources & Acknowledgments
 
-本 repo 的 prompt 精选自以下开源项目：
+This repo's prompts are curated from the following open-source projects:
 
-| 来源 | Stars | 贡献场景 |
+| Source | Stars | Contributed Scenarios |
 |------|-------|---------|
-| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 22.5k | 翻译/润色/去AI味/缩写扩写/逻辑检查/实验分析/绘图推荐/图标题/表标题/架构图/审稿 |
-| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 4.6k | 研究选题/Abstract/Lit Review/Methodology/Results/Conclusion/Future Works |
-| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 147 | 多场景候选 |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 5.4k | 文献综述/审稿候选 |
-| [kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper) | 19.5k | 审稿候选 |
+| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 22.5k | Translation / Polishing / De-AI / Shorten / Expand / Logic Check / Experiment Analysis / Figure Recommendation / Figure Caption / Table Caption / Architecture Diagram / Review |
+| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 4.6k | Brainstorming / Abstract / Lit Review / Methodology / Results / Conclusion / Future Works |
+| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 147 | Multi-scenario candidates |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 5.4k | Literature Review / Review candidates |
+| [kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper) | 19.5k | Review candidates |
 
-感谢所有原作者的贡献！
+Thanks to all original authors for their contributions!
 
 ---
 
-> 🤖 本项目由 [Xiaomi MiMo](https://mimo.xiaomi.com/) 协助编写
-> Powered by [Xiaomi MiMo](https://mimo.xiaomi.com/) · 感谢 [MiMo Orbit 百万亿 Token 创造者激励计划](https://100t.xiaomimimo.com/) 支持
+> 🤖 Powered by [Xiaomi MiMo](https://mimo.xiaomi.com/) · Thanks to [MiMo Orbit 100T Token Creator Incentive Program](https://100t.xiaomimimo.com/)
 
 ---
 
