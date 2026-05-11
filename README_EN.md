@@ -17,7 +17,7 @@
 | [III. Restructuring](#iii-restructuring) | [3.1 Shorten](#31-shorten) · [3.2 Expand](#32-expand) · [3.3 Logic Check](#33-logic-check) |
 | [IV. Paper Sections](#iv-paper-sections) | [4.1 Brainstorming](#41-brainstorming) · [4.2 Abstract](#42-abstract) · [4.3 Literature Review](#43-literature-review) · [4.4 Methodology](#44-methodology) · [4.5 Results](#45-results--discussion) · [4.6 Conclusion](#46-conclusion) · [4.7 Future Works](#47-future-works) |
 | [V. Experiments & Figures](#v-experiments--figures) | [5.1 Experiment Analysis](#51-experiment-analysis) · [5.2 Figure Recommendation](#52-figure-recommendation) · [5.3 Figure Caption](#53-figure-caption) · [5.4 Table Caption](#54-table-caption) · [5.5 Architecture Diagram](#55-architecture-diagram) |
-| [VI. Review](#vi-review) | [6.1 Reviewer-Perspective Review](#61-reviewer-perspective-review) |
+| [VI. Review](#vi-review) | [6.1 Reviewer-Perspective Review](#61-reviewer-perspective-review) · [6.2 Response to Reviewers](#62-response-to-reviewers) |
 
 ---
 
@@ -1401,6 +1401,90 @@ This repo is not a prompt, but rather **ready-to-use Python plotting scripts**, 
 
 ---
 
+## 6.2 Response to Reviewers
+
+### 🥇 First Recommendation
+
+> Source: [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ⭐5.4k
+
+```
+# Role
+你是一位经验丰富的学术论文作者，擅长撰写针对审稿人意见的逐条回复（Point-by-Point Response）。你深谙顶会修稿流程，能精准区分"必须改"和"可以礼貌拒绝"的意见。
+
+# Task
+请根据我提供的【审稿意见】，为我的论文生成一份完整的 Response to Reviewers。
+
+# Constraints
+1. 解析与分类：
+   - 逐条提取审稿意见，标注审稿人编号（R1/R2/R3/Editor）。
+   - 对每条意见分类：Major / Minor / Editorial / Positive。
+   - 评估优先级：P1 必须修复 / P2 建议修复 / P3 可选考虑。
+   - 将每条意见映射到论文对应章节。
+
+2. 回复策略（四种状态）：
+   - RESOLVED：已修改，必须说明具体修改位置（页码+段落）。
+   - DELIBERATE_LIMITATION：承认是设计边界，需在 Limitations 章节引用说明。
+   - UNRESOLVABLE：需解释约束条件，建议未来工作解决。
+   - REVIEWER_DISAGREE：基于文献/数据的礼貌反驳，必须引用支撑材料。
+
+3. 回复质量标准：
+   - 直接具体：每条回复必须包含修改位置（Page X, Section Y, Paragraph Z）。
+   - 有理有据：反驳时引用文献或实验数据，不空口否认。
+   - 态度诚恳：即使拒绝也要先肯定审稿人的洞察。
+   - 完整覆盖：绝不跳过任何一条意见。
+
+4. 输出格式：
+   - Part 1 [Revision Roadmap]：审稿意见解析表（编号/分类/优先级/对应章节/回复策略）。
+   - Part 2 [Response Letter]：完整的逐条回复信，格式如下：
+
+     Dear Editor and Reviewers,
+
+     Thank you for the constructive feedback on our manuscript "[论文标题]".
+
+     ## Response to Reviewer 1
+
+     ### Comment R1-1: [意见摘要]
+     **Author Response**: [详细回复]
+     **Changes Made**: [具体修改位置]
+
+     ### R1-2: [意见摘要]
+     ...
+
+     ## Response to Reviewer 2
+     ...
+
+     ## Summary of Changes
+     [300-500 字总结主要修改]
+
+   - Part 3 [Change Log]：修改对照表（原始页码/修改后页码/章节/修改描述）。
+   - 除以上三部分外，不要输出任何多余的对话。
+
+# Input
+[在此处粘贴审稿意见全文]
+```
+
+💡 **Highlights**: Four response states (resolved / deliberate limitation / unresolvable / respectful disagreement), priority grading, mandatory modification location citation, complete response letter template.
+
+### 🥈 Second Recommendation
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+
+```
+Write a point-by-point response to the following reviewer comments:
+
+[Paste reviewer comments here]
+
+For each comment:
+1. Quote the reviewer's comment
+2. Provide a polite, evidence-based response
+3. State what changes were made (or explain why no change was made)
+4. Reference the specific location in the revised manuscript
+```
+
+💡 **Highlights**: Concise and direct, clear four-step structure. Suitable for quickly generating response drafts.
+
+---
+
 # 📐 Scoring Criteria
 
 Rankings in this repo are based on the following dimensions:
@@ -1478,7 +1562,7 @@ Prompts in this repo are curated from the following open-source projects:
 | [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 22.5k | Translation / Polishing / De-AI / Shorten / Expand / Logic Check / Experiment Analysis / Figure Recommendation / Figure Caption / Table Caption / Architecture Diagram / Review |
 | [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 4.6k | Brainstorming / Abstract / Lit Review / Methodology / Results / Conclusion / Future Works |
 | [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 147 | Multi-scenario candidates |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 5.4k | Literature Review / Review candidates |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 5.4k | Literature Review / Review candidates / Response to Reviewers |
 | [kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper) | 19.5k | Review candidates |
 
 Thanks to all original authors for their contributions!

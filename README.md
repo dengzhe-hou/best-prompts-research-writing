@@ -19,7 +19,7 @@
 | [三、结构调整类](#三结构调整类-restructuring) | [3.1 缩写](#31-缩写-shorten) · [3.2 扩写](#32-扩写-expand) · [3.3 逻辑检查](#33-逻辑检查-logic-check) |
 | [四、论文 Section 生成](#四论文各-section-生成-paper-sections) | [4.1 研究选题](#41-研究选题-brainstorming) · [4.2 Abstract](#42-abstract) · [4.3 Literature Review](#43-literature-review) · [4.4 Methodology](#44-methodology) · [4.5 Results](#45-results--discussion) · [4.6 Conclusion](#46-conclusion) · [4.7 Future Works](#47-future-works) |
 | [五、实验与图表](#五实验与图表-experiments--figures) | [5.1 实验分析](#51-实验分析-experiment-analysis) · [5.2 绘图推荐](#52-绘图推荐-figure-recommendation) · [5.3 图标题](#53-图标题-figure-caption) · [5.4 表标题](#54-表标题-table-caption) · [5.5 架构图](#55-架构图-architecture-diagram) |
-| [六、审稿](#六审稿-review) | [6.1 Reviewer 审稿](#61-reviewer-视角审稿) |
+| [六、审稿](#六审稿-review) | [6.1 Reviewer 审稿](#61-reviewer-视角审稿) · [6.2 回复审稿人](#62-回复审稿人-response-to-reviewers) |
 
 ---
 
@@ -1403,6 +1403,90 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ---
 
+## 6.2 回复审稿人 (Response to Reviewers)
+
+### 🥇 第一推荐
+
+> 来源：[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ⭐5.4k
+
+```
+# Role
+你是一位经验丰富的学术论文作者，擅长撰写针对审稿人意见的逐条回复（Point-by-Point Response）。你深谙顶会修稿流程，能精准区分"必须改"和"可以礼貌拒绝"的意见。
+
+# Task
+请根据我提供的【审稿意见】，为我的论文生成一份完整的 Response to Reviewers。
+
+# Constraints
+1. 解析与分类：
+   - 逐条提取审稿意见，标注审稿人编号（R1/R2/R3/Editor）。
+   - 对每条意见分类：Major / Minor / Editorial / Positive。
+   - 评估优先级：P1 必须修复 / P2 建议修复 / P3 可选考虑。
+   - 将每条意见映射到论文对应章节。
+
+2. 回复策略（四种状态）：
+   - RESOLVED：已修改，必须说明具体修改位置（页码+段落）。
+   - DELIBERATE_LIMITATION：承认是设计边界，需在 Limitations 章节引用说明。
+   - UNRESOLVABLE：需解释约束条件，建议未来工作解决。
+   - REVIEWER_DISAGREE：基于文献/数据的礼貌反驳，必须引用支撑材料。
+
+3. 回复质量标准：
+   - 直接具体：每条回复必须包含修改位置（Page X, Section Y, Paragraph Z）。
+   - 有理有据：反驳时引用文献或实验数据，不空口否认。
+   - 态度诚恳：即使拒绝也要先肯定审稿人的洞察。
+   - 完整覆盖：绝不跳过任何一条意见。
+
+4. 输出格式：
+   - Part 1 [Revision Roadmap]：审稿意见解析表（编号/分类/优先级/对应章节/回复策略）。
+   - Part 2 [Response Letter]：完整的逐条回复信，格式如下：
+
+     Dear Editor and Reviewers,
+
+     Thank you for the constructive feedback on our manuscript "[论文标题]".
+
+     ## Response to Reviewer 1
+
+     ### Comment R1-1: [意见摘要]
+     **Author Response**: [详细回复]
+     **Changes Made**: [具体修改位置]
+
+     ### R1-2: [意见摘要]
+     ...
+
+     ## Response to Reviewer 2
+     ...
+
+     ## Summary of Changes
+     [300-500 字总结主要修改]
+
+   - Part 3 [Change Log]：修改对照表（原始页码/修改后页码/章节/修改描述）。
+   - 除以上三部分外，不要输出任何多余的对话。
+
+# Input
+[在此处粘贴审稿意见全文]
+```
+
+💡 **亮点**：四种回复状态（已修复/设计边界/不可修复/礼貌反驳）、优先级分级、修改位置强制引用、完整回复信模板。
+
+### 🥈 第二推荐
+
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) ⭐4.6k
+
+```
+Write a point-by-point response to the following reviewer comments:
+
+[粘贴审稿意见]
+
+For each comment:
+1. Quote the reviewer's comment
+2. Provide a polite, evidence-based response
+3. State what changes were made (or explain why no change was made)
+4. Reference the specific location in the revised manuscript
+```
+
+💡 **亮点**：简洁直接，四步结构清晰。适合快速生成回复草稿。
+
+---
+
 # 📐 评分标准
 
 本 repo 中的排名基于以下维度：
@@ -1480,7 +1564,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 | [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 22.5k | 翻译/润色/去AI味/缩写扩写/逻辑检查/实验分析/绘图推荐/图标题/表标题/架构图/审稿 |
 | [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 4.6k | 研究选题/Abstract/Lit Review/Methodology/Results/Conclusion/Future Works |
 | [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 147 | 多场景候选 |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 5.4k | 文献综述/审稿候选 |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 5.4k | 文献综述/审稿候选/回复审稿人 |
 | [kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper) | 19.5k | 审稿候选 |
 
 感谢所有原作者的贡献！
