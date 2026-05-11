@@ -2,7 +2,7 @@
 
 ---
 
-# Best Prompts for AI Research Writing
+# Best Prompts AI Research Writing
 
 > Curated prompts from 130k+ star repos — ranked candidates per scenario, copy, paste, publish.
 

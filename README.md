@@ -2,7 +2,7 @@
 
 ---
 
-# Best Prompts for AI Research Writing
+# Best Prompts AI Research Writing
 
 > 从 130k+ stars 的 GitHub repo 中精选的论文写作 prompt — 每个场景多个候选，按排名对比，复制即用。
 
