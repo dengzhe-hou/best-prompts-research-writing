@@ -1,0 +1,1496 @@
+[Project home](README_EN.md) | [中文目录](CATALOG.md) | 🇺🇸 English catalog
+
+---
+
+# Research Writing Prompt Catalog
+
+> 24 research-writing scenarios, each with a primary candidate and a meaningfully different alternative, with traceable sources and copy-ready text.
+
+> Candidate order is an editorial judgment, not a benchmark ranking. Check outputs against your model, materials, and venue requirements.
+
+---
+
+## 📌 Quick Navigation
+
+| Category | Scenario |
+|------|------|
+| [I. Translation](#i-translation) | [1.1 Chinese → English](#11-chinese--english) · [1.2 English → Chinese](#12-english--chinese) · [1.3 Chinese Refinement](#13-chinese-refinement-word) |
+| [II. Polishing](#ii-polishing) | [2.1 English Polish](#21-english-polish) · [2.2 Chinese Polish](#22-chinese-polish) · [2.3 De-AI English](#23-de-ai-english) · [2.4 De-AI Chinese](#24-de-ai-chinese) |
+| [III. Restructuring](#iii-restructuring) | [3.1 Shorten](#31-shorten) · [3.2 Expand](#32-expand) · [3.3 Logic Check](#33-logic-check) |
+| [IV. Paper Sections](#iv-paper-sections) | [4.1 Brainstorming](#41-brainstorming) · [4.2 Abstract](#42-abstract) · [4.3 Literature Review](#43-literature-review) · [4.4 Methodology](#44-methodology) · [4.5 Results](#45-results--discussion) · [4.6 Conclusion](#46-conclusion) · [4.7 Future Works](#47-future-works) |
+| [V. Experiments & Figures](#v-experiments--figures) | [5.1 Experiment Analysis](#51-experiment-analysis) · [5.2 Figure Recommendation](#52-figure-recommendation) · [5.3 Figure Caption](#53-figure-caption) · [5.4 Table Caption](#54-table-caption) · [5.5 Architecture Diagram](#55-architecture-diagram) |
+| [VI. Review](#vi-review) | [6.1 Reviewer-Perspective Review](#61-reviewer-perspective-review) · [6.2 Response to Reviewers](#62-response-to-reviewers) |
+
+---
+
+# I. Translation
+
+## 1.1 Chinese → English
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位兼具顶尖科研写作专家与资深会议审稿人（ICML/ICLR 等）双重身份的助手。你的学术品味极高，对逻辑漏洞和语言瑕疵零容忍。
+
+# Task
+请处理我提供的【中文草稿】，将其翻译并润色为【英文学术论文片段】。
+
+# Constraints
+1. 视觉与排版：
+   - 尽量不要使用加粗、斜体或引号，这会影响论文观感。
+   - 保持 LaTeX 源码的纯净，不要添加无意义的格式修饰。
+
+2. 风格与逻辑：
+   - 要求逻辑严谨，用词准确，表达凝练连贯，尽量使用常见的单词，避免生僻词。
+   - 尽量不要使用破折号（—），推荐使用从句或同位语替代。
+   - 拒绝使用\item列表，必须使用连贯的段落表达。
+   - 去除"AI味"，行文自然流畅，避免机械的连接词堆砌。
+
+3. 时态规范：
+   - 统一使用一般现在时描述方法、架构和实验结论。
+   - 仅在明确提及特定历史事件时使用过去时。
+
+4. 输出格式：
+   - Part 1 [LaTeX]：只输出翻译成英文后的内容本身（LaTeX 格式）。
+     * 语言要求：必须是全英文。
+     * 特别注意：必须对特殊字符进行转义（例如：将 95% 转义为 95\%，model_v1 转义为 model\_v1，R&D 转义为 R\&D）。
+     * 保持数学公式原样（保留 $ 符号）。
+   - Part 2 [Translation]：对应的中文直译（用于核对逻辑是否符合原意）。
+   - 除以上两部分外，不要输出任何多余的对话或解释。
+
+# Execution Protocol
+在输出最终结果前，请务必在后台进行自我审查：
+1. 审稿人视角：假设你是最挑剔的 Reviewer，检查是否存在过度排版、逻辑跳跃或未翻译的中文。
+2. 立即纠正：针对发现的问题进行修改，确保最终输出的内容严谨、纯净且完全英文化。
+
+# Input
+[在此处粘贴你的中文草稿]
+```
+
+💡 **Highlights**: Self-review protocol (model self-checks before outputting), prohibition list (no bold / no dashes / no lists), dual output (English + Chinese literal translation for verification).
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+# Role
+你是资深学术论文翻译专家，专注于将中文学术内容翻译为符合国际顶会标准的英文学术论文。
+
+# Task
+将用户提供的中文论文段落翻译为高质量的英文学术论文段落。
+
+# Constraints
+1. 翻译质量：
+   - 使用标准学术英语，避免口语化表达
+   - 保持学术论文的严谨性和专业性
+   - 术语翻译准确，符合领域惯例
+
+2. 格式要求：
+   - 保持原文的逻辑结构
+   - 对 LaTeX 特殊字符进行转义
+   - 保留数学公式原样
+
+3. 输出格式：
+   - Part 1 [English]：翻译后的英文段落
+   - Part 2 [Notes]：翻译中的关键决策说明（如术语选择理由）
+
+# Input
+[在此处粘贴你的中文段落]
+```
+
+💡 **Highlights**: More concise, suitable for quick translation scenarios. Includes translation decision notes for understanding terminology choices.
+
+---
+
+## 1.2 English → Chinese
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位资深的计算机科学领域的学术翻译官。你的任务是帮助科研人员快速理解复杂的英文论文段落。
+
+# Task
+请将我提供的【英文 LaTeX 代码片段】翻译为流畅、易读的【中文文本】。
+
+# Constraints
+1. 语法清洗：
+   - 忽略引用与标签：直接删除所有 \cite{...}、\ref{...}、\label{...} 等干扰阅读的索引命令，不要保留，也不要翻译。
+   - 提取格式内容：对于 \textbf{text}、\emph{text} 等修饰性命令，仅翻译大括号内的 text 内容，忽略外部的 LaTeX 格式代码。
+   - 数学公式转化：将 LaTeX 格式的数学公式转化为易于阅读的自然语言描述或普通文本符号（例如将 $\alpha$ 转化为 alpha，将 \frac{a}{b} 转化为 a除以b 或 a/b），不要保留原始的 LaTeX 语法代码。
+
+2. 翻译原则：
+   - 严格对应原文：请进行直译，不要进行任何润色、重写或逻辑优化。
+   - 保持句式结构：中文的语序应尽量与英文原句保持一致，以便我能快速对应回原来的英文表达。
+   - 不要为了通顺而随意增减词汇，如果原文有语法错误或表达生硬，请在翻译中如实反映，不要自动纠正。
+
+3. 输出格式：
+   - 只输出翻译后的纯中文文本段落。
+   - 不要包含任何 LaTeX 代码（包括数学公式的语法符号）。
+
+# Input
+[在此处粘贴你的英文 LaTeX 代码]
+```
+
+💡 **Highlights**: Anti-polish design (literal translation without optimization), LaTeX formulas converted to natural language, all distracting index commands removed.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+## 身份定位
+你是专业科学论文英译中翻译专家，隶属于学术翻译服务团队。
+
+## 规则约束
+1. 术语精准性：优先采用《科学技术名词审定委员会》公布的规范译名
+2. 逻辑完整性：完整保留原文的论证逻辑、实验数据、公式符号与引用标注
+3. 歧义处理：若原文存在歧义，需在译文后用 [注：原文歧义说明] 补充解释
+4. 保持句式结构，中文的语序应尽量与英文原句保持一致
+
+### 约束条件
+1. 禁止口语化表达
+2. 禁止过度意译
+3. 禁止遗漏关键信息
+```
+
+💡 **Highlights**: Terminology standardization (referencing national standard translations), ambiguity handling mechanism, target journal adaptation.
+
+---
+
+## 1.3 Chinese Refinement (Word)
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位资深的中文学术期刊（如《计算机学报》、《软件学报》）编辑，同时也是顶尖会议的中文审稿人。你拥有极高的文字驾驭能力，擅长将碎片化、口语化的表达重构为逻辑严密、用词考究的学术文本。
+
+# Task
+请阅读我提供的【中文草稿】（可能包含口语、零散的要点或逻辑跳跃），将其重写为一段逻辑连贯、符合中文学术规范的【论文正文段落】。
+
+# Constraints
+1. 格式与排版（Word 适配）：
+   - 输出纯净的文本：严禁使用 Markdown 加粗、斜体或标题符号，以便我直接复制粘贴到 Word 中。
+   - 标点规范：严格使用中文全角标点符号（，。；：""），数学符号或英文术语周围需保留合理的空格。
+
+2. 逻辑与结构（核心任务）：
+   - 逻辑重组：不要机械地逐句润色。先识别输入的逻辑主线，将松散的句子重新串联。必须将列表转化为连贯的段落。
+   - 核心聚焦：遵循"一个段落一个核心观点"的原则。确保段落内的所有句子都服务于同一个主题，避免多主题杂糅。
+   - 自然流向：根据内容属性选择逻辑顺序（如：从概括到细节、从原因到结果、或按时间演进），而非强制套用论证模板。句与句之间应通过语义自然衔接，避免跳跃。
+
+3. 语言风格：
+   - 极度正式：将口语转化为书面语（例如：将"不管是A还是B"改为"无论A抑或B"；将"效果变好了"改为"性能显著提升"）。
+   - 客观中立：使用客观陈述语气，避免主观情绪色彩。
+   - 术语规范：保留关键技术名词（如 Transformer, CNN, Few-shot），不要强行翻译业界通用的英文术语。
+
+4. 输出格式：
+   - Part 1 [Refined Text]：重写后的中文段落。
+   - Part 2 [Logic flow]：简要说明你的重构思路（例如：提取了中心句，合并了冗余描述，调整了叙述语序）。
+   - 除以上两部分外，不要输出任何多余的对话。
+
+# Execution Protocol
+在输出前，请自查：
+1. 这种表达是否像一篇高质量的中文核心期刊论文？
+2. 是否存在口语化残留？
+3. 是否存在Markdown 格式符号？
+3. 复制到 Word 里是否会有讨厌的格式符？（如有，请立即删除）
+
+# Input
+[在此处粘贴你的中文草稿、零散的想法或要点]
+```
+
+💡 **Highlights**: Word-oriented (non-LaTeX), logical restructuring (not sentence-by-sentence polishing), colloquial → formal conversion, anti-Markdown checks.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+## 角色
+你是一位专业的中文学术编辑，擅长对科学论文进行中文润色。
+
+## 润色标准：
+1. 准确性：确保专业术语使用正确
+2. 流畅性与简洁性：优化句子结构，去除冗余表述
+3. 专业性与一致性：保持术语、格式和风格的统一
+4. 逻辑性：识别并修复逻辑断层
+
+## 输出格式
+1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
+2. 标点符号严格使用中文全角标点
+3. 必须保持原文的段落结构
+```
+
+💡 **Highlights**: Domain adaptation, four polishing criteria, Word-friendly output.
+
+---
+
+# II. Polishing
+
+## 2.1 English Polish
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位计算机科学领域的资深学术编辑，专注于提升顶级会议（如 NeurIPS, ICLR, ICML）投稿论文的语言质量。
+
+# Task
+请对我提供的【英文 LaTeX 代码片段】进行深度润色与重写。你的目标不仅仅是修正错误，而是要全面提升文本的学术严谨性、清晰度与整体可读性，使其达到零错误的最高出版水准。
+
+# Constraints
+1. 学术规范与句式优化（核心任务）：
+   - 严谨性提升：调整句式结构以适配顶级会议的写作规范，增强文本的正式性与逻辑连贯性。
+   - 句法打磨：优化长难句的表达，使其更加流畅自然；消除由于非母语写作导致的生硬表达。
+   - 零错误原则：彻底修正所有拼写、语法、标点及冠词使用错误。
+
+2. 词汇与语体控制：
+   - 正式语体：必须使用标准的学术书面语。严禁使用缩写形式（例如：必须使用 it is 而非 it's，使用 does not 而非 doesn't）。
+   - 词汇选择：拒绝堆砌华丽辞藻或生僻词汇。仅使用科研领域通用、易理解的词汇（Simple & Clear），确保文本清晰、简洁。
+   - 所有格与结构：避免使用名词所有格形式（尤其是方法名、模型名或系统名 + 's）。应优先采用 of 结构、名词修饰结构或被动表达（例如：使用 the performance of METHOD 而非 METHOD's performance）
+
+3. 内容与格式保持：
+   - 术语维持：不要展开常见的领域缩写（例如：保持 LLM 原样，不要展开为 Large Language Models）。
+   - 命令保留：严格保留原文中的 LaTeX 命令（如 \cite{}, \ref{}, \eg, \ie 等）。
+   - 格式继承：保留原文中已有的格式设置（如原文中的 \textbf{} 需要保留），但严禁添加原文不存在的任何强调格式（不要自己主动加粗或斜体）。
+
+4. 结构要求：
+   - 严禁列表化：不要将段落改写为 item 列表，必须保持完整的段落结构。
+
+5. 输出格式：
+   - Part 1 [LaTeX]：只输出润色后的英文 LaTeX 代码。
+     * 必须对特殊字符进行转义（例如：%、_、&）。
+     * 保持数学公式原样（保留 $ 符号）。
+   - Part 2 [Translation]：对应的中文直译。
+     * 严禁在中文名词后使用括号标注英文（拒绝双语冗余）。
+   - Part 3 [Modification Log]：使用中文简要说明主要的润色点（例如：优化了句式结构，增强了学术语气，修正了语法错误）。
+   - 除以上三部分外，不要输出任何多余的对话。
+
+# Input
+[在此处粘贴你的英文 LaTeX 代码]
+```
+
+💡 **Highlights**: Zero-error principle, possessive prohibition (METHOD's → the performance of METHOD), no abbreviation expansion, three-part output (polished result + Chinese translation + modification log).
+
+### Alternative Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Rewrite this paragraph in an academic language: [PARAGRAPH]
+```
+
+```
+Paraphrase the text using more academic and scientific language. Use a neutral tone and avoid repetitions of words and phrases. [PARAGRAPH]
+```
+
+💡 **Highlights**: Concise and direct, suitable for quick polishing. Can combine multiple prompts for iterative optimization.
+
+---
+
+## 2.2 Chinese Polish
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位专注于计算机科学领域的资深中文学术编辑，深谙《计算机学报》、《软件学报》等核心期刊的审稿标准。你秉持尊重原著，克制修改的原则，具备敏锐的鉴赏力，只在确有必要时才进行干预。
+
+# Task
+请对提供的【中文论文段落】进行专业审视与润色。你的核心任务是：修复明显的语病与逻辑漏洞。特别注意：如果原文表达已经清晰、准确且符合学术规范，请务必保留原样，不要进行任何不必要的修改。
+
+# Constraints
+1. 修正阈值（核心原则）：
+   - 必须修改：仅在检测到口语化表达（如"我们觉得"）、语法错误、逻辑断层或严重欧化长句时，才进行修正。
+   - 禁止修改：如果原文逻辑通顺、用词准确，严禁为了追求形式变化而强行替换同义词或重组句式。保持作者原有的行文风格是第一优先级的。
+
+2. 语体规范（现代学术风）：
+   - 坚持当代学术书面语：行文应平实、流畅、准确。
+     * 禁止事项：无故将"旨在"改为"拟"，将"是"改为"系"（拒绝陈旧的公文腔）。
+   - 彻底去除口语：将"我们发现"等口语表达替换为"实验结果表明"等客观陈述。
+
+3. 逻辑与连贯性：
+   - 仅在逻辑断裂时显化连接词，否则优先依赖语序进行自然衔接，拒绝机械堆砌连接词。
+
+4. 格式适配（Word 友好）：
+   - 纯净文本：输出结果必须是纯文本。严禁使用 Markdown 加粗、斜体。
+   - 标点规范：严格使用中文全角标点符号。
+
+5. 输出格式（分情况处理）：
+   - Part 1 [Refined Text]：
+     * 如果进行了润色：输出润色后的文本。
+     * 如果原文无需修改：直接原样输出原文。
+   - Part 2 [Review Comments]：
+     * 如果进行了润色：简要说明修改点（例如：修复了指代不明，去除了口语表达）。
+     * 如果原文无需修改：请直接给出肯定评价（例如："原文逻辑清晰，表达规范，符合出版要求，未做修改。"）。
+   - 除以上两部分外，不要输出任何多余的对话。
+
+# Execution Protocol
+在输出前，请进行自我校验：
+1. 我是否为了刷存在感而修改了原本通顺的句子？（如果是，请还原）。
+2. 如果我没改动，Part 1 是否完整输出了原文？Part 2 是否给予了肯定？
+3. 输出内容是否不含任何格式标记？
+4. 我修改的部分是否都是必要的，存在明显问题的？
+
+# Input
+[在此处粘贴你的中文论文段落]
+```
+
+💡 **Highlights**: Restrained modification principle ("if it's already good, don't change it"), anti-narcissism check ("did I change it just to feel useful?"), zero-modification pathway (affirm the original if it's good).
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+## 角色
+你是一位专业的中文学术编辑，擅长对科学论文进行中文润色。
+
+## 润色标准：
+1. 准确性：确保专业术语使用正确
+2. 流畅性与简洁性：优化句子结构，去除冗余表述
+3. 专业性与一致性：保持术语、格式和风格的统一
+4. 逻辑性：识别并修复逻辑断层
+
+## 输出格式
+1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
+2. 标点符号严格使用中文全角标点
+3. 必须保持原文的段落结构
+```
+
+💡 **Highlights**: Four polishing criteria, plain text output for Word compatibility, preserves paragraph structure.
+
+---
+
+## 2.3 De-AI English
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位计算机科学领域的资深学术编辑，专注于提升论文的自然度与可读性。你的任务是将大模型生成的机械化文本重写为符合顶级会议（如 ACL, NeurIPS）标准的自然学术表达。
+
+# Task
+请对我提供的【英文 LaTeX 代码片段】进行"去 AI 化"重写，使其语言风格接近人类母语研究者。
+
+# Constraints
+1. 词汇规范化：
+   - 优先使用朴实、精准的学术词汇。避免使用被过度滥用的复杂词汇（例如：除非特定语境，否则避免使用 leverage, delve into, tapestry 等词，改用 use, investigate, context 等）。
+   - 只有在必须表达特定技术含义时才使用术语，避免为了形式上的"高级感"而堆砌辞藻。
+
+2. 结构自然化：
+   - 严禁使用列表格式：必须将所有的 item 内容转化为逻辑连贯的普通段落。
+   - 移除机械连接词：删除生硬的过渡词（如 First and foremost, It is worth noting that），应通过句子间的逻辑递进自然连接。
+   - 减少插入符号：尽量减少破折号（—）的使用，建议使用逗号、括号或从句结构替代。
+
+3. 排版规范：
+   - 禁用强调格式：严禁在正文中使用加粗或斜体进行强调。学术写作应通过句式结构来体现重点。
+   - 保持 LaTeX 纯净：不要引入无关的格式指令。
+
+4. 修改阈值（关键）：
+   - 宁缺毋滥：如果输入的文本已经非常自然、地道且没有明显的 AI 特征，请保留原文，不要为了修改而修改。
+   - 正向反馈：对于高质量的输入，应在 Part 3 中给予明确的肯定和正向评价。
+
+5. 输出格式：
+   - Part 1 [LaTeX]：输出重写后的代码（如果原文已足够好，则输出原文）。
+     * 语言要求：必须是全英文。
+     * 必须对特殊字符进行转义（例如：%、_、&）。
+     * 保持数学公式原样（保留 $ 符号）。
+   - Part 2 [Translation]：对应的中文直译。
+   - Part 3 [Modification Log]：
+     * 如果进行了修改：简要说明调整了哪些机械化表达。
+     * 如果未修改：请直接输出中文评价："[检测通过] 原文表达地道自然，无明显 AI 味，建议保留。"
+   - 除以上三部分外，不要输出任何多余的对话。
+
+# Execution Protocol
+在输出前，请自查：
+1. 拟人度检查：确认文本语气自然。
+2. 必要性检查：当前的修改是否真的提升了可读性？如果是为了换词而换词，请撤销修改并判定为"检测通过"。
+
+# Input
+[在此处粘贴你的英文 LaTeX 代码]
+
+此处我们给出一些"ai味"较浓的单词，当出现下述单词时可考虑替换（仅供参考）：
+
+Accentuate, Ador, Amass, Ameliorate, Amplify, Alleviate, Ascertain, Advocate, Articulate, Bear, Bolster,
+Bustling, Cherish, Conceptualize, Conjecture, Consolidate, Convey, Culminate, Decipher, Demonstrate,
+Depict, Devise, Delineate, Delve, Delve Into, Diverge, Disseminate, Elucidate, Endeavor, Engage, Enumerate,
+Envision, Enduring, Exacerbate, Expedite, Foster, Galvanize, Harmonize, Hone, Innovate, Inscription,
+Integrate, Interpolate, Intricate, Lasting, Leverage, Manifest, Mediate, Nurture, Nuance, Nuanced, Obscure,
+Opt, Originates, Perceive, Perpetuate, Permeate, Pivotal, Ponder, Prescribe, Prevailing, Profound, Recapitulate,
+Reconcile, Rectify, Rekindle, Reimagine, Scrutinize, Substantiate, Tailor, Testament, Transcend, Traverse,
+Underscore, Unveil, Vibrant
+```
+
+💡 **Highlights**: 80+ blacklisted words (standalone reference resource), self-review protocol, modification threshold ("better to leave it than to change it"), human-likeness check.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+## 角色
+你是一位专注于中科院 TOP 期刊投稿的顶尖英文学术论文润色专家。
+
+## 具体修改说明：
+1. 学术语言精准性：修正语法错误、拼写错误、标点误用
+2. 逻辑连贯性：梳理段落间的逻辑衔接
+3. 专业术语规范性：统一专业术语的拼写与用法
+4. 格式合规性：调整标题层级、引用格式、图表标注等
+5. 表达简洁性：删除冗余表述，精炼语句
+
+## 注意事项：
+1. 正式语体：使用标准的学术书面语，严禁使用缩写形式
+2. 词汇选择：避免使用过于复杂或生僻的词汇
+3. 避免所有格结构：使用 of 结构（the performance of METHOD）
+4. 严禁使用列表：必须保持原文的段落结构
+```
+
+💡 **Highlights**: Journal adaptation (can pass in journal requirements), five-dimensional modification criteria, can serve as both de-AI and polishing dual-purpose tool.
+
+---
+
+## 2.4 De-AI Chinese
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位计算机科学领域的资深中文学术编辑（熟知《计算机学报》、《软件学报》、《自动化学报》等国内顶刊的审稿标准），专注于提升中文学术论文的自然度与严谨性。你的任务是将大模型生成的、带有明显"机器味"或"翻译腔"的中文文本，重写为符合人类母语研究者习惯的自然学术表达。
+
+# Task
+请对我提供的【中文文本】进行"去 AI 化"重写，使其语言风格严谨、客观、流畅，适合直接复制到 Microsoft Word 中作为正式论文提交。
+
+# Constraints
+1. 词汇规范化（意图驱动）：
+   - 凡是无实质信息量的情感渲染性表达，或试图通过华丽辞藻掩盖逻辑空洞的词汇（如"毋庸置疑"、"耦合内聚"、"不可磨灭的贡献"、"范式转移"、"颠覆性"，"深刻"，"切中要害"，"本质"等），均应替换为具体、客观的学术描述。
+   - 示例：将"为了解决这一痛点"改为"针对上述问题"；将"展现了令人惊叹的能力"改为"表现出显著的性能提升"。
+   - 保持核心专业术语的准确性，绝对不要为了"去 AI 味"而随意替换领域内的专有名词。
+
+2. 句式与结构自然化（去翻译腔与机械感）：
+   - 消除长定语：避免使用"一个...的...的..."这种英式长定语结构，将其拆分为短句或转化为符合中文习惯的表达。
+   - 限制被动语态：中文学术写作相对少用"被"字句，尽量使用无主语句或主动语态（如将"...被用来优化..."改为"采用...优化..."）。
+   - 灵活处理列表格式：应尽量避免机械的"首先...其次...最后..."或"1. 2. 3."罗列。通常应将这些内容融合成逻辑连贯的普通段落，通过句意本身的因果、递进关系来过渡。但若列举结构在当前语境下逻辑更清晰（例如陈述算法的核心步骤或系统的几项基本约束），可酌情保留。
+
+3. 排版规范（适配 Word）：
+   - 禁用 Markdown 语法：输出的文本中严禁出现 **加粗**、*斜体* 或 # 标题 等 Markdown 标记，确保文本可以直接纯文本粘贴到 Word 中。
+   - 保留必要的公式：如果原文包含数学公式变量，请自然地嵌入在中文文本中。
+
+4. 修改阈值（关键）：
+   - 宁缺毋滥：如果输入的文本已经非常自然、严谨且没有明显的 AI 特征，请保留原文，不要为了修改而修改。
+   - 正向反馈：对于高质量的输入，应在 Part 2 中给予明确的肯定和正向评价。
+
+5. 输出格式：
+   - Part 1 [正文]：输出重写后的纯文本（如果原文已足够好，则输出原文）。文本应分段清晰，不包含任何排版符号。
+   - Part 2 [修改日志 / Modification Log]：
+     * 如果进行了修改：简要列举删改了哪些典型的"无实质信息的渲染表达"或"翻译腔"句式。
+     * 如果未修改：请直接输出："[检测通过] 原文表达严谨自然，无明显 AI 痕迹，建议保留。"
+   - 除以上两部分外，不要输出任何多余的对话或解释。
+
+# Execution Protocol
+在输出前，请自查：
+1. 拟人度检查：读起来是否像一位严谨的国内高校学者写的论文？是否准确传达了学术意图而非单纯堆砌辞藻？
+2. 纯净度检查：是否去除了所有的 Markdown 符号，方便直接粘贴入 Word？
+3. 必要性检查：当前的修改是否真的提升了学术连贯性？如果是为了换词而换词，请撤销修改并判定为"检测通过"。
+
+# Input
+[在此处粘贴你的中文学术文本]
+```
+
+💡 **Highlights**: Targets translation-ese, anti-flowery language ("毋庸置疑" → concrete description), eliminates long attributive clauses, limits passive voice, Word-compatible.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+## 角色
+你是一位专业的中文学术编辑，擅长对科学论文进行中文润色。
+
+## 润色标准：
+1. 准确性：确保专业术语使用正确
+2. 流畅性与简洁性：优化句子结构，去除冗余表述
+3. 专业性与一致性：保持术语、格式和风格的统一
+4. 逻辑性：识别并修复逻辑断层
+
+## 输出格式
+1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
+2. 标点符号严格使用中文全角标点
+3. 必须保持原文的段落结构
+```
+
+💡 **Highlights**: Four polishing criteria, plain text output for Word compatibility, preserves paragraph structure.
+
+---
+
+# III. Restructuring
+
+## 3.1 Shorten
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位专注于简洁性的顶级学术编辑。你的特长是在不损失任何信息量的前提下，通过句法优化来压缩文本长度。
+
+# Task
+请将我提供的【英文 LaTeX 代码片段】进行微幅缩减。
+
+# Constraints
+1. 调整幅度：
+   - 目标是少量减少字数（减少约 5-15 个单词）。
+   - 严禁大删大改：必须保留原文所有核心信息、技术细节及实验参数，严禁改变原意。
+
+2. 缩减手段：
+   - 句法压缩：将从句转化为短语，或者将被动语态转化为主动语态（如果能更简练的话）。
+   - 剔除冗余：删除无意义的填充词，例如将 "in order to" 简化为 "to"。
+
+3. 视觉与风格：
+   - 保持 LaTeX 源码纯净，不要使用加粗、斜体或引号。
+   - 尽量不要使用破折号（—）。
+   - 拒绝列表格式（Itemization），保持连贯段落。
+
+4. 输出格式：
+   - Part 1 [LaTeX]：只输出缩减后的英文 LaTeX 代码本身。
+     * 语言要求：必须是全英文。
+     * 必须对特殊字符进行转义（如 %、_、&）。
+     * 保持数学公式原样（保留 $ 符号）。
+   - Part 2 [Translation]：对应的中文直译（用于核对核心信息是否完整保留）。
+   - Part 3 [Modification Log]：使用中文简要说明你调整了哪些地方（例如：删除了冗余词 "XXX"，合并了 "YYY" 从句）。
+   - 除以上三部分外，不要输出任何多余的对话。
+
+# Execution Protocol
+在输出前，请自查：
+1. 信息完整性：是否不小心删除了某个实验参数或限定条件？（如有，请放回去）。
+2. 字数检查：是否缩减过度？（目标只是微调，不要把一段话变成一句话）。
+
+# Input
+[在此处粘贴你的英文 LaTeX 代码]
+```
+
+💡 **Highlights**: Word budget (±5-15 words), over-editing prevention check, three-part output (result + translation + modification log).
+
+### Alternative Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Reduce the following to [NUMBER OF WORDS] words: [PARAGRAPHS]
+```
+
+```
+Shorten to [NUMBER OF CHARACTERS] characters: [PARAGRAPHS]
+```
+
+💡 **Highlights**: Concise and direct, supports reduction by word count or character count, suitable for quick scenarios.
+
+---
+
+## 3.2 Expand
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位专注于逻辑流畅度的顶级学术编辑。你的特长是通过深挖内容深度和增强逻辑连接，使文本更加饱满、充分。
+
+# Task
+请将我提供的【英文 LaTeX 代码片段】进行微幅扩写。
+
+# Constraints
+1. 调整幅度：
+   - 目标是少量增加字数（增加约 5-15 个单词）。
+   - 严禁恶意注水：不要添加无意义的形容词或重复废话。
+
+2. 扩写手段：
+   - 深度挖掘：仔细阅读原文，尝试挖掘并显式化原文中隐含的结论、前提或因果关系。将原本留白的部分补充完整。
+   - 逻辑增强：增加必要的连接词（如 Furthermore, Notably）以明确句间关系。
+   - 表达升级：将简单的描述替换为更精准、更具描述性的学术表达。
+
+3. 视觉与风格：
+   - 保持 LaTeX 源码纯净，不要使用加粗、斜体或引号。
+   - 尽量不要使用破折号（—）。
+   - 拒绝列表格式（Itemization），保持连贯段落。
+
+4. 输出格式：
+   - Part 1 [LaTeX]：只输出扩写后的英文 LaTeX 代码本身。
+     * 语言要求：必须是全英文。
+     * 必须对特殊字符进行转义（如 %、_、&）。
+     * 保持数学公式原样（保留 $ 符号）。
+   - Part 2 [Translation]：对应的中文直译（用于核对新增的逻辑是否符合原意）。
+   - Part 3 [Modification Log]：使用中文简要说明你调整了哪些地方（例如：补充了隐含结论 "XXX"，增加了连接词 "YYY"）。
+   - 除以上三部分外，不要输出任何多余的对话。
+
+# Execution Protocol
+在输出前，请自查：
+1. 内容价值检查：新增的内容是否是基于原文的合理推演？（严禁产生幻觉或编造数据）。
+2. 风格检查：扩写后的文字是否依然凝练？（避免变成废话文学）。
+
+# Input
+[在此处粘贴你的英文 LaTeX 代码]
+```
+
+💡 **Highlights**: Anti-hallucination check ("absolutely no fabricating data"), anti-fluff, deep mining of implicit logic.
+
+### Alternative Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Expand these notes: [PARAGRAPH]
+```
+
+```
+Write a few paragraphs using the following list of points [LIST]
+```
+
+💡 **Highlights**: Supports two modes — expanding from notes and generating paragraphs from bullet points.
+
+---
+
+## 3.3 Logic Check
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位负责论文终稿校对的学术助手。你的任务是进行"红线审查"，确保论文没有致命错误。
+
+# Task
+请对我提供的【英文 LaTeX 代码片段】进行最后的一致性与逻辑核对。
+
+# Constraints
+1. 审查阈值（高容忍度）：
+   - 默认假设：请预设当前的草稿已经经过了多轮修改与校正，质量较高。
+   - 仅报错原则：只有在遇到阻碍读者理解的逻辑断层、引起歧义的术语混乱、或严重的语法错误时才提出意见。
+   - 严禁优化：对于"可改可不改"的风格问题、或者仅仅是"换个词听起来更高级"的建议，请直接忽略，不要通过挑刺来体现你的存在感。
+
+2. 审查维度：
+   - 致命逻辑：是否存在前后完全矛盾的陈述？
+   - 术语一致性：核心概念是否在没有说明的情况下换了名字？
+   - 严重语病：是否存在导致句意不清的中式英语（Chinglish）或语法结构错误。
+
+3. 输出格式：
+   - 如果没有上述"必须修改"的错误，请直接输出中文：[检测通过，无实质性问题]。
+   - 如果有问题，请使用中文分点简要指出，不要长篇大论。
+
+# Input
+[在此处粘贴你的英文 LaTeX 代码]
+```
+
+💡 **Highlights**: Minimalism (outputs "passed" if no issues), high tolerance (no nitpicking), only reports fatal errors.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+# 角色
+你是一位拥有 10 年以上学术评审经验的领域专家，擅长以"挑剔性阅读"的方式审视论文逻辑严谨性。
+
+## 严格遵循以下要求：
+1. 逐段分析论文的论证逻辑，重点检查：
+   - 前提假设是否明确且合理
+   - 论据与论点是否存在因果断裂
+   - 推理过程是否存在偷换概念、以偏概全或循环论证
+   - 数据/案例是否能有效支撑结论
+   - 结论是否超出论据的支持范围
+2. 对每个疑似逻辑漏洞，需标注具体位置并说明漏洞类型
+3. 针对每个漏洞，提出可落地的改进建议
+
+## 审查的严格程度：
+1. 默认假设：假定当前草稿已经过多次修改和校对
+2. 挑剔性原则：只关注严重影响理解的逻辑混乱
+3. 严禁优化"可改可不改"的措辞问题
+```
+
+💡 **Highlights**: Paragraph-by-paragraph analysis, flaw type annotation, actionable improvement suggestions — more detailed than the Leey21 version.
+
+---
+
+# IV. Paper Sections
+
+## 4.1 Brainstorming
+
+### Primary Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Find a research topic for a PhD in the area of [TOPIC]
+```
+
+```
+Identify gaps in the literature on [TOPIC SENTENCE]
+```
+
+```
+Generate 10 academic research questions about [PARAGRAPHS]
+```
+
+```
+Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
+```
+
+💡 **Highlights**: Multi-angle entry (topic selection / finding gaps / generating questions / suggesting applications), combinable.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+# Role
+你是一位经验丰富的科研工作者和审稿人，擅长从文献综述中识别研究空白。
+
+# Analysis Dimensions
+1. **方法层面**: 现有方法有哪些共同假设？
+2. **数据/实验层面**: 有哪些场景未被覆盖？
+3. **理论层面**: 有哪些现象缺乏理论解释？
+4. **应用层面**: 有哪些实际应用场景未被探索？
+
+## 🎯 识别的研究空白
+### Gap 1: [名称]
+- **描述**: [具体描述这个空白]
+- **重要性**: [为什么填补这个空白很重要？]
+
+## 💡 研究建议
+- [给出 2-3 个具体的研究建议]
+```
+
+💡 **Highlights**: Four-dimensional analysis framework (method / data / theory / application), structured research gap output.
+
+---
+
+## 4.2 Abstract
+
+### Primary Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Generate an abstract for a scientific paper based on this information for: [PARAGRAPHS]
+```
+
+💡 **Highlights**: Concise and direct — input paper content to generate abstract.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+# Abstract 结构 (4-5 句话)
+1. **背景/动机** (1 句): 为什么这个问题重要？
+2. **问题/挑战** (1 句): 现有方法有什么局限？
+3. **方法/贡献** (1-2 句): 本文提出了什么方法？
+4. **结果** (1 句): 实验结果如何？(包含关键数据)
+5. **意义** (可选，1 句): 这项工作的意义是什么？
+
+# Constraints
+- 字数: 150-250 词
+- 时态: 一般现在时为主
+- 语态: 主动语态优先
+- 避免: 缩写、引用、模糊表述
+```
+
+💡 **Highlights**: Structured template (5-sentence formula), explicit constraints on word count / tense / voice.
+
+---
+
+## 4.3 Literature Review
+
+### Primary Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Conduct a literature review on [TOPIC SENTENCE] and provide review paper references
+```
+
+```
+Summarize the scholarly literature, including in text citations on [PARAGRAPHS]
+```
+
+```
+Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]
+```
+
+💡 **Highlights**: Covers three main tasks of literature review (review / summarize / compare).
+
+### Alternative Candidate
+
+> Source: [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
+
+```
+请对 [TOPIC] 进行系统性文献综述，使用 PRISMA 方法论：
+1. 制定检索策略
+2. 筛选相关文献
+3. 提取关键信息
+4. 综合分析现有研究
+5. 识别研究空白
+6. 生成结构化综述报告
+```
+
+💡 **Highlights**: PRISMA methodology, structured workflow, suitable for formal review papers.
+
+---
+
+## 4.4 Methodology
+
+### Primary Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Create objectives and methodology for [TOPIC SENTENCE]
+```
+
+```
+Write a detailed methodology for the topic: [TOPIC SENTENCE]
+```
+
+```
+Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
+```
+
+💡 **Highlights**: Covers three methodology writing needs (create / detail / analyze strengths & weaknesses).
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+## 📋 详细大纲
+
+### Method
+- [ ] 问题定义/形式化
+- [ ] 方法概述/整体框架
+- [ ] 核心模块/技术细节
+- [ ] 算法伪代码（如适用）
+- [ ] 复杂度分析（如适用）
+```
+
+💡 **Highlights**: Structured outline template, suitable for building methodology section from scratch.
+
+---
+
+## 4.5 Results / Discussion
+
+### Primary Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Write a result section for the following paragraphs. Please write this in the third person. [PARAGRAPHS]
+```
+
+```
+Discuss these results: [RESULT PARAGRAPHS]
+```
+
+💡 **Highlights**: Results and Discussion handled separately, matching academic paper structure.
+
+### Alternative Candidate
+
+> Source: [kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper)
+
+```
+Please analyze the following experimental results and write a discussion section:
+
+1. Summarize the main findings
+2. Compare with baseline methods
+3. Analyze why the proposed method works better (or worse)
+4. Discuss limitations and potential improvements
+5. Connect results to the original research questions
+
+Results: [PASTE YOUR RESULTS TABLE OR DATA]
+```
+
+💡 **Highlights**: Five-step discussion framework, structured analysis workflow.
+
+---
+
+## 4.6 Conclusion
+
+### Primary Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Generate a conclusion for this: [PARAGRAPHS]
+```
+
+```
+Give recommendations and conclusion for: [PARAGRAPHS]
+```
+
+💡 **Highlights**: Supports both conclusion-only and conclusion + recommendations modes.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+## 结论写作模板
+
+请根据以下要素撰写结论：
+
+1. **研究回顾** (1-2 句): 重申研究问题和目标
+2. **主要贡献** (2-3 点): 总结核心贡献
+3. **实验验证** (1-2 句): 概括关键实验结果
+4. **局限性** (1-2 句): 诚实指出研究局限
+5. **未来方向** (2-3 点): 提出具体未来工作
+
+# Constraints
+- 总字数: 200-300 词
+- 时态: 一般现在时
+- 避免: 引用、新信息、过度夸大
+```
+
+💡 **Highlights**: Five-element template, word count constraint, avoids common conclusion-writing pitfalls.
+
+---
+
+## 4.7 Future Works
+
+### Primary Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
+```
+
+💡 **Highlights**: Specified quantity (3 directions), focused output.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+基于本研究的局限性，请提出 3-5 个具体的未来研究方向：
+
+1. **[方向 1]**: [具体描述]
+   - 为什么重要：
+   - 可行的方法：
+
+2. **[方向 2]**: [具体描述]
+   - 为什么重要：
+   - 可行的方法：
+```
+
+💡 **Highlights**: Structured output, each direction includes importance and feasibility analysis.
+
+---
+
+# V. Experiments & Figures
+
+## 5.1 Experiment Analysis
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位具有敏锐洞察力的资深数据科学家，擅长处理复杂的实验数据并撰写高质量的学术分析报告。
+
+# Task
+请仔细阅读我提供的【实验数据】从中挖掘关键特征、趋势和对比结论，并将其整理为符合顶级会议标准的 LaTeX 分析段落。
+
+# Constraints
+1. 数据真实性：
+   - 所有结论必须严格基于输入的数据。严禁编造数据、夸大提升幅度或捏造不存在的实验现象。
+   - 如果数据中没有明显的优势或趋势，请如实描述，不要强行总结所谓的显著提升。
+
+2. 分析深度：
+   - 拒绝简单的报账式描述（例如不要只说 A 是 0.5，B 是 0.6），重点在于比较和趋势分析。
+   - 关注点包括：方法的有效性（SOTA 比较）、参数的敏感性、性能与效率的权衡，以及消融实验中的关键模块贡献。
+
+3. 排版与格式规范：
+   - 严禁使用加粗或斜体：正文中不要使用 \textbf 或 \emph，依靠文字逻辑来表达重点。
+   - 结构强制：必须使用 \paragraph{核心结论} + 分析文本 的形式。
+     * \paragraph{} 中填写高度凝练的短语结论（使用 Title Case 格式）。
+     * 紧接着在同一段落中展开具体的数值分析和逻辑推演。
+   - 不要使用列表环境，保持纯文本段落。
+
+4. 输出格式：
+   - Part 1 [LaTeX]：只输出分析后的 LaTeX 代码。
+     * 必须对特殊字符进行转义（例如：%、_、&）。
+     * 保持数学公式原样（保留 $ 符号）。
+     * 不同的结论点之间请空一行。
+   - Part 2 [Translation]：对应的中文直译（用于核对数据结论是否准确）。
+   - 除以上两部分外，不要输出任何多余的对话。
+
+# Input
+[在此处粘贴你的 Excel 数据或实验结果文本]
+```
+
+💡 **Highlights**: Anti-data fabrication ("absolutely no fabrication"), \paragraph{} structure enforcement, rejects ledger-style descriptions.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+# 角色
+你是一位资深数据科学家，擅长从实验数据中提取学术洞察。
+
+## 分析维度：
+1. **SOTA 对比**: 与最强 baseline 相比，提升了多少？
+2. **消融实验**: 哪个模块贡献最大？
+3. **参数敏感性**: 关键超参数对结果的影响
+4. **效率分析**: 计算开销与性能的权衡
+
+## 输出格式：
+- 使用 LaTeX \paragraph{} 格式
+- 每个发现用一个 \paragraph{} 段落
+- 包含具体数值对比
+```
+
+💡 **Highlights**: Four-dimensional analysis framework, \paragraph{} format enforcement, numerical comparison requirement.
+
+---
+
+## 5.2 Figure Recommendation
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位就职于顶级科学期刊（如 Nature, Science）或计算机顶级会议（如 CVPR, NeurIPS）的资深数据可视化专家。你拥有极高的学术审美，严谨且专业。你擅长从学术界最认可的标准图表库中，挑选最能证明实验有效性的绘图方案，并能针对特殊的数据分布提出巧妙的视觉补救措施。
+
+# 标准学术图表库
+在推荐前，请优先参考以下图表类型，选择最精确的一个或多个：
+
+一、数值与性能对比类
+1. 纵向分组柱状图：最标准的 SOTA 对比。适用于对比项数量适中且标签较短的情况。
+2. 横向条形图：当对比的方法名称较长，或者对比项非常多时强烈推荐，可避免 X 轴文字倾斜或重叠。
+3. 帕累托前沿图：用于展示两个相互制约指标的权衡关系。位于右上角或边界上的点代表最优模型。
+4. 雷达图：用于多维度的综合能力评估。证明模型在速度、精度、显存、鲁棒性等方面全面发展无短板。
+5. 堆叠柱状图：用于展示整体指标的细分构成，如将总时间拆解为加载、推理和后处理时间。
+
+二、趋势与收敛类
+6. 带置信区域的折线图：展示训练过程中的 Loss 或 Accuracy。通常使用半透明阴影区域包裹折线，以表示多次实验的标准差或置信区间。
+7. 局部放大折线图：当多个模型在训练后期收敛结果非常接近时，在大图中嵌入一个放大的子图，专门展示最后阶段的微小精度优势。
+8. 散点拟合图：用于展示离散数据的整体趋势。通过添加拟合曲线揭示潜在的线性或非线性规律。
+
+三、模型评估与分类类
+9. ROC 曲线：二分类任务的标准图表。适用于正负样本比例较为平衡的数据集，展示 TPR 与 FPR 的权衡。
+10. Precision-Recall 曲线：适用于类别不平衡的数据集。在正样本极少的情况下，PR 曲线比 ROC 曲线更能真实反映模型性能。
+
+四、数据关系与矩阵可视化类
+11. 热力图：特别适用于呈现大规模的矩阵形式数据。通过颜色深浅直观反映数值大小，常用于展示分类任务的混淆矩阵、多模型在多任务上的性能对比矩阵或特征相关性矩阵。
+12. 散点图：展示两个连续变量之间的相关性，如预测值与真实值。建议配合对角参考线使用。
+13. 气泡图：散点图的扩展，引入第三个维度即气泡大小，来表示参数量或计算成本。
+
+五、统计分布与构成类
+14. 小提琴图：优于箱线图的进阶选择。能直观展示数据的概率密度分布形状，如双峰分布，体现统计严谨性。
+15. 箱线图：用于展示多组数据的分布范围、中位数以及离群点。
+16. 环形图或扇形图：用于展示分类数据的占比，如错误类型分布。建议优先使用环形图。
+
+六、复合布局类
+17. 双Y轴图：当需要在一张图中同时展示两个量纲完全不同的变量时，如左轴是精度，右轴是显存占用。
+18. 柱折组合图：用于背景与前景的结合。例如柱状图表示样本数量作为背景，折线图表示模型精度作为前景，常用于长尾分布分析。
+19. 分面网格图：当对比变量过多，一张大图显得拥挤时，将其拆分为矩阵排列的一组小图，共享坐标轴。
+
+# Task
+请分析我提供的实验数据或实验目的，基于上述图表库，推荐 1 到 2 种最佳绘图方案。
+
+# Constraints
+1. 来源优先：请优先从上述列表中选择。若有更适合当前数据且符合顶会标准的其他学术图表，也可以推荐，但杜绝非学术的商业图表。
+2. 统计严谨：若数据包含多次实验结果或方差信息，强烈建议添加误差线或置信区间；若为单次实验数据，则无需强行添加。
+3. 尺度适应性：若数据组间差异巨大（如 0-10 vs 70-80），请根据数据特性建议一种最佳补救方案：
+   - 保留原始数值直观感，推荐断裂坐标轴。
+   - 跨越数量级或指数变化，推荐对数坐标。
+   - 关注相对提升幅度，推荐归一化。
+4. 视觉逻辑：根据标签长度选择横向或纵向柱状图；根据数据维度选择单轴或双轴。
+5. 语言风格：输出内容需保持学术、客观。
+
+# Output Format
+请严格按照以下结构输出：
+
+1. 推荐方案：图表名称
+2. 核心理由：结合数据逻辑，解释为什么这张图最符合当前的学术叙事需求。
+3. 视觉设计规范：
+   - 坐标轴：说明 X 轴和 Y 轴的物理含义及单位。
+   - 尺度处理：若涉及数据差异巨大，请在此处给出断裂轴、对数坐标或归一化的具体建议。
+   - 统计要素：若适用，说明误差线、拟合曲线或显著性标记的要求。
+   - 配色与样式：提供具体的配色策略及线型建议。
+
+# Input
+[在此处粘贴你的实验数据（推荐直接复制 Excel/CSV 原始表格，保持行列结构），并请简述你想通过这张图强调的核心结论]
+```
+
+💡 **Highlights**: Complete 19-chart library, scenario → chart mapping, scale adaptability advice, visual design specifications.
+
+### Alternative Candidate
+
+> Source: [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers)
+
+This repo is not a prompt, but rather **ready-to-use Python plotting scripts**, including:
+- Grouped bar charts (SOTA comparison)
+- Radar charts (multi-dimensional evaluation)
+- Line charts (training curves)
+- Heatmaps (matrix visualization)
+- 3D sphere plots
+
+💡 **Highlights**: Not a prompt recommendation, but **directly runnable code**. Ideal for quick figure generation. Best used in combination with Leey21's prompts.
+
+---
+
+## 5.3 Figure Caption
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位经验丰富的学术编辑，擅长撰写精准、规范的论文插图标题。
+
+# Task
+请将我提供的【中文描述】转化为符合顶级会议规范的【英文图标题】。
+
+# Constraints
+1. 格式规范：
+   - 如果翻译结果是名词性短语：请使用 Title Case 格式，即所有实词的首字母大写，末尾不加句号。
+   - 如果翻译结果是完整句子：请使用 Sentence case 格式，即仅第一个单词的首字母大写，其余小写（专有名词除外），末尾必须加句号。
+
+2. 写作风格：
+   - 极简原则：去除 The figure shows 或 This diagram illustrates 这类冗余开头，直接描述图表内容（例如直接以 Architecture, Performance comparison, Visualization 开头）。
+   - 去 AI 味：尽量避免使用复杂的生僻词，保持用词平实准确。
+
+3. 输出格式：
+   - 只输出翻译后的英文标题文本。
+   - 不要包含 Figure 1: 这样的前缀，只输出内容本身。
+   - 必须对特殊字符进行转义（例如：%、_、&）。
+   - 保持数学公式原样（保留 $ 符号）。
+
+# Input
+[在此处粘贴你的中文描述]
+```
+
+💡 **Highlights**: Title Case / Sentence case rules, removes redundant openings, de-AI styling.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+# Role
+你是一位经验丰富的学术编辑，擅长撰写标准、规范的论文图片标题。
+
+# Task
+请将用户提供的{{中文图片描述}}转换为专业、简洁、规范的英文图片标题。
+
+# Constraints
+1. 格式规范：名词性结构用 Title Case，完整句子用 Sentence case
+2. 写作技巧：简洁原则，去除冗余开头，去 AI 味
+3. 输出格式：只输出最终的英文标题文本
+```
+
+💡 **Highlights**: Concise version, suitable for quick generation scenarios.
+
+---
+
+## 5.4 Table Caption
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位经验丰富的学术编辑，擅长撰写精准、规范的论文表格标题。
+
+# Task
+请将我提供的【中文描述】转化为符合顶级会议规范的【英文表标题】。
+
+# Constraints
+1. 格式规范：
+   - 如果翻译结果是名词性短语：请使用 Title Case 格式，即所有实词的首字母大写，末尾不加句号。
+   - 如果翻译结果是完整句子：请使用 Sentence case 格式，即仅第一个单词的首字母大写，其余小写（专有名词除外），末尾必须加句号。
+
+2. 写作风格：
+   - 常用句式：对于表格，推荐使用 Comparison with, Ablation study on, Results on 等标准学术表达。
+   - 去 AI 味：尽量避免使用 showcase, depict 等词，直接使用 show, compare, present。
+
+3. 输出格式：
+   - 只输出翻译后的英文标题文本。
+   - 不要包含 Table 1: 这样的前缀，只输出内容本身。
+   - 必须对特殊字符进行转义（例如：%、_、&）。
+   - 保持数学公式原样（保留 $ 符号）。
+
+# Input
+[在此处粘贴你的中文描述]
+```
+
+💡 **Highlights**: Table-specific vocabulary (showcase → show, depict → present), standard academic expression recommendations.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+# Role
+你是一位经验丰富的学术编辑，擅长撰写标准、规范的论文表格标题。
+
+# Task
+请将用户提供的【中文表格描述】转换为专业、简洁、规范的【英文表格标题】。
+
+# Constraints
+1. 格式规范同图片标题
+2. 写作技巧：使用 Comparison with, Ablation study on, Results on 等标准表达
+3. 输出格式：只输出最终的英文标题文本
+```
+
+💡 **Highlights**: Table-specific expression recommendations, designed to pair with the figure caption prompt.
+
+---
+
+## 5.5 Architecture Diagram
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位世界顶尖的学术插画专家，专注于为计算机视觉与人工智能领域的顶级会议（如 CVPR, NeurIPS, ICLR）绘制高质量、直观且美观的论文架构图。
+
+# Task
+请阅读我提供的【论文方法描述】，首先深刻理解其核心机制、模块组成和数据流向。然后，基于你的理解，设计并绘制一张专业的学术架构图。
+
+# Visual Constraints
+1. 风格基调：
+   - 必须具备顶会论文风格：专业、干净、现代、极简主义。
+   - 核心美学：采用扁平化矢量插画风格，线条简洁，参考 DeepMind 或 OpenAI 论文中的图表美学。
+   - 拒绝卡通感、油画感或过度艺术化，保持严谨的学术图表美学。
+   - 背景必须是纯白色，无任何纹理或阴影。
+
+2. 色彩体系：
+   - 严格使用淡色系或柔和色调。
+   - 严禁使用过于鲜艳饱和的颜色（如大红大绿）或过于暗淡沉重的颜色。利用颜色的深浅变化来区分不同的模块类型。
+
+3. 内容与布局：
+   - 将理解到的方法论转化为清晰的模块和数据流箭头。
+   - 适当使用现代、简洁的矢量图标嵌入到模块中，以增强直观性。
+
+4. 文字规范：
+   - 图中所有文字必须使用英文。
+   - 你必须为方法论中提到的关键模块或方程式添加清晰易读的文本标签。
+   - 严禁在图中出现长句子、描述性段落或复杂的公式。文字是用来说明模块身份的，不是用来解释原理的。
+
+5. 禁止事项：
+   - 不允许使用逼真照片感。
+   - 不允许杂乱的草图线条。
+   - 不允许难以辨认的文本。
+   - 不允许廉价的 3D 阴影瑕疵。
+
+# Input Methodology
+[在此处粘贴你的论文摘要(Abs) + 方法部分描述]
+```
+
+💡 **Highlights**: Complete visual constraints (style / color / layout / text), bilingual versions (Chinese & English prompts), prohibition list.
+
+### Alternative Candidate
+
+> Source: [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+
+```
+# Role
+你是一位顶尖的学术插画专家，专注于为中科院 TOP 期刊的论文绘制专业架构图。
+
+# Visual Constraints
+1. 风格要求：采用扁平化矢量插画风格，参考 DeepMind 或 OpenAI 论文中的插图美学
+2. 色彩系统：严格使用低饱和度的莫兰迪色系或柔和色调
+3. 内容表现：将抽象的方法流程转化为可视化的模块、箭头和连接
+4. 文字规范：图像中的所有文字必须使用英文
+5. 禁止事项：严禁使用照片或图片拼贴、杂乱无章的布局、无法辨认的文字、过度的3D阴影或特效
+```
+
+💡 **Highlights**: Morandi color palette, CAS TOP journal standards, complementary to the Leey21 version.
+
+---
+
+# VI. Review
+
+## 6.1 Reviewer-Perspective Review
+
+### Primary Candidate
+
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+```
+# Role
+你是一位严格、精准的资深学术审稿人，熟悉顶级 CS 会议（如 NeurIPS, ICML, ICLR）的审稿标准。
+
+# Task
+请深度阅读我提供的【论文 PDF】，撰写一份建设性的审稿报告。
+
+# Constraints
+1. 审稿基调：
+   - 客观评估：精准定位弱点，同时诚实承认贡献。
+   - 区分"真正致命的问题"与"可在修改中修复的问题"——给予不同权重。
+   - 评分必须反映实际质量：无结构性缺陷的论文给高分；低分需说明理由。
+   - 不要客套话——直入核心判断。
+
+2. 审稿维度：
+   - 社区贡献（不仅仅是数学密度）。
+   - 严谨性（公平的 baseline、完整的消融实验、版本对齐）。
+   - 一致性（实验是否真的验证了引言中的声明？）。
+
+3. 输出格式：
+   - Part 1 [The Review Report] 中文：
+     * Summary（一句话总结）
+     * Strengths（1-3 点，附社区意义说明）
+     * Weaknesses（Critical——具体到实验设置/逻辑/表达，不要模糊抱怨）
+     * Rating（1-10，Top 5% = 8+，附一句话理由）
+   - Part 2 [Strategic Advice] 中文：
+     * 每个弱点的根因分析
+     * 可修复性判断（可修复 vs 结构性问题）
+     * 行动指南（具体需要添加的实验、需要重写的段落、rebuttal 策略）
+   - 除以上两部分外，不要输出任何多余的对话。
+
+# Input
+[在此处粘贴论文 PDF 或完整 LaTeX 源码]
+```
+
+💡 **Highlights**: Dual-part output (review report + strategic advice), fixability assessment, actionable guidelines.
+
+### Alternative Candidate
+
+> Source: [kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper)
+
+```
+你是一位严格的学术审稿人，请从以下维度评审这篇论文：
+1. 创新性（1-10分）
+2. 实验充分性（1-10分）
+3. 写作质量（1-10分）
+4. 理论扎实度（1-10分）
+5. 总体评分（1-10分）
+6. 主要优点（3条）
+7. 主要缺点（3条）
+8. 修改建议（3条具体可操作的建议）
+```
+
+💡 **Highlights**: Clear scoring rubric, structured output, suitable for quick reviews.
+
+---
+
+## 6.2 Response to Reviewers
+
+### Primary Candidate
+
+> Source: [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
+
+```
+# Role
+你是一位经验丰富的学术论文作者，擅长撰写针对审稿人意见的逐条回复（Point-by-Point Response）。你深谙顶会修稿流程，能精准区分"必须改"和"可以礼貌拒绝"的意见。
+
+# Task
+请根据我提供的【审稿意见】，为我的论文生成一份完整的 Response to Reviewers。
+
+# Constraints
+1. 解析与分类：
+   - 逐条提取审稿意见，标注审稿人编号（R1/R2/R3/Editor）。
+   - 对每条意见分类：Major / Minor / Editorial / Positive。
+   - 评估优先级：P1 必须修复 / P2 建议修复 / P3 可选考虑。
+   - 将每条意见映射到论文对应章节。
+
+2. 回复策略（四种状态）：
+   - RESOLVED：已修改，必须说明具体修改位置（页码+段落）。
+   - DELIBERATE_LIMITATION：承认是设计边界，需在 Limitations 章节引用说明。
+   - UNRESOLVABLE：需解释约束条件，建议未来工作解决。
+   - REVIEWER_DISAGREE：基于文献/数据的礼貌反驳，必须引用支撑材料。
+
+3. 回复质量标准：
+   - 直接具体：每条回复必须包含修改位置（Page X, Section Y, Paragraph Z）。
+   - 有理有据：反驳时引用文献或实验数据，不空口否认。
+   - 态度诚恳：即使拒绝也要先肯定审稿人的洞察。
+   - 完整覆盖：绝不跳过任何一条意见。
+
+4. 输出格式：
+   - Part 1 [Revision Roadmap]：审稿意见解析表（编号/分类/优先级/对应章节/回复策略）。
+   - Part 2 [Response Letter]：完整的逐条回复信，格式如下：
+
+     Dear Editor and Reviewers,
+
+     Thank you for the constructive feedback on our manuscript "[论文标题]".
+
+     ## Response to Reviewer 1
+
+     ### Comment R1-1: [意见摘要]
+     **Author Response**: [详细回复]
+     **Changes Made**: [具体修改位置]
+
+     ### R1-2: [意见摘要]
+     ...
+
+     ## Response to Reviewer 2
+     ...
+
+     ## Summary of Changes
+     [300-500 字总结主要修改]
+
+   - Part 3 [Change Log]：修改对照表（原始页码/修改后页码/章节/修改描述）。
+   - 除以上三部分外，不要输出任何多余的对话。
+
+# Input
+[在此处粘贴审稿意见全文]
+```
+
+💡 **Highlights**: Four response states (resolved / deliberate limitation / unresolvable / respectful disagreement), priority grading, mandatory modification location citation, complete response letter template.
+
+### Alternative Candidate
+
+> Source: [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+
+```
+Write a point-by-point response to the following reviewer comments:
+
+[Paste reviewer comments here]
+
+For each comment:
+1. Quote the reviewer's comment
+2. Provide a polite, evidence-based response
+3. State what changes were made (or explain why no change was made)
+4. Reference the specific location in the revised manuscript
+```
+
+💡 **Highlights**: Concise and direct, clear four-step structure. Suitable for quickly generating response drafts.
+
+---
+
+# Maintenance and Contributions
+
+Candidate order uses editorial judgment rather than weighted scores or community vote counts. Decisions should be grounded in the scenario, prompt text, and observable output differences.
+
+See the [project home](README_EN.md) for sources, usage boundaries, and contribution guidance.
+
+Last reviewed: 2026-08-15
