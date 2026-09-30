@@ -12,25 +12,29 @@
 
 ## Installation
 
+`idea-discovery`, `research-lit`, `paper-writing` and `rebuttal` share their names with the originals in [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep), and "install all" below would overwrite them. If you already have ARIS, use the second command to install only the other four.
+
 **Claude Code**
 
 ```bash
 git clone https://github.com/dengzhe-hou/best-prompts-research-writing.git
+mkdir -p ~/.claude/skills
 
 # Install all
-cp -r best-prompts-research-writing/skills/*/ ~/.claude/skills/
+for d in best-prompts-research-writing/skills/*/; do cp -R "${d%/}" ~/.claude/skills/; done
+
+# Already have ARIS: install only the four with different names
+for n in research-gap paper-review humanizer humanizer-zh-academic; do cp -R best-prompts-research-writing/skills/$n ~/.claude/skills/; done
 
 # Install one, e.g. rebuttal
-cp -r best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
+cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
 ```
 
-**Codex**: replace `~/.claude/skills/` above with `~/.codex/skills/`.
+**Codex**: replace `~/.claude/skills` above with `~/.codex/skills`.
 
 **Cursor**: loads skills from `~/.claude/skills/` and `~/.codex/skills/`, so either install above works.
 
-After installing, call a skill with `/skill-name` (for example `/rebuttal`) or describe the task in your message.
-
-`idea-discovery`, `research-lit`, `paper-writing` and `rebuttal` share their names with the originals in [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep). If you already have the originals installed, skip these short versions.
+After installing, call a skill with `/skill-name` in Claude Code and Cursor (for example `/rebuttal`); in Codex, type `$rebuttal` or pick it from `/skills`. You can also just describe the task in your message.
 
 ---
 
@@ -188,7 +192,7 @@ Includes review and revision workflows.
 
 **What it does**: breaks down reviewer comments, plans a response strategy, and drafts within a character limit. Three safety gates: every factual statement needs a source; every promise is either already done, approved by you, or stated as future work; every reviewer concern is accounted for. No invented data or citations.
 
-**Note**: the upstream external reviewer model, state file and command-line options were removed. State the venue and character limit in your message.
+**Note**: the upstream external reviewer model, state file and command-line options were removed. The "External reviewer" in Phase 6 is the running model; no second model is called. State the venue and character limit in your message.
 
 **File**: [`skills/rebuttal/SKILL.md`](skills/rebuttal/SKILL.md)
 

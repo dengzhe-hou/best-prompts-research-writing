@@ -688,7 +688,7 @@ Expand these notes: [PARAGRAPH]
 ```
 
 ```
-Write a few paragraphs using the following list of points [LIST]
+Please write a few paragraphs using the following list of points [LIST]
 ```
 
 💡 **Highlights**: Supports two modes — expanding from notes and generating paragraphs from bullet points.

@@ -688,7 +688,7 @@ Expand these notes: [PARAGRAPH]
 ```
 
 ```
-Write a few paragraphs using the following list of points [LIST]
+Please write a few paragraphs using the following list of points [LIST]
 ```
 
 💡 **亮点**：支持从笔记扩展和从要点生成段落两种模式。

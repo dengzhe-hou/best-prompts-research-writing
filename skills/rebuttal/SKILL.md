@@ -6,7 +6,7 @@ description: "Submission rebuttal pipeline. Parses external reviews, enforces co
 # Rebuttal Pipeline
 
 > Abridged from: [wanshuiyin/Auto-claude-code-research-in-sleep · rebuttal](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/rebuttal/SKILL.md) (MIT, Copyright (c) 2026 wanshuiyin)
-> The upstream external reviewer (Codex MCP), state file and command-line options were removed. Name the venue and character limit in your message.
+> The upstream external reviewer (Codex MCP), state file and command-line options were removed. The "External reviewer" in Phase 6 is the running model re-reading the draft critically; no second model is called. Name the venue and character limit in your message.
 
 ## Overview
 

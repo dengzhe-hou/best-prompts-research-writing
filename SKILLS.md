@@ -4,7 +4,7 @@
 
 # Research Writing Skill Catalog
 
-> 8 个可安装的 agent skill，覆盖研究、写作、审稿。每个场景一个首选候选（收录在本仓库 `skills/` 下）和一个可选的替代候选（只给链接）。
+> 8 个可安装的 agent skill，覆盖研究、写作、审稿。每个场景一个首选候选（收录在本仓库 `skills/` 下），部分场景另有一个替代候选（只给链接）。
 
 > 收录的 skill 大多是上游的精简版，篇幅约为 2026 年 5 月上游版本的 7% 到 22%。短、好读、装上就能用，但功能比原版少，有的还会调用本仓库没有收录的子 skill。每条都写明删掉了什么，并给出原版链接；需要完整功能请装原版。
 
@@ -12,25 +12,29 @@
 
 ## 安装
 
+`idea-discovery`、`research-lit`、`paper-writing`、`rebuttal` 与 [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) 原版同名，照下面的"全部安装"会覆盖原版。已经装了 ARIS 的，用第二条命令只装另外 4 个。
+
 **Claude Code**
 
 ```bash
 git clone https://github.com/dengzhe-hou/best-prompts-research-writing.git
+mkdir -p ~/.claude/skills
 
 # 全部安装
-cp -r best-prompts-research-writing/skills/*/ ~/.claude/skills/
+for d in best-prompts-research-writing/skills/*/; do cp -R "${d%/}" ~/.claude/skills/; done
+
+# 已装 ARIS 原版的：只装不同名的 4 个
+for n in research-gap paper-review humanizer humanizer-zh-academic; do cp -R best-prompts-research-writing/skills/$n ~/.claude/skills/; done
 
 # 只装一个，例如 rebuttal
-cp -r best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
+cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
 ```
 
-**Codex**：把上面的 `~/.claude/skills/` 换成 `~/.codex/skills/`。
+**Codex**：把上面的 `~/.claude/skills` 换成 `~/.codex/skills`。
 
 **Cursor**：会读取 `~/.claude/skills/` 和 `~/.codex/skills/`，按上面任一种装好即可。
 
-装好后，在对话里用 `/skill 名` 调用（例如 `/rebuttal`），或直接说要做的事。
-
-`idea-discovery`、`research-lit`、`paper-writing`、`rebuttal` 与 [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) 原版同名。已经装了原版的，不要再装这几个精简版。
+装好后，在 Claude Code 和 Cursor 里用 `/skill 名` 调用（例如 `/rebuttal`），在 Codex 里输入 `$rebuttal` 或用 `/skills` 从列表里选。也可以直接说要做的事。
 
 ---
 
@@ -188,7 +192,7 @@ cp -r best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
 
 **做什么**：拆解审稿意见，制定回复策略，按字数上限起草。有三道安全门：每条事实要有出处；每个承诺要么已经做到，要么经你批准，要么只写成未来工作；每条意见都要有交代。不许编造数据和引用。
 
-**注意**：原版的外部审稿模型、进度文件和命令行参数已删去。用的时候在对话里直接说明会议名称和字数上限。
+**注意**：原版的外部审稿模型、进度文件和命令行参数已删去。第 6 步写的 External reviewer 由当前模型扮演，不接入第二个模型。用的时候在对话里直接说明会议名称和字数上限。
 
 **文件**：[`skills/rebuttal/SKILL.md`](skills/rebuttal/SKILL.md)
 
