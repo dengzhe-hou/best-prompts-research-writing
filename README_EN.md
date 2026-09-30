@@ -2,11 +2,21 @@
 
 [中文](README.md) | 🇺🇸 English
 
-A prompt catalog for focused research-writing tasks: 24 scenarios, each with a primary candidate and a meaningfully different alternative, with traceable sources and copy-ready text.
+Prompts and skills for research writing, each with its source stated. Pick whichever fits how you work:
 
-[Open the English prompt catalog](CATALOG_EN.md)
+- **Prompts**: 24 scenarios, each with a primary and an alternative candidate. Paste them into any chat model. Most prompt texts are in Chinese. [Open the prompt catalog](CATALOG_EN.md)
+- **Skills**: 8 installable agent skills for Claude Code, Codex, or Cursor, suited to multi-step work. [Open the skill catalog](SKILLS_EN.md)
 
-## What It Covers
+## Prompt or Skill?
+
+| Your situation | Suggestion |
+|---|---|
+| You chat in ChatGPT, Claude, Kimi, or a similar web or mobile app | Use a prompt |
+| Single-step task: translation, polishing, shortening or expanding, figure and table captions | A prompt is enough |
+| Multi-step work in Claude Code, Codex, or Cursor: literature review, drafting a whole paper, rebuttal | Use a skill |
+| You want to adapt it to your field or habits | Both are plain text; copy and edit. For a skill, edit its `SKILL.md` |
+
+## What the Prompts Cover
 
 | Category | Scenarios |
 |---|---|
@@ -17,13 +27,17 @@ A prompt catalog for focused research-writing tasks: 24 scenarios, each with a p
 | [Experiments and figures](CATALOG_EN.md#v-experiments--figures) | Experiment analysis, figure selection, captions, architecture diagrams |
 | [Review](CATALOG_EN.md#vi-review) | Reviewer-perspective review and responses to reviewers |
 
-## Relationship to Best Skills
+## What the Skills Cover
 
-This repository provides prompts for focused, single-session tasks.
+| Stage | Skills |
+|---|---|
+| Research | `idea-discovery` idea discovery · `research-lit` literature review · `research-gap` research gaps |
+| Writing | `paper-writing` paper writing · `humanizer` English de-AI editing · `humanizer-zh-academic` Chinese de-AI editing |
+| Review | `paper-review` paper review · `rebuttal` rebuttal |
 
-[best-skills-research-writing](https://github.com/dengzhe-hou/best-skills-research-writing) provides installable agent skills for multi-step literature research, paper writing, review, and rebuttal workflows. The two repositories complement rather than replace each other.
+Installation, sources, and links to the full upstream versions are in the [skill catalog](SKILLS_EN.md). These skills used to live in [best-skills-research-writing](https://github.com/dengzhe-hou/best-skills-research-writing) and have moved here.
 
-## How Candidates Are Selected
+## How Prompt Candidates Are Selected
 
 Each scenario contains two candidates:
 
@@ -32,9 +46,9 @@ Each scenario contains two candidates:
 
 Candidate order is an editorial judgment based on task fit, output clarity, and source traceability. It is not a model benchmark result. Prompt behavior varies by model, context, and field; users should verify facts, citations, data, and formatting.
 
-## Sources and Usage Boundaries
+## Prompt Sources and Usage Boundaries
 
-Of the 48 candidates, 41 are taken or adapted from these public projects and 7 were written for this catalog:
+Of the 48 prompt candidates, 41 are taken or adapted from these public projects and 7 were written for this catalog:
 
 | Source | Entries | Main contributions | Upstream license |
 |---|---|---|---|
@@ -46,8 +60,10 @@ Of the 48 candidates, 41 are taken or adapted from these public projects and 7 w
 
 Each candidate states its provenance: verbatim, adapted (with the upstream section named), or written for this catalog. Upstream licenses and usage terms vary; check the linked upstream repository before redistributing, modifying, or republishing its material. This catalog does not relicense third-party content.
 
+Sources, adaptation notes, and licenses for the skills are in the [skill catalog](SKILLS_EN.md).
+
 ## Contributing
 
-Contributions may add a new scenario or replace an existing candidate. A PR should include the prompt text, source and usage terms, and at least one input/output example that demonstrates the practical difference. See the [PR template](.github/PULL_REQUEST_TEMPLATE.md) for the expected format.
+Contributions may add a new scenario, replace an existing candidate, or suggest a skill. A PR should include the prompt or skill text, source and usage terms, and at least one input/output example that demonstrates the practical difference. See the [PR template](.github/PULL_REQUEST_TEMPLATE.md) for the expected format.
 
 Last reviewed: 2026-09-30
