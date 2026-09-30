@@ -8,6 +8,8 @@
 
 > 候选顺序是编辑判断，不是基准测试排名。请根据自己的模型、材料和期刊要求检查输出。
 
+> 每条候选都注明来源类型：原文（与上游一致，最多改了格式或错字）、改编（删节或重写，注明出自上游哪一部分）、本仓库编写（上游没有对应 prompt）。
+
 ---
 
 ## 📌 快速导航
@@ -29,7 +31,7 @@
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -74,7 +76,7 @@
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：本仓库编写（上游仓库中没有对应 prompt）
 
 ```
 # Role
@@ -110,7 +112,7 @@
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -142,7 +144,7 @@
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「英译中」
 
 ```
 ## 身份定位
@@ -160,7 +162,7 @@
 3. 禁止遗漏关键信息
 ```
 
-💡 **亮点**：术语规范性（引用国标译名）、歧义处理机制、目标期刊适配。
+💡 **亮点**：术语规范性（引用国标译名）、歧义处理机制。
 
 ---
 
@@ -168,7 +170,7 @@
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -180,7 +182,7 @@
 # Constraints
 1. 格式与排版（Word 适配）：
    - 输出纯净的文本：严禁使用 Markdown 加粗、斜体或标题符号，以便我直接复制粘贴到 Word 中。
-   - 标点规范：严格使用中文全角标点符号（，。；：""），数学符号或英文术语周围需保留合理的空格。
+   - 标点规范：严格使用中文全角标点符号（，。；：“”），数学符号或英文术语周围需保留合理的空格。
 
 2. 逻辑与结构（核心任务）：
    - 逻辑重组：不要机械地逐句润色。先识别输入的逻辑主线，将松散的句子重新串联。必须将列表转化为连贯的段落。
@@ -212,7 +214,7 @@
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「中文润色」
 
 ```
 ## 角色
@@ -230,7 +232,7 @@
 3. 必须保持原文的段落结构
 ```
 
-💡 **亮点**：领域适配、四项润色标准、Word 友好输出。
+💡 **亮点**：四项润色标准、Word 友好输出。
 
 ---
 
@@ -240,7 +242,7 @@
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -285,7 +287,7 @@
 
 ### 替代候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文）
 
 ```
 Rewrite this paragraph in an academic language: [PARAGRAPH]
@@ -303,7 +305,7 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -353,7 +355,7 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「中文润色」（与 1.3 替代候选为同一段）
 
 ```
 ## 角色
@@ -379,7 +381,7 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -437,31 +439,42 @@ Reconcile, Rectify, Rekindle, Reimagine, Scrutinize, Substantiate, Tailor, Testa
 Underscore, Unveil, Vibrant
 ```
 
-💡 **亮点**：80+ 黑名单词汇（独立参考资源）、自审协议、修改阈值（"宁缺毋滥"）、拟人度检查。
+💡 **亮点**：76 个 AI 高频词清单（独立参考资源）、自审协议、修改阈值（"宁缺毋滥"）、拟人度检查。
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/main/references/prompts/08-en-deai.md)（原文）
 
 ```
-## 角色
-你是一位专注于中科院 TOP 期刊投稿的顶尖英文学术论文润色专家。
+## Role
+You are a senior editor specializing in the optimization of English academic papers, serving researchers who target top-tier Chinese Academy of Sciences (CAS) journals. Your core responsibility is to rewrite mechanically stiff, AI-generated text into natural, idiomatic, and professional academic expression that meets the publication standards of target journals, while preserving the original core research content and logic.
 
-## 具体修改说明：
-1. 学术语言精准性：修正语法错误、拼写错误、标点误用
-2. 逻辑连贯性：梳理段落间的逻辑衔接
-3. 专业术语规范性：统一专业术语的拼写与用法
-4. 格式合规性：调整标题层级、引用格式、图表标注等
-5. 表达简洁性：删除冗余表述，精炼语句
+## Variables
+<paper_text>
+{{PAPER_TEXT}}
+</paper_text>
 
-## 注意事项：
-1. 正式语体：使用标准的学术书面语，严禁使用缩写形式
-2. 词汇选择：避免使用过于复杂或生僻的词汇
-3. 避免所有格结构：使用 of 结构（the performance of METHOD）
-4. 严禁使用列表：必须保持原文的段落结构
+## Constraints
+1. Do not alter key academic content of the original text, such as research hypotheses, experimental data, and core conclusions
+2. Prohibit the use of non-specialized vocabulary or colloquial expressions unsuitable for the target journal's field
+3. Avoid introducing additional academic viewpoints or data unrelated to the original text
+4. Do not oversimplify or overcomplicate the original chain of logical argumentation
+5. Avoid using exaggerated or obscure academic vocabulary
+6. Avoid complex terms that are overused by AI (e.g., in most contexts, avoid words like "leverage," "delve into," "tapestry," and use "use," "investigate," "context," etc., instead)
+7. Avoid piling up vocabulary merely to pursue a sense of "sophistication"
+8. Remove mechanical connectives and delete stiff transitional phrases (e.g., "First and foremost," "It is worth noting that," etc.); transitions should be achieved naturally through logical progression between sentences
+9. Reduce unnecessary parentheses and avoid overuse of semicolons; if necessary, prioritize the use of commas, periods, or clause structures
+
+## Execution Steps
+1. Mechanical Content Rewriting: Address AI-generated characteristics by replacing them one by one with expressions that conform to the journal's style
+2. Overall Logic Optimization: Adjust the paragraph order and sentence cohesion of the text to make the argumentative logic better align with the academic expression conventions of the target journal
+3. Specialized Terminology Verification: Check the consistency of specialized terminology in the rewritten text with the original to ensure academic accuracy
+
+## Output Format
+Output the rewritten text directly, without additional commentary.
 ```
 
-💡 **亮点**：期刊适配（可传入期刊要求）、五维修改标准、可作为去 AI 味 + 润色双重用途。
+💡 **亮点**：专门针对 AI 高频词（leverage、delve into 等）和生硬过渡词；不改研究假设、数据和结论；直接输出改写结果。
 
 ---
 
@@ -469,7 +482,7 @@ Underscore, Unveil, Vibrant
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -518,25 +531,38 @@ Underscore, Unveil, Vibrant
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/main/references/prompts/07-zh-deai.md)（原文）
 
 ```
 ## 角色
-你是一位专业的中文学术编辑，擅长对科学论文进行中文润色。
+你是专注于中文学术论文优化的资深编辑，核心职责是将机械生硬的 AI 生成文本改写为符合期刊录用标准的自然、地道、专业的学术表达，同时保留原文核心研究内容与逻辑。
 
-## 润色标准：
-1. 准确性：确保专业术语使用正确
-2. 流畅性与简洁性：优化句子结构，去除冗余表述
-3. 专业性与一致性：保持术语、格式和风格的统一
-4. 逻辑性：识别并修复逻辑断层
+## 变量
+<论文文本>
+{{PAPER_TEXT}}
+</论文文本>
+
+## 约束规则
+1. 不得改变原文的研究假设、实验数据、核心结论等关键学术内容
+2. 禁止使用不符合目标期刊领域的非专业词汇或口语化表达
+3. 避免引入与原文无关的额外学术观点或数据
+4. 不得过度简化或复杂化原文的逻辑论证链条
+5. 避免使用夸张或生僻的学术词汇
+6. 移除机械的连接词，删除生硬的过渡词（如"首先""值得注意的是"等），应通过句子间的逻辑递进自然衔接
+7. 减少不必要的括号，避免过度使用分号；如果必须使用，优先使用逗号、句号或从句结构
+
+## 执行步骤
+1. **机械内容改写**：针对 AI 生成特征，逐一替换为符合期刊风格的表达
+2. **整体逻辑优化**：调整文本的段落顺序与句子衔接方式，使论证逻辑更符合目标期刊的学术表达习惯
+3. **专业术语校验**：核对改写后文本中的专业术语与原文一致性，确保学术准确性
 
 ## 输出格式
-1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
-2. 标点符号严格使用中文全角标点
-3. 必须保持原文的段落结构
+- 输出纯文本，不使用 Markdown 加粗、斜体等符号
+- 保持原文段落结构，不改写为列表形式
+- 标点符号使用中文全角标点
 ```
 
-💡 **亮点**：四项润色标准、纯文本输出适配 Word、保持段落结构。
+💡 **亮点**：针对中文 AI 腔（生硬过渡词、括号和分号过多）；不改研究假设、数据和结论；纯文本输出，适配 Word。
 
 ---
 
@@ -546,7 +572,7 @@ Underscore, Unveil, Vibrant
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -591,7 +617,7 @@ Underscore, Unveil, Vibrant
 
 ### 替代候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文）
 
 ```
 Reduce the following to [NUMBER OF WORDS] words: [PARAGRAPHS]
@@ -609,7 +635,7 @@ Shorten to [NUMBER OF CHARACTERS] characters: [PARAGRAPHS]
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -655,14 +681,14 @@ Shorten to [NUMBER OF CHARACTERS] characters: [PARAGRAPHS]
 
 ### 替代候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文）
 
 ```
 Expand these notes: [PARAGRAPH]
 ```
 
 ```
-Write a few paragraphs using the following list of points [LIST]
+Please write a few paragraphs using the following list of points [LIST]
 ```
 
 💡 **亮点**：支持从笔记扩展和从要点生成段落两种模式。
@@ -673,7 +699,7 @@ Write a few paragraphs using the following list of points [LIST]
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -705,7 +731,7 @@ Write a few paragraphs using the following list of points [LIST]
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「逻辑检查（挑刺王）」
 
 ```
 # 角色
@@ -737,7 +763,7 @@ Write a few paragraphs using the following list of points [LIST]
 
 ### 首选候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文）
 
 ```
 Find a research topic for a PhD in the area of [TOPIC]
@@ -759,7 +785,7 @@ Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「找到研究空白」
 
 ```
 # Role
@@ -788,7 +814,7 @@ Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
 
 ### 首选候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文）
 
 ```
 Generate an abstract for a scientific paper based on this information for: [PARAGRAPHS]
@@ -798,7 +824,7 @@ Generate an abstract for a scientific paper based on this information for: [PARA
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：节选自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「摘要写作」的结构和约束部分
 
 ```
 # Abstract 结构 (4-5 句话)
@@ -815,7 +841,7 @@ Generate an abstract for a scientific paper based on this information for: [PARA
 - 避免: 缩写、引用、模糊表述
 ```
 
-💡 **亮点**：结构化模板（5 句话公式）、明确字数/时态/语态约束。
+💡 **亮点**：结构化模板（5 句话公式）、明确字数/时态/语态约束。只含结构和约束，使用时在前面加一句任务说明，例如“按以下结构为我的论文写摘要”。
 
 ---
 
@@ -823,7 +849,7 @@ Generate an abstract for a scientific paper based on this information for: [PARA
 
 ### 首选候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文，6 条中选 3 条）
 
 ```
 Conduct a literature review on [TOPIC SENTENCE] and provide review paper references
@@ -841,7 +867,7 @@ Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]
 
 ### 替代候选
 
-> 来源：[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
+> 来源：本仓库编写（上游仓库中没有对应 prompt）
 
 ```
 请对 [TOPIC] 进行系统性文献综述，使用 PRISMA 方法论：
@@ -861,7 +887,7 @@ Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]
 
 ### 首选候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文）
 
 ```
 Create objectives and methodology for [TOPIC SENTENCE]
@@ -879,7 +905,7 @@ Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：节选自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「论文大纲生成」的 Method 部分，后两项为本仓库增补
 
 ```
 ## 📋 详细大纲
@@ -900,7 +926,7 @@ Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 
 ### 首选候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文）
 
 ```
 Write a result section for the following paragraphs. Please write this in the third person. [PARAGRAPHS]
@@ -914,7 +940,7 @@ Discuss these results: [RESULT PARAGRAPHS]
 
 ### 替代候选
 
-> 来源：[kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper)
+> 来源：本仓库编写（上游仓库中没有对应 prompt）
 
 ```
 Please analyze the following experimental results and write a discussion section:
@@ -936,7 +962,7 @@ Results: [PASTE YOUR RESULTS TABLE OR DATA]
 
 ### 首选候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文）
 
 ```
 Generate a conclusion for this: [PARAGRAPHS]
@@ -950,7 +976,7 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：本仓库编写（上游仓库中没有对应 prompt）
 
 ```
 ## 结论写作模板
@@ -977,7 +1003,7 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 
 ### 首选候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)（原文）
 
 ```
 Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
@@ -987,7 +1013,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：本仓库编写（上游仓库中没有对应 prompt）
 
 ```
 基于本研究的局限性，请提出 3-5 个具体的未来研究方向：
@@ -1011,7 +1037,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -1052,7 +1078,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「实验结果分析」（删节，分析维度为本仓库增补）
 
 ```
 # 角色
@@ -1078,7 +1104,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -1150,16 +1176,16 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 替代候选
 
-> 来源：[ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers)
+> 来源：[ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers)（仓库内容简介，未收录其原文）
 
-该 repo 不是 prompt，而是**直接可用的 Python 绘图脚本**，包含：
+该 repo 以**可直接运行的 Python 绘图脚本**为主（另有 prompt 模板和绘图 skill，本目录未收录），包含：
 - 分组柱状图（SOTA 对比）
 - 雷达图（多维评估）
 - 折线图（训练曲线）
 - 热力图（矩阵可视化）
 - 3D 球体图
 
-💡 **亮点**：不是 prompt 推荐，而是**可直接运行的代码**。适合需要快速出图的场景。配合 Leey21 的 prompt 使用效果最佳。
+💡 **亮点**：以可运行代码为主，适合需要快速出图的场景。可配合首选候选的 prompt 使用。
 
 ---
 
@@ -1167,7 +1193,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -1199,7 +1225,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「图片标题说明」
 
 ```
 # Role
@@ -1222,7 +1248,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -1254,7 +1280,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「表格标题说明」
 
 ```
 # Role
@@ -1277,7 +1303,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
 # Role
@@ -1316,11 +1342,11 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 [在此处粘贴你的论文摘要(Abs) + 方法部分描述]
 ```
 
-💡 **亮点**：完整视觉约束（风格/色彩/布局/文字）、双语言版本（中英文 prompt）、禁止清单。
+💡 **亮点**：完整视觉约束（风格/色彩/布局/文字）、禁止清单。上游另有英文版，本目录只收中文版。
 
 ### 替代候选
 
-> 来源：[alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill)
+> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「绘制架构图」
 
 ```
 # Role
@@ -1344,7 +1370,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：删节改编自 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)「论文整体以 Reviewer 视角进行审视」
 
 ```
 # Role
@@ -1385,7 +1411,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 替代候选
 
-> 来源：[kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper)
+> 来源：本仓库编写（上游仓库中没有对应 prompt）
 
 ```
 你是一位严格的学术审稿人，请从以下维度评审这篇论文：
@@ -1407,7 +1433,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 首选候选
 
-> 来源：[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
+> 来源：改编自 [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 的 revision_coach_agent、revision_tracking_template 和 revision_response_template（合并后中文重写；CC BY-NC 4.0，仅限非商业使用）
 
 ```
 # Role
@@ -1469,7 +1495,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 替代候选
 
-> 来源：[ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing)
+> 来源：本仓库编写（上游仓库中没有对应 prompt）
 
 ```
 Write a point-by-point response to the following reviewer comments:
@@ -1493,4 +1519,4 @@ For each comment:
 
 来源、使用边界和贡献方式见 [项目首页](README.md)。
 
-最后审阅：2026-08-15
+最后审阅：2026-09-30
