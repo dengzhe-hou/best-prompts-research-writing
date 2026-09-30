@@ -10,6 +10,8 @@
 
 > Each candidate states its provenance: verbatim (matches upstream apart from formatting or typo fixes), adapted (abridged or rewritten, with the upstream section named), or written for this catalog (no upstream counterpart).
 
+> Most prompt texts are in Chinese, and some also make the model reply in Chinese. The 3.3 and 6.1 primary candidates reply entirely in Chinese; the 2.1, 2.3, 3.1, 3.2 and 5.1 primary candidates add a Chinese translation or change log; 5.3 and 5.4 expect a Chinese description as input. For English-only output, edit the output lines of the prompt (change 中文 to English, or delete the Part you do not need).
+
 ---
 
 ## 📌 Quick Navigation
@@ -224,12 +226,12 @@
 1. 准确性：确保专业术语使用正确
 2. 流畅性与简洁性：优化句子结构，去除冗余表述
 3. 专业性与一致性：保持术语、格式和风格的统一
-4. 逻辑性：识别并修复逻辑断层
+4. 逻辑性：识别并修复逻辑断层，将零散的句子整合成连贯的段落，将列表转换为流畅的叙述
 
 ## 输出格式
 1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
 2. 标点符号严格使用中文全角标点
-3. 必须保持原文的段落结构
+3. 如果原文是段落形式，不要将其改写为 item 列表，必须保持原文的段落结构
 ```
 
 💡 **Highlights**: Four polishing criteria, Word-friendly output.
@@ -365,12 +367,12 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 1. 准确性：确保专业术语使用正确
 2. 流畅性与简洁性：优化句子结构，去除冗余表述
 3. 专业性与一致性：保持术语、格式和风格的统一
-4. 逻辑性：识别并修复逻辑断层
+4. 逻辑性：识别并修复逻辑断层，将零散的句子整合成连贯的段落，将列表转换为流畅的叙述
 
 ## 输出格式
 1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
 2. 标点符号严格使用中文全角标点
-3. 必须保持原文的段落结构
+3. 如果原文是段落形式，不要将其改写为 item 列表，必须保持原文的段落结构
 ```
 
 💡 **Highlights**: Four polishing criteria, plain text output for Word compatibility, preserves paragraph structure.
@@ -727,7 +729,7 @@ Please write a few paragraphs using the following list of points [LIST]
 [在此处粘贴你的英文 LaTeX 代码]
 ```
 
-💡 **Highlights**: Minimalism (outputs "passed" if no issues), high tolerance (no nitpicking), only reports fatal errors.
+💡 **Highlights**: Minimalism (outputs "passed" if no issues), high tolerance (no nitpicking), only reports fatal errors. Replies in Chinese.
 
 ### Alternative Candidate
 
@@ -877,9 +879,11 @@ Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]
 4. 综合分析现有研究
 5. 识别研究空白
 6. 生成结构化综述报告
+
+只使用我提供的文献或你实际检索到的文献。不要编造检索结果数量、筛选数字或参考文献；没有依据的地方标为 [待检索]。
 ```
 
-💡 **Highlights**: PRISMA methodology, structured workflow, suitable for formal review papers.
+💡 **Highlights**: Lays out a review plan and search strategy along the PRISMA steps. A plain chat model does not actually search databases, so screening results, study counts and references must come from your own search and be checked one by one.
 
 ---
 
@@ -918,7 +922,7 @@ Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 - [ ] 复杂度分析（如适用）
 ```
 
-💡 **Highlights**: Structured outline template, suitable for building methodology section from scratch.
+💡 **Highlights**: Structured outline template, suitable for building methodology section from scratch. It contains only the outline items, so add a task line and your material before it, e.g. "Write the Method section for my approach following these items: [METHOD DESCRIPTION]".
 
 ---
 
@@ -951,6 +955,8 @@ Please analyze the following experimental results and write a discussion section
 4. Discuss limitations and potential improvements
 5. Connect results to the original research questions
 
+Research questions: [LIST YOUR RESEARCH QUESTIONS]
+Method and baselines: [BRIEFLY DESCRIBE YOUR METHOD AND WHAT IT IS COMPARED WITH]
 Results: [PASTE YOUR RESULTS TABLE OR DATA]
 ```
 
@@ -981,7 +987,7 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 ```
 ## 结论写作模板
 
-请根据以下要素撰写结论：
+请根据下方 Input 中的材料，按以下要素撰写结论：
 
 1. **研究回顾** (1-2 句): 重申研究问题和目标
 2. **主要贡献** (2-3 点): 总结核心贡献
@@ -993,6 +999,11 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 - 总字数: 200-300 词
 - 时态: 一般现在时
 - 避免: 引用、新信息、过度夸大
+- 只使用 Input 中的内容，不要添加材料里没有的贡献或结果
+- 语言: 与论文正文一致
+
+# Input
+[在此处粘贴研究问题、主要贡献、关键结果和局限性（可直接粘贴摘要和结果段落）]
 ```
 
 💡 **Highlights**: Five-element template, word count constraint, avoids common conclusion-writing pitfalls.
@@ -1016,7 +1027,12 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 > Source: written for this catalog (no counterpart in the upstream repositories)
 
 ```
-基于本研究的局限性，请提出 3-5 个具体的未来研究方向：
+基于本研究的局限性，请提出 3-5 个具体的未来研究方向。
+
+研究概要和局限性：
+[在此处粘贴研究概要和局限性]
+
+输出格式：
 
 1. **[方向 1]**: [具体描述]
    - 为什么重要：
@@ -1084,8 +1100,12 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 # 角色
 你是一位资深数据科学家，擅长从实验数据中提取学术洞察。
 
-## 分析维度：
-1. **SOTA 对比**: 与最强 baseline 相比，提升了多少？
+## 数据真实性：
+- 所有结论必须严格基于提供的数据。严禁编造数据、夸大结果或添加原文不存在的实验内容。
+- 如果数据没有显示明显的优势或趋势，请如实描述，不要强行得出正面结论。
+
+## 分析维度（只分析数据中实际包含的内容）：
+1. **SOTA 对比**: 与最强 baseline 相比，差距或提升是多少？
 2. **消融实验**: 哪个模块贡献最大？
 3. **参数敏感性**: 关键超参数对结果的影响
 4. **效率分析**: 计算开销与性能的权衡
@@ -1094,6 +1114,9 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 - 使用 LaTeX \paragraph{} 格式
 - 每个发现用一个 \paragraph{} 段落
 - 包含具体数值对比
+
+# 输入
+[在此处粘贴实验数据]
 ```
 
 💡 **Highlights**: Four-dimensional analysis framework, \paragraph{} format enforcement, numerical comparison requirement.
@@ -1221,7 +1244,7 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 [在此处粘贴你的中文描述]
 ```
 
-💡 **Highlights**: Title Case / Sentence case rules, removes redundant openings, de-AI styling.
+💡 **Highlights**: Turns a Chinese description into an English figure caption. Title Case / Sentence case rules, removes redundant openings, de-AI styling.
 
 ### Alternative Candidate
 
@@ -1240,7 +1263,7 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 3. 输出格式：只输出最终的英文标题文本
 ```
 
-💡 **Highlights**: Concise version, suitable for quick generation scenarios.
+💡 **Highlights**: Turns a Chinese description into an English figure caption. Concise version, suitable for quick generation scenarios.
 
 ---
 
@@ -1276,7 +1299,7 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 [在此处粘贴你的中文描述]
 ```
 
-💡 **Highlights**: Table-specific vocabulary (showcase → show, depict → present), standard academic expression recommendations.
+💡 **Highlights**: Turns a Chinese description into an English table caption. Table-specific vocabulary (showcase → show, depict → present), standard academic expression recommendations.
 
 ### Alternative Candidate
 
@@ -1290,16 +1313,18 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 请将用户提供的【中文表格描述】转换为专业、简洁、规范的【英文表格标题】。
 
 # Constraints
-1. 格式规范同图片标题
+1. 格式规范：名词性结构用 Title Case，完整句子用 Sentence case
 2. 写作技巧：使用 Comparison with, Ablation study on, Results on 等标准表达
 3. 输出格式：只输出最终的英文标题文本
 ```
 
-💡 **Highlights**: Table-specific expression recommendations, designed to pair with the figure caption prompt.
+💡 **Highlights**: Turns a Chinese description into an English table caption. Table-specific expression recommendations, designed to pair with the figure caption prompt.
 
 ---
 
 ## 5.5 Architecture Diagram
+
+> Both candidates need a model that can generate images (upstream used nano banana). A text-only model returns a description or drawing code, not a figure.
 
 ### Primary Candidate
 
@@ -1407,7 +1432,7 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 [在此处粘贴论文 PDF 或完整 LaTeX 源码]
 ```
 
-💡 **Highlights**: Dual-part output (review report + strategic advice), fixability assessment, actionable guidelines.
+💡 **Highlights**: Dual-part output (review report + strategic advice), fixability assessment, actionable guidelines. Both parts are written in Chinese.
 
 ### Alternative Candidate
 
@@ -1423,6 +1448,9 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 6. 主要优点（3条）
 7. 主要缺点（3条）
 8. 修改建议（3条具体可操作的建议）
+
+论文：
+[在此处粘贴论文全文，或上传 PDF]
 ```
 
 💡 **Highlights**: Clear scoring rubric, structured output, suitable for quick reviews.
@@ -1440,7 +1468,7 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 你是一位经验丰富的学术论文作者，擅长撰写针对审稿人意见的逐条回复（Point-by-Point Response）。你深谙顶会修稿流程，能精准区分"必须改"和"可以礼貌拒绝"的意见。
 
 # Task
-请根据我提供的【审稿意见】，为我的论文生成一份完整的 Response to Reviewers。
+请根据我提供的【审稿意见】和【我对每条意见的实际处理】，为我的论文生成一份完整的 Response to Reviewers。
 
 # Constraints
 1. 解析与分类：
@@ -1450,16 +1478,17 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
    - 将每条意见映射到论文对应章节。
 
 2. 回复策略（四种状态）：
-   - RESOLVED：已修改，必须说明具体修改位置（页码+段落）。
+   - RESOLVED：已修改，说明具体修改位置（页码+段落）。
    - DELIBERATE_LIMITATION：承认是设计边界，需在 Limitations 章节引用说明。
    - UNRESOLVABLE：需解释约束条件，建议未来工作解决。
    - REVIEWER_DISAGREE：基于文献/数据的礼貌反驳，必须引用支撑材料。
 
 3. 回复质量标准：
-   - 直接具体：每条回复必须包含修改位置（Page X, Section Y, Paragraph Z）。
+   - 直接具体：每条回复写明修改位置（Page X, Section Y, Paragraph Z）。
    - 有理有据：反驳时引用文献或实验数据，不空口否认。
    - 态度诚恳：即使拒绝也要先肯定审稿人的洞察。
    - 完整覆盖：绝不跳过任何一条意见。
+   - 不编造：修改内容、页码、数据和文献只用我提供的信息。我没提供的写 [待补]，不要自行编写；每条意见的回复策略按我给的处理决定标注，我没给的标 [待作者决定]。
 
 4. 输出格式：
    - Part 1 [Revision Roadmap]：审稿意见解析表（编号/分类/优先级/对应章节/回复策略）。
@@ -1489,9 +1518,13 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 
 # Input
 [在此处粘贴审稿意见全文]
+
+[在此处写明你对每条意见的实际处理：改了什么、改在哪里，或不改的理由]
+
+[可选：粘贴修改后的论文或章节列表，用于定位章节和页码]
 ```
 
-💡 **Highlights**: Four response states (resolved / deliberate limitation / unresolvable / respectful disagreement), priority grading, mandatory modification location citation, complete response letter template.
+💡 **Highlights**: Four response states (resolved / deliberate limitation / unresolvable / respectful disagreement), priority grading, complete response letter template. You supply what you actually did for each comment; changes and locations you did not give are left as [待补] placeholders, not invented.
 
 ### Alternative Candidate
 
@@ -1502,11 +1535,17 @@ Write a point-by-point response to the following reviewer comments:
 
 [Paste reviewer comments here]
 
+My revisions (what I changed and where, or why I made no change):
+
+[Paste your actual revisions here]
+
 For each comment:
 1. Quote the reviewer's comment
 2. Provide a polite, evidence-based response
 3. State what changes were made (or explain why no change was made)
 4. Reference the specific location in the revised manuscript
+
+Use only the revisions I listed. If a change or location is missing, write [TODO] instead of inventing one.
 ```
 
 💡 **Highlights**: Concise and direct, clear four-step structure. Suitable for quickly generating response drafts.

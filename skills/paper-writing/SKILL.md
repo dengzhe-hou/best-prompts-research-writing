@@ -1,6 +1,6 @@
 ---
 name: paper-writing
-description: "Full paper writing pipeline. Orchestrates outline → figures → LaTeX writing → compilation → improvement loop to go from a narrative report to a polished PDF."
+description: "Outline of the ARIS paper-writing pipeline (plan → figures → LaTeX → compile → improve). Needs the ARIS sub-skills /paper-plan, /paper-figure, /paper-write, /paper-compile and /auto-paper-improvement-loop, which are not included here."
 ---
 
 # Paper Writing Pipeline
@@ -63,7 +63,7 @@ Polish the paper (2 rounds):
 - **Preserve all PDFs.** The user needs round0/round1/round2 for comparison.
 - **Respect page limits.** If the paper exceeds the venue limit, suggest specific cuts.
 
-## Typical Timeline
+## Typical Timeline (upstream pipeline with all sub-skills installed)
 
 | Phase | Duration |
 |-------|----------|
@@ -73,4 +73,4 @@ Polish the paper (2 rounds):
 | 4. Compilation | 2-5 min |
 | 5. Improvement | 15-30 min |
 
-**Total: ~45-90 min** for a full paper from narrative report to polished PDF.
+**Total: ~45-90 min** for a full paper from narrative report to polished PDF, when run with the upstream sub-skills.

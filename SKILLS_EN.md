@@ -58,7 +58,7 @@ After installing, call a skill with `/skill-name` in Claude Code and Cursor (for
 
 **What it does**: four steps (literature survey, idea generation, novelty check, review), ending with a ranked idea report.
 
-**Note**: it calls three sub-skills, `/idea-creator`, `/novelty-check` and `/research-review`, which are not included here. The upstream cross-model review, pilot experiments and checkpoints were removed.
+**Note**: it calls three sub-skills, `/idea-creator`, `/novelty-check` and `/research-review`, which are not included here. The upstream cross-model review, pilot experiments and checkpoints were removed, so ideas are ranked on feasibility, novelty and expected impact without running experiments.
 
 **File**: [`skills/idea-discovery/SKILL.md`](skills/idea-discovery/SKILL.md)
 
@@ -170,9 +170,9 @@ Based on humanizer, for medical papers.
 
 > Source: adapted from research-review and the external-review phase of idea-discovery in [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/research-review/SKILL.md) (MIT); the review dimensions and output template were added here
 
-**What it does**: reviews on novelty, significance, feasibility, experimental design and writing quality, lists issues by severity, and gives a 1 to 10 score.
+**What it does**: reviews a paper draft or a research idea on novelty, significance, soundness (feasibility for an idea), experimental design and writing quality, lists issues by severity, and gives a 1 to 10 score.
 
-**Note**: the file mentions cross-model review but does not call a second model. The running model acts as the reviewer, in a single round.
+**Note**: no second model is called. The running model acts as the reviewer, in a single round.
 
 **File**: [`skills/paper-review/SKILL.md`](skills/paper-review/SKILL.md)
 
