@@ -34,21 +34,20 @@
 
 ## 来源与使用边界
 
-本目录整理并改编自以下公开项目：
+48 条候选中，41 条整理或改编自以下公开项目，7 条为本仓库编写：
 
-| 来源 | 主要贡献场景 |
-|---|---|
-| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 翻译、润色、结构调整、实验、图表、审稿 |
-| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 选题及论文各章节 |
-| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 多场景替代候选 |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 文献综述、审稿、回复审稿人 |
-| [kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper) | 审稿候选 |
-| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 科研绘图参考 |
+| 来源 | 条数 | 主要贡献场景 | 上游许可 |
+|---|---|---|---|
+| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 16 | 翻译、润色、结构调整、实验、图表、审稿的首选候选 | 仓库未声明 |
+| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 10 | 选题及论文各章节；英文润色、缩写、扩写的替代候选 | 仓库未声明 |
+| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 13 | 多场景替代候选 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE)，Copyright (c) 2026 research-writing-skill contributors |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | 回复审稿人 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
+| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | 科研绘图参考（只做介绍，未收录原文） | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
 
-Prompt 条目保留对应来源链接。上游项目的许可证和使用条款各不相同，部分项目没有 GitHub 可识别的 SPDX 许可证；转载、修改或再发布前请检查对应上游仓库。本目录不替第三方内容重新授权。
+每条候选都注明来源类型：原文、改编（注明出自上游哪一部分），或本仓库编写。上游项目的许可证和使用条款各不相同；转载、修改或再发布前请检查对应上游仓库。本目录不替第三方内容重新授权。
 
 ## 贡献
 
 欢迎补充新场景或替换现有候选。提交 PR 时请提供 Prompt 原文、来源与使用条款，以及至少一个能体现实际差异的输入输出示例。详细格式见 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)。
 
-最后审阅：2026-08-15
+最后审阅：2026-09-30

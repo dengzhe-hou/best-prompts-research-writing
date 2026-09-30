@@ -34,21 +34,20 @@ Candidate order is an editorial judgment based on task fit, output clarity, and 
 
 ## Sources and Usage Boundaries
 
-The catalog curates and adapts material from these public projects:
+Of the 48 candidates, 41 are taken or adapted from these public projects and 7 were written for this catalog:
 
-| Source | Main contributions |
-|---|---|
-| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | Translation, polishing, restructuring, experiments, figures, review |
-| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | Brainstorming and paper sections |
-| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | Alternative candidates across scenarios |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | Literature review, paper review, responses to reviewers |
-| [kaixindelele/ChatPaper](https://github.com/kaixindelele/ChatPaper) | Review candidates |
-| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | Scientific figure references |
+| Source | Entries | Main contributions | Upstream license |
+|---|---|---|---|
+| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 16 | Primary candidates for translation, polishing, restructuring, experiments, figures, review | None stated |
+| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 10 | Brainstorming and paper sections; alternatives for English polishing, shortening, expansion | None stated |
+| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 13 | Alternative candidates across scenarios | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE), Copyright (c) 2026 research-writing-skill contributors |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | Responses to reviewers | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
+| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | Scientific figure references (described, text not reproduced) | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
 
-Each prompt entry retains its source link. Upstream licenses and usage terms vary, and some projects do not expose a GitHub-detected SPDX license. Check the linked upstream repository before redistributing, modifying, or republishing its material. This catalog does not relicense third-party content.
+Each candidate states its provenance: verbatim, adapted (with the upstream section named), or written for this catalog. Upstream licenses and usage terms vary; check the linked upstream repository before redistributing, modifying, or republishing its material. This catalog does not relicense third-party content.
 
 ## Contributing
 
 Contributions may add a new scenario or replace an existing candidate. A PR should include the prompt text, source and usage terms, and at least one input/output example that demonstrates the practical difference. See the [PR template](.github/PULL_REQUEST_TEMPLATE.md) for the expected format.
 
-Last reviewed: 2026-08-15
+Last reviewed: 2026-09-30
