@@ -1,12 +1,12 @@
 ---
 name: humanizer-zh-academic
-description: "降低中文学术写作AIGC检测率的专项skill。基于真实论文改写实验归纳的规律，检测并修复中文AI写作的典型模式。"
+description: "检测并改写中文学术写作中的典型 AI 写作模式（去 AI 味）。精简自以降低 AIGC 检测率为目标的上游 skill，本精简版未验证检测效果。"
 ---
 
 # Humanizer-ZH-Academic：中文学术写作去AI味指南
 
 > Abridged from: [redbaronyyyyy-eng/humanizer-zh-academic](https://github.com/redbaronyyyyy-eng/humanizer-zh-academic/blob/main/SKILL.md) (MIT, Copyright (c) 2025 redbaronyyyyy-eng)
-> Keeps 6 of the 16 upstream patterns.
+> Keeps 6 of the 16 upstream patterns. Upstream reports lower AIGC detection rates; this short version has not been tested for that.
 
 ## Overview
 

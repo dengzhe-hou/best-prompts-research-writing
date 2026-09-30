@@ -1,32 +1,44 @@
-## Prompt 贡献
+填写与本次贡献对应的一节，另一节可以删掉。 / Fill in the section that matches your contribution and delete the other.
 
-### 场景
+## Prompt 贡献 / Prompt contribution
+
+### 场景 / Scenario
 
 说明要新增或修改的具体场景，以及它解决的实际任务。
 
-### Prompt 原文
+### Prompt 原文 / Prompt text
 
 粘贴完整 Prompt，并注明它应作为首选候选还是替代候选。
 
-### 来源与使用条款
+### 来源与使用条款 / Source and usage terms
 
-- 原始仓库或作者：
-- 原始链接：
-- License 或使用条款：
-- 原文、改编或原创：
+- 原始仓库或作者 / Source repository or author：
+- 原始链接 / Link：
+- License 或使用条款 / License or terms：
+- 原文、改编（注明出自上游哪一部分）还是本仓库编写 / Verbatim, adapted (name the upstream section), or written for this catalog：
 
 如果来源没有明确许可证，请直接写明，不要推测。
 
-### 代表性示例
+### 代表性示例 / Example
 
 提供至少一组能体现实际差异的示例。
 
-**输入**：
+**输入 / Input**：
 
-**当前候选输出**：
+**当前候选输出 / Current candidate output**：
 
-**建议候选输出**：
+**建议候选输出 / Proposed candidate output**：
 
-### 编辑理由
+### 编辑理由 / Rationale
 
 说明现有候选的具体不足、建议候选带来的可观察变化，以及为什么适合这个场景。无需打分。
+
+## Skill 贡献 / Skill contribution
+
+- Skill 名称与文件夹 / Name and folder（`skills/<name>/SKILL.md`）：
+- 来源仓库与许可 / Source repository and license：
+- 原文、精简还是原创 / Verbatim, abridged, or original：
+- 相比上游删去了什么 / What was removed compared with upstream：
+- 调用但未收录的子 skill、脚本或 MCP / Sub-skills, scripts or MCP servers it calls that are not included：
+
+只有 MIT 或兼容许可的 skill 才复制进本仓库，其余只放链接。 / Only MIT or compatibly licensed skills are copied into this repository; others are linked.

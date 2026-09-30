@@ -1,6 +1,6 @@
 ---
 name: idea-discovery
-description: "Full idea discovery pipeline. Orchestrates literature survey → idea generation → novelty check → review to go from a broad research direction to validated ideas."
+description: "Short idea discovery workflow: literature survey → idea generation → novelty check → review, from a broad research direction to a ranked idea report. Runs no experiments."
 ---
 
 # Idea Discovery Pipeline
@@ -23,7 +23,7 @@ This skill chains sub-skills into a single automated pipeline:
 Search arXiv, Google Scholar, Semantic Scholar for recent papers. Build a landscape map: sub-directions, approaches, open problems. Identify structural gaps and recurring limitations.
 
 ### Phase 2: Idea Generation
-Brainstorm 8-12 concrete ideas. Filter by feasibility, compute cost, quick novelty search. Rank by empirical signal.
+Brainstorm 8-12 concrete ideas. Filter by feasibility, compute cost, quick novelty search. Rank by feasibility, novelty and expected impact (this version runs no pilot experiments).
 
 ### Phase 3: Deep Novelty Verification
 For each top idea, run a thorough novelty check:
@@ -43,7 +43,7 @@ Get brutal feedback from a senior reviewer perspective:
 
 - **Don't skip phases.** Each phase filters and validates — skipping leads to wasted effort later.
 - **Kill ideas early.** Better to kill 10 bad ideas than to implement one and fail.
-- **Empirical signal > theoretical appeal.** An idea with a positive pilot outranks a "sounds great" idea without evidence.
+- **Evidence > appeal.** Prefer ideas backed by published results or a clear closest-work comparison over ideas that only sound good.
 - **Document everything.** Dead ends are just as valuable as successes for future reference.
 
 ## Output
@@ -61,9 +61,9 @@ Get brutal feedback from a senior reviewer perspective:
 [from Phase 2, updated with Phase 3-4 results]
 
 ### 🏆 Idea 1: [title] — RECOMMENDED
-- Novelty: CONFIRMED
+- Novelty: [CONFIRMED / UNCERTAIN] (closest: [paper], differentiation: [what is different])
 - Reviewer score: X/10
-- Next step: implement full experiment
+- Next step: [e.g. run a small pilot experiment]
 
 ## Eliminated Ideas
 [ideas killed at each phase, with reasons]

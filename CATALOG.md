@@ -224,12 +224,12 @@
 1. 准确性：确保专业术语使用正确
 2. 流畅性与简洁性：优化句子结构，去除冗余表述
 3. 专业性与一致性：保持术语、格式和风格的统一
-4. 逻辑性：识别并修复逻辑断层
+4. 逻辑性：识别并修复逻辑断层，将零散的句子整合成连贯的段落，将列表转换为流畅的叙述
 
 ## 输出格式
 1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
 2. 标点符号严格使用中文全角标点
-3. 必须保持原文的段落结构
+3. 如果原文是段落形式，不要将其改写为 item 列表，必须保持原文的段落结构
 ```
 
 💡 **亮点**：四项润色标准、Word 友好输出。
@@ -365,12 +365,12 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 1. 准确性：确保专业术语使用正确
 2. 流畅性与简洁性：优化句子结构，去除冗余表述
 3. 专业性与一致性：保持术语、格式和风格的统一
-4. 逻辑性：识别并修复逻辑断层
+4. 逻辑性：识别并修复逻辑断层，将零散的句子整合成连贯的段落，将列表转换为流畅的叙述
 
 ## 输出格式
 1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
 2. 标点符号严格使用中文全角标点
-3. 必须保持原文的段落结构
+3. 如果原文是段落形式，不要将其改写为 item 列表，必须保持原文的段落结构
 ```
 
 💡 **亮点**：四项润色标准、纯文本输出适配 Word、保持段落结构。
@@ -877,9 +877,11 @@ Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]
 4. 综合分析现有研究
 5. 识别研究空白
 6. 生成结构化综述报告
+
+只使用我提供的文献或你实际检索到的文献。不要编造检索结果数量、筛选数字或参考文献；没有依据的地方标为 [待检索]。
 ```
 
-💡 **亮点**：PRISMA 方法论、结构化流程、适合正式综述论文。
+💡 **亮点**：按 PRISMA 步骤搭建综述框架和检索策略。普通聊天模型不会真的检索数据库，筛选结果、文献数量和引用要以你自己的检索为准，并逐条核实。
 
 ---
 
@@ -918,7 +920,7 @@ Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 - [ ] 复杂度分析（如适用）
 ```
 
-💡 **亮点**：结构化大纲模板，适合从零搭建方法论章节。
+💡 **亮点**：结构化大纲模板，适合从零搭建方法论章节。只含大纲条目，使用时在前面加一句任务说明并附上材料，例如“按以下条目为我的方法写 Method 章节：[方法描述]”。
 
 ---
 
@@ -951,6 +953,8 @@ Please analyze the following experimental results and write a discussion section
 4. Discuss limitations and potential improvements
 5. Connect results to the original research questions
 
+Research questions: [LIST YOUR RESEARCH QUESTIONS]
+Method and baselines: [BRIEFLY DESCRIBE YOUR METHOD AND WHAT IT IS COMPARED WITH]
 Results: [PASTE YOUR RESULTS TABLE OR DATA]
 ```
 
@@ -981,7 +985,7 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 ```
 ## 结论写作模板
 
-请根据以下要素撰写结论：
+请根据下方 Input 中的材料，按以下要素撰写结论：
 
 1. **研究回顾** (1-2 句): 重申研究问题和目标
 2. **主要贡献** (2-3 点): 总结核心贡献
@@ -993,6 +997,11 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 - 总字数: 200-300 词
 - 时态: 一般现在时
 - 避免: 引用、新信息、过度夸大
+- 只使用 Input 中的内容，不要添加材料里没有的贡献或结果
+- 语言: 与论文正文一致
+
+# Input
+[在此处粘贴研究问题、主要贡献、关键结果和局限性（可直接粘贴摘要和结果段落）]
 ```
 
 💡 **亮点**：五要素模板、字数约束、避免常见结论写作陷阱。
@@ -1016,7 +1025,12 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 > 来源：本仓库编写（上游仓库中没有对应 prompt）
 
 ```
-基于本研究的局限性，请提出 3-5 个具体的未来研究方向：
+基于本研究的局限性，请提出 3-5 个具体的未来研究方向。
+
+研究概要和局限性：
+[在此处粘贴研究概要和局限性]
+
+输出格式：
 
 1. **[方向 1]**: [具体描述]
    - 为什么重要：
@@ -1084,8 +1098,12 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 # 角色
 你是一位资深数据科学家，擅长从实验数据中提取学术洞察。
 
-## 分析维度：
-1. **SOTA 对比**: 与最强 baseline 相比，提升了多少？
+## 数据真实性：
+- 所有结论必须严格基于提供的数据。严禁编造数据、夸大结果或添加原文不存在的实验内容。
+- 如果数据没有显示明显的优势或趋势，请如实描述，不要强行得出正面结论。
+
+## 分析维度（只分析数据中实际包含的内容）：
+1. **SOTA 对比**: 与最强 baseline 相比，差距或提升是多少？
 2. **消融实验**: 哪个模块贡献最大？
 3. **参数敏感性**: 关键超参数对结果的影响
 4. **效率分析**: 计算开销与性能的权衡
@@ -1094,6 +1112,9 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 - 使用 LaTeX \paragraph{} 格式
 - 每个发现用一个 \paragraph{} 段落
 - 包含具体数值对比
+
+# 输入
+[在此处粘贴实验数据]
 ```
 
 💡 **亮点**：四维分析框架、\paragraph{} 格式强制、数值对比要求。
@@ -1290,7 +1311,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 请将用户提供的【中文表格描述】转换为专业、简洁、规范的【英文表格标题】。
 
 # Constraints
-1. 格式规范同图片标题
+1. 格式规范：名词性结构用 Title Case，完整句子用 Sentence case
 2. 写作技巧：使用 Comparison with, Ablation study on, Results on 等标准表达
 3. 输出格式：只输出最终的英文标题文本
 ```
@@ -1300,6 +1321,8 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ---
 
 ## 5.5 架构图 (Architecture Diagram)
+
+> 这两条都要用能生成图片的模型（首选候选的上游 Leey21 配合 nano banana 使用）。只能输出文字的模型会给出文字描述或绘图代码，不会直接出图。
 
 ### 首选候选
 
@@ -1423,6 +1446,9 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 6. 主要优点（3条）
 7. 主要缺点（3条）
 8. 修改建议（3条具体可操作的建议）
+
+论文：
+[在此处粘贴论文全文，或上传 PDF]
 ```
 
 💡 **亮点**：评分量表清晰、结构化输出、适合快速评审。
@@ -1440,7 +1466,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 你是一位经验丰富的学术论文作者，擅长撰写针对审稿人意见的逐条回复（Point-by-Point Response）。你深谙顶会修稿流程，能精准区分"必须改"和"可以礼貌拒绝"的意见。
 
 # Task
-请根据我提供的【审稿意见】，为我的论文生成一份完整的 Response to Reviewers。
+请根据我提供的【审稿意见】和【我对每条意见的实际处理】，为我的论文生成一份完整的 Response to Reviewers。
 
 # Constraints
 1. 解析与分类：
@@ -1450,16 +1476,17 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
    - 将每条意见映射到论文对应章节。
 
 2. 回复策略（四种状态）：
-   - RESOLVED：已修改，必须说明具体修改位置（页码+段落）。
+   - RESOLVED：已修改，说明具体修改位置（页码+段落）。
    - DELIBERATE_LIMITATION：承认是设计边界，需在 Limitations 章节引用说明。
    - UNRESOLVABLE：需解释约束条件，建议未来工作解决。
    - REVIEWER_DISAGREE：基于文献/数据的礼貌反驳，必须引用支撑材料。
 
 3. 回复质量标准：
-   - 直接具体：每条回复必须包含修改位置（Page X, Section Y, Paragraph Z）。
+   - 直接具体：每条回复写明修改位置（Page X, Section Y, Paragraph Z）。
    - 有理有据：反驳时引用文献或实验数据，不空口否认。
    - 态度诚恳：即使拒绝也要先肯定审稿人的洞察。
    - 完整覆盖：绝不跳过任何一条意见。
+   - 不编造：修改内容、页码、数据和文献只用我提供的信息。我没提供的写 [待补]，不要自行编写；每条意见的回复策略按我给的处理决定标注，我没给的标 [待作者决定]。
 
 4. 输出格式：
    - Part 1 [Revision Roadmap]：审稿意见解析表（编号/分类/优先级/对应章节/回复策略）。
@@ -1489,9 +1516,13 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 # Input
 [在此处粘贴审稿意见全文]
+
+[在此处写明你对每条意见的实际处理：改了什么、改在哪里，或不改的理由]
+
+[可选：粘贴修改后的论文或章节列表，用于定位章节和页码]
 ```
 
-💡 **亮点**：四种回复状态（已修复/设计边界/不可修复/礼貌反驳）、优先级分级、修改位置强制引用、完整回复信模板。
+💡 **亮点**：四种回复状态（已修复/设计边界/不可修复/礼貌反驳）、优先级分级、完整回复信模板。需要你写明每条意见的实际处理；没提供的修改内容和位置会留 [待补]，不会替你编。
 
 ### 替代候选
 
@@ -1502,11 +1533,17 @@ Write a point-by-point response to the following reviewer comments:
 
 [粘贴审稿意见]
 
+My revisions (what I changed and where, or why I made no change):
+
+[粘贴你的实际修改]
+
 For each comment:
 1. Quote the reviewer's comment
 2. Provide a polite, evidence-based response
 3. State what changes were made (or explain why no change was made)
 4. Reference the specific location in the revised manuscript
+
+Use only the revisions I listed. If a change or location is missing, write [TODO] instead of inventing one.
 ```
 
 💡 **亮点**：简洁直接，四步结构清晰。适合快速生成回复草稿。

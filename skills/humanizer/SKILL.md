@@ -1,6 +1,6 @@
 ---
 name: humanizer
-description: "Remove signs of AI-generated writing from text. Based on Wikipedia's 'Signs of AI writing' guide. Detects and fixes patterns including inflated symbolism, promotional language, AI vocabulary words, and filler phrases."
+description: "Remove signs of AI-generated writing from text. Based on Wikipedia's 'Signs of AI writing' guide. Detects and fixes patterns including inflated symbolism, promotional language, AI vocabulary words, and em dash overuse."
 ---
 
 # Humanizer: Remove AI Writing Patterns
@@ -40,7 +40,7 @@ When given text to humanize:
 
 4. **Vague Attributions**
    - Words: Industry reports, Experts argue, Some critics
-   - Fix: Use specific sources with citations
+   - Fix: Name a specific source only if the text or the user supplies it; otherwise state it as the author's own claim or cut it. Never invent a citation.
 
 ### Language Patterns
 

@@ -13,7 +13,7 @@ Prompts and skills for research writing, each with its source stated. Pick which
 |---|---|
 | You chat in ChatGPT, Claude, Kimi, or a similar web or mobile app | Use a prompt |
 | Single-step task: translation, polishing, shortening or expanding, figure and table captions | A prompt is enough |
-| Multi-step work in Claude Code, Codex, or Cursor: literature review, drafting a whole paper, rebuttal | Use a skill |
+| Multi-step work in Claude Code, Codex, or Cursor: literature review, finding research gaps, rebuttal | Use a skill |
 | You want to adapt it to your field or habits | Both are plain text; copy and edit. For a skill, edit its `SKILL.md` |
 
 ## What the Prompts Cover
@@ -48,7 +48,7 @@ Candidate order is an editorial judgment based on task fit, output clarity, and 
 
 ## Prompt Sources and Usage Boundaries
 
-Of the 48 prompt candidates, 41 are taken or adapted from these public projects and 7 were written for this catalog:
+Of the 48 prompt candidates, 40 are taken or adapted from these public projects, 1 is a description of an upstream repository (the 5.2 alternative, not a paste-ready prompt), and 7 were written for this catalog:
 
 | Source | Entries | Main contributions | Upstream license |
 |---|---|---|---|

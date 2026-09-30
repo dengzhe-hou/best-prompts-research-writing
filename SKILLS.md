@@ -58,7 +58,7 @@ cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
 
 **做什么**：文献调研、生成想法、查新、评审四步，最后输出排好序的想法报告。
 
-**注意**：会调用 `/idea-creator`、`/novelty-check`、`/research-review` 三个子 skill，本仓库没有收录。原版的跨模型审查、pilot 实验和检查点都已删去。
+**注意**：会调用 `/idea-creator`、`/novelty-check`、`/research-review` 三个子 skill，本仓库没有收录。原版的跨模型审查、pilot 实验和检查点都已删去，所以想法只按可行性、新颖性和预期影响排序，不跑实验。
 
 **文件**：[`skills/idea-discovery/SKILL.md`](skills/idea-discovery/SKILL.md)
 
@@ -170,9 +170,9 @@ cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
 
 > 来源：改写自 [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/research-review/SKILL.md) 的 research-review 和 idea-discovery 的外部评审部分（MIT）；评审维度和输出模板为本仓库增补
 
-**做什么**：从新颖性、重要性、可行性、实验设计、写作质量五个维度评审，按严重程度列问题，给 1 到 10 分。
+**做什么**：评审论文稿或研究想法，看新颖性、重要性、可靠性（想法则看可行性）、实验设计、写作质量五个维度，按严重程度列问题，给 1 到 10 分。
 
-**注意**：文件里写了 cross-model review，但没有接入第二个模型，实际由当前模型扮演审稿人，只评一轮。
+**注意**：不接入第二个模型，由当前模型扮演审稿人，只评一轮。
 
 **文件**：[`skills/paper-review/SKILL.md`](skills/paper-review/SKILL.md)
 
