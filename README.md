@@ -35,7 +35,7 @@
 | 写作 | `paper-writing` 论文写作 · `humanizer` 英文去 AI 味 · `humanizer-zh-academic` 中文去 AI 味 |
 | 审稿 | `paper-review` 论文审阅 · `rebuttal` 审稿回复 |
 
-安装方法、各 skill 的来源和完整版链接见 [Skill 目录](SKILLS.md)。这些 skill 原先在 [best-skills-research-writing](https://github.com/dengzhe-hou/best-skills-research-writing) 仓库，现已并入本仓库。
+安装方法、各 skill 的来源和完整版链接见 [Skill 目录](SKILLS.md)。这些 skill 原先在单独的 best-skills-research-writing 仓库，现已并入本仓库。
 
 ## Prompt 候选的选择方式
 

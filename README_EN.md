@@ -35,7 +35,7 @@ Prompts and skills for research writing, each with its source stated. Pick which
 | Writing | `paper-writing` paper writing · `humanizer` English de-AI editing · `humanizer-zh-academic` Chinese de-AI editing |
 | Review | `paper-review` paper review · `rebuttal` rebuttal |
 
-Installation, sources, and links to the full upstream versions are in the [skill catalog](SKILLS_EN.md). These skills used to live in [best-skills-research-writing](https://github.com/dengzhe-hou/best-skills-research-writing) and have moved here.
+Installation, sources, and links to the full upstream versions are in the [skill catalog](SKILLS_EN.md). These skills used to live in a separate best-skills-research-writing repository and have moved here.
 
 ## How Prompt Candidates Are Selected
 
