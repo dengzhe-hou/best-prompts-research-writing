@@ -10,7 +10,7 @@
 
 > Each candidate states its provenance: verbatim (matches upstream apart from formatting or typo fixes), adapted (abridged or rewritten, with the upstream section named), or written for this catalog (no upstream counterpart).
 
-> Most prompt texts are in Chinese, and some also make the model reply in Chinese. The 3.3 and 6.1 primary candidates reply entirely in Chinese; the 2.1, 2.3, 3.1, 3.2 and 5.1 primary candidates add a Chinese translation or change log; 5.3 and 5.4 expect a Chinese description as input. For English-only output, edit the output lines of the prompt (change 中文 to English, or delete the Part you do not need).
+> Most prompt texts are in Chinese, and some also make the model reply in Chinese. The 3.3 and 6.1 primary candidates reply entirely in Chinese; the 5.2 primary candidate has a Chinese output template, so it normally replies in Chinese as well; the 2.1, 2.3, 3.1, 3.2 and 5.1 primary candidates add a Chinese translation or change log; 5.3 and 5.4 expect a Chinese description as input. For English-only output, edit the output lines of the prompt (change 中文 to English, or delete the Part you do not need), or add a line such as "Reply in English" at the end.
 
 ---
 
@@ -1324,7 +1324,7 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 
 ## 5.5 Architecture Diagram
 
-> Both candidates need a model that can generate images (upstream used nano banana). A text-only model returns a description or drawing code, not a figure.
+> Both candidates need a model that can generate images (Leey21, the primary candidate's upstream, used nano banana). A text-only model returns a description or drawing code, not a figure.
 
 ### Primary Candidate
 

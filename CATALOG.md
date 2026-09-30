@@ -1322,7 +1322,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ## 5.5 架构图 (Architecture Diagram)
 
-> 这两条都要用能生成图片的模型（上游配合 nano banana 使用）。只能输出文字的模型会给出文字描述或绘图代码，不会直接出图。
+> 这两条都要用能生成图片的模型（首选候选的上游 Leey21 配合 nano banana 使用）。只能输出文字的模型会给出文字描述或绘图代码，不会直接出图。
 
 ### 首选候选
 
