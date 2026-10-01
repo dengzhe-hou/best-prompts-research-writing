@@ -78,7 +78,7 @@ cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
 
 **做什么**：在 arXiv、Semantic Scholar、Google Scholar 检索，去重、分析、综合，输出文献对比表。
 
-**注意**：文件里列出的 Zotero、Obsidian、DeepXiv、Exa、Gemini、OpenAlex 需要原版附带的脚本或 MCP 服务，本仓库没有。原版的 Research Wiki 已删去。
+**注意**：文件里列出的 Zotero、Obsidian、DeepXiv、Exa、Gemini、OpenAlex 需要原版附带的脚本或 MCP 服务，本仓库没有。原版的 Research Wiki 已删去。上游在 2026-05-13 加了"核对文献是否真实存在"的步骤，本精简版是在那之前抄的，没有这一步，列出的文献要自己核对。
 
 **文件**：[`skills/research-lit/SKILL.md`](skills/research-lit/SKILL.md)
 
@@ -118,7 +118,7 @@ cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
 
 **做什么**：列出规划、作图、写 LaTeX、编译、改进循环五个阶段。
 
-**注意**：这个精简版更像流程提纲。每个阶段都要调用子 skill（`/paper-plan`、`/paper-figure`、`/paper-write`、`/paper-compile`、`/auto-paper-improvement-loop`），本仓库都没有；原版的跨模型审查和 assurance gate 也已删去。实际写论文请装原版。
+**注意**：这个精简版更像流程提纲。每个阶段都要调用子 skill（`/paper-plan`、`/paper-figure`、`/paper-write`、`/paper-compile`、`/auto-paper-improvement-loop`），本仓库都没有；原版的跨模型审查和 assurance gate 也已删去。文件里 `AUTO_PROCEED = true`，各阶段之间不停下来；想逐步确认，就在对话里说"每个阶段停一下"。实际写论文请装原版。
 
 **文件**：[`skills/paper-writing/SKILL.md`](skills/paper-writing/SKILL.md)
 

@@ -21,7 +21,7 @@ This skill chains sub-skills into a single automated pipeline:
 
 - **VENUE = `ICLR`** — Target venue (ICLR, NeurIPS, ICML, CVPR, ACL, AAAI, ACM, IEEE)
 - **MAX_IMPROVEMENT_ROUNDS = 2** — Review→fix→recompile rounds
-- **AUTO_PROCEED = true** — Auto-continue between phases
+- **AUTO_PROCEED = true** — Auto-continue between phases. Say "stop after each phase" if you want to review each step before it continues.
 
 ## Pipeline
 

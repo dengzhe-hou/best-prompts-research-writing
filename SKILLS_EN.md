@@ -78,7 +78,7 @@ A framework for planning and writing academic papers.
 
 **What it does**: searches arXiv, Semantic Scholar and Google Scholar, de-duplicates, analyzes and synthesizes, and outputs a comparison table.
 
-**Note**: the Zotero, Obsidian, DeepXiv, Exa, Gemini and OpenAlex sources listed in the file need upstream scripts or MCP servers that are not included here. The upstream Research Wiki was removed.
+**Note**: the Zotero, Obsidian, DeepXiv, Exa, Gemini and OpenAlex sources listed in the file need upstream scripts or MCP servers that are not included here. The upstream Research Wiki was removed. Upstream added a step that checks whether each paper really exists on 2026-05-13, after this copy was made, so verify the papers it lists yourself.
 
 **File**: [`skills/research-lit/SKILL.md`](skills/research-lit/SKILL.md)
 
@@ -118,7 +118,7 @@ A full research, writing, review, revision and finalization workflow.
 
 **What it does**: lists five phases: planning, figures, LaTeX writing, compilation, and an improvement loop.
 
-**Note**: this short version is closer to an outline. Every phase calls a sub-skill (`/paper-plan`, `/paper-figure`, `/paper-write`, `/paper-compile`, `/auto-paper-improvement-loop`), none of which is included here, and the upstream cross-model review and assurance gate were removed. Install the original to actually write a paper with it.
+**Note**: this short version is closer to an outline. Every phase calls a sub-skill (`/paper-plan`, `/paper-figure`, `/paper-write`, `/paper-compile`, `/auto-paper-improvement-loop`), none of which is included here, and the upstream cross-model review and assurance gate were removed. The file sets `AUTO_PROCEED = true`, so it does not pause between phases; ask it to stop after each phase if you want to review. Install the original to actually write a paper with it.
 
 **File**: [`skills/paper-writing/SKILL.md`](skills/paper-writing/SKILL.md)
 

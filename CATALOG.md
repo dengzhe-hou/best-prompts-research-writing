@@ -162,7 +162,7 @@
 3. 禁止遗漏关键信息
 ```
 
-💡 **亮点**：术语规范性（引用国标译名）、歧义处理机制。
+💡 **亮点**：术语优先用全国科学技术名词审定委员会公布的规范译名，歧义处加注。
 
 ---
 
@@ -613,7 +613,7 @@ Output the rewritten text directly, without additional commentary.
 [在此处粘贴你的英文 LaTeX 代码]
 ```
 
-💡 **亮点**：字数预算（±5-15 词）、防过度编辑检查、三部分输出（结果+翻译+修改日志）。
+💡 **亮点**：字数预算（只减 5-15 词）、防过度编辑检查、三部分输出（结果+翻译+修改日志）。
 
 ### 替代候选
 
@@ -1297,7 +1297,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 [在此处粘贴你的中文描述]
 ```
 
-💡 **亮点**：表格专用词汇（showcase→show, depict→present）、标准学术表达推荐。
+💡 **亮点**：表格专用词汇（避免 showcase、depict，改用 show、compare、present）、标准学术表达推荐。
 
 ### 替代候选
 
@@ -1383,7 +1383,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 5. 禁止事项：严禁使用照片或图片拼贴、杂乱无章的布局、无法辨认的文字、过度的3D阴影或特效
 ```
 
-💡 **亮点**：莫兰迪色系、中科院 TOP 期刊标准、与 Leey21 版互补。
+💡 **亮点**：莫兰迪色系；比首选多了"禁止图片拼贴、杂乱布局"两项，可以和首选合用。
 
 ---
 

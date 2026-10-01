@@ -164,7 +164,7 @@
 3. 禁止遗漏关键信息
 ```
 
-💡 **Highlights**: Terminology standardization (referencing national standard translations), ambiguity handling mechanism.
+💡 **Highlights**: Prefers the standard Chinese terms published by the China National Committee for Terms in Sciences and Technologies; adds a note where the source is ambiguous.
 
 ---
 
@@ -615,7 +615,7 @@ Output the rewritten text directly, without additional commentary.
 [在此处粘贴你的英文 LaTeX 代码]
 ```
 
-💡 **Highlights**: Word budget (±5-15 words), over-editing prevention check, three-part output (result + translation + modification log).
+💡 **Highlights**: Word budget (removes only 5-15 words), over-editing prevention check, three-part output (result + translation + modification log).
 
 ### Alternative Candidate
 
@@ -1299,7 +1299,7 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 [在此处粘贴你的中文描述]
 ```
 
-💡 **Highlights**: Turns a Chinese description into an English table caption. Table-specific vocabulary (showcase → show, depict → present), standard academic expression recommendations.
+💡 **Highlights**: Turns a Chinese description into an English table caption. Table-specific vocabulary (avoid showcase and depict; use show, compare, present), standard academic expression recommendations.
 
 ### Alternative Candidate
 
@@ -1385,7 +1385,7 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 5. 禁止事项：严禁使用照片或图片拼贴、杂乱无章的布局、无法辨认的文字、过度的3D阴影或特效
 ```
 
-💡 **Highlights**: Morandi color palette, CAS TOP journal standards, complementary to the Leey21 version.
+💡 **Highlights**: Morandi color palette; adds two bans the primary lacks (photo collage, cluttered layout), so the two can be combined.
 
 ---
 
