@@ -4,7 +4,7 @@
 
 <p align="center">🇨🇳 中文 | <a href="README_EN.md">English</a></p>
 
-写论文常见的 24 类任务，每类一条现成的 prompt：翻译、润色、去 AI 味、缩写扩写、写摘要和结论、图表标题、审稿和回复审稿人。点开、复制、粘贴到 ChatGPT、Claude、Kimi 等任意大模型就能用。
+写论文常见的 24 类任务，每类的首选 prompt 都放在下面，另一条替代写法在完整目录里（合计 48 条）。覆盖翻译、润色、去 AI 味、缩写扩写、写摘要和结论、图表标题、审稿和回复审稿人。点开、复制、粘贴到 ChatGPT、Claude、Kimi 等任意大模型就能用。
 
 ## 怎么用
 
@@ -473,6 +473,18 @@ Underscore, Unveil, Vibrant
 Find a research topic for a PhD in the area of [TOPIC]
 ```
 
+```text
+Identify gaps in the literature on [TOPIC SENTENCE]
+```
+
+```text
+Generate 10 academic research questions about [PARAGRAPHS]
+```
+
+```text
+Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
+```
+
 </details>
 
 <details>
@@ -491,6 +503,14 @@ Generate an abstract for a scientific paper based on this information for: [PARA
 Conduct a literature review on [TOPIC SENTENCE] and provide review paper references
 ```
 
+```text
+Summarize the scholarly literature, including in text citations on [PARAGRAPHS]
+```
+
+```text
+Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]
+```
+
 </details>
 
 <details>
@@ -498,6 +518,14 @@ Conduct a literature review on [TOPIC SENTENCE] and provide review paper referen
 
 ```text
 Create objectives and methodology for [TOPIC SENTENCE]
+```
+
+```text
+Write a detailed methodology for the topic: [TOPIC SENTENCE]
+```
+
+```text
+Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 ```
 
 </details>
@@ -509,6 +537,10 @@ Create objectives and methodology for [TOPIC SENTENCE]
 Write a result section for the following paragraphs. Please write this in the third person. [PARAGRAPHS]
 ```
 
+```text
+Discuss these results: [RESULT PARAGRAPHS]
+```
+
 </details>
 
 <details>
@@ -516,6 +548,10 @@ Write a result section for the following paragraphs. Please write this in the th
 
 ```text
 Generate a conclusion for this: [PARAGRAPHS]
+```
+
+```text
+Give recommendations and conclusion for: [PARAGRAPHS]
 ```
 
 </details>
@@ -643,7 +679,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 </details>
 
 <details>
-<summary><b>5.3</b> 图标题：写一句中文图片描述，得到规范的英文图标题</summary>
+<summary><b>5.3</b> 图标题：写一句中文图片描述，得到规范的英文图标题（按 LaTeX 转义 % _ &，用 Word 的删掉 prompt 里转义那一行）</summary>
 
 ```text
 # Role
@@ -674,7 +710,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 </details>
 
 <details>
-<summary><b>5.4</b> 表标题：写一句中文表格描述，得到规范的英文表标题</summary>
+<summary><b>5.4</b> 表标题：写一句中文表格描述，得到规范的英文表标题（按 LaTeX 转义 % _ &，用 Word 的删掉 prompt 里转义那一行）</summary>
 
 ```text
 # Role
@@ -859,21 +895,21 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ## 在 Claude Code、Codex 或 Cursor 里？装 Skill
 
-单步任务用上面的 prompt 就够。文献综述、找研究空白、审稿回复这类多步流程，可以装 skill，装一次就能反复调用。例如安装 `rebuttal`：
+单步任务用上面的 prompt 就够。文献综述、找研究空白、审稿回复这类多步流程，可以装 skill，装一次就能反复调用。例如安装 `research-gap`：
 
 ```bash
 git clone https://github.com/dengzhe-hou/best-prompts-research-writing.git
 mkdir -p ~/.claude/skills
-cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
+cp -R best-prompts-research-writing/skills/research-gap ~/.claude/skills/
 ```
 
-装好后在 Claude Code 里输入 `/rebuttal`。
+装好后在 Claude Code 里输入 `/research-gap`，再贴上你的文献。
 
 | Skill | 做什么 |
 |---|---|
 | `research-lit` | 检索文献，整理成对比表 |
 | `research-gap` | 从文献里找方法、理论、实证、应用四类研究空白 |
-| `idea-discovery` | 从一个方向出发，生成、查新、评审研究想法 |
+| `idea-discovery` | 从一个方向出发，生成、查新、评审研究想法（会调用本仓库没有的子 skill） |
 | `paper-review` | 按审稿人标准审论文稿或研究想法 |
 | `rebuttal` | 拆解审稿意见，在字数上限内起草回复，不替你做承诺 |
 | `humanizer` | 去掉英文文本里的 AI 痕迹 |

@@ -1,4 +1,4 @@
-"""Copy the 24 primary prompts from CATALOG.md into README.md and README_EN.md.
+"""Copy the primary prompts of the 24 scenarios from CATALOG.md into README.md and README_EN.md.
 
 Run after editing a primary prompt in CATALOG.md:
 
@@ -23,19 +23,19 @@ GROUPS = [
     ]),
     ('润色', 'Polishing', [
         ('2.1', '英文润色：贴英文 LaTeX，得到润色稿、中文直译和修改日志',
-                'English polish: paste English LaTeX, get the polished text, a Chinese translation and a change log'),
+                'English polish: paste English LaTeX, get the polished text plus a Chinese translation and a Chinese change log'),
         ('2.2', '中文润色：贴中文段落，只改该改的地方；原文没问题就原样返回',
                 'Chinese polish: paste a Chinese paragraph; it only fixes real problems and returns good text unchanged'),
         ('2.3', '英文去 AI 味：贴英文 LaTeX，换掉 delve、leverage 这类词；本来自然的段落原样通过',
-                'De-AI English: paste English LaTeX; replaces words like delve and leverage, leaves natural text alone'),
+                'De-AI English: paste English LaTeX; replaces words like delve and leverage, leaves natural text alone (adds a Chinese translation and change log)'),
         ('2.4', '中文去 AI 味：贴中文段落，去掉空话大词和翻译腔，附修改日志',
                 'De-AI Chinese: paste Chinese text; removes empty buzzwords and translationese, with a change log'),
     ]),
     ('缩写、扩写、逻辑检查', 'Shorten, expand, check logic', [
         ('3.1', '缩写：贴英文 LaTeX，只删 5 到 15 个词，参数一个不丢',
-                'Shorten: paste English LaTeX; removes only 5 to 15 words and keeps every parameter'),
+                'Shorten: paste English LaTeX; removes only 5 to 15 words and keeps every parameter (adds a Chinese translation and change log)'),
         ('3.2', '扩写：贴英文 LaTeX，只加 5 到 15 个词，把隐含的因果写明',
-                'Expand: paste English LaTeX; adds only 5 to 15 words that spell out implied reasoning'),
+                'Expand: paste English LaTeX; adds only 5 to 15 words that spell out implied reasoning (adds a Chinese translation and change log)'),
         ('3.3', '逻辑检查：贴英文 LaTeX，只报致命问题；没问题就回“检测通过”',
                 'Logic check: paste English LaTeX; reports only serious problems, otherwise says it passed (replies in Chinese)'),
     ]),
@@ -60,10 +60,10 @@ GROUPS = [
                 'Experiment analysis: paste a results table, get LaTeX analysis paragraphs plus a Chinese translation, no invented numbers'),
         ('5.2', '绘图推荐：贴数据表和想强调的结论，得到 1 到 2 种推荐图表和画法规范',
                 'Figure choice: paste the data and the point to make, get 1 or 2 chart types with drawing guidelines (replies in Chinese)'),
-        ('5.3', '图标题：写一句中文图片描述，得到规范的英文图标题',
-                'Figure caption: write a Chinese description, get an English caption'),
-        ('5.4', '表标题：写一句中文表格描述，得到规范的英文表标题',
-                'Table caption: write a Chinese description, get an English caption'),
+        ('5.3', '图标题：写一句中文图片描述，得到规范的英文图标题（按 LaTeX 转义 % _ &，用 Word 的删掉 prompt 里转义那一行）',
+                'Figure caption: write a Chinese description, get an English caption (LaTeX-escaped; for Word, delete the escaping line)'),
+        ('5.4', '表标题：写一句中文表格描述，得到规范的英文表标题（按 LaTeX 转义 % _ &，用 Word 的删掉 prompt 里转义那一行）',
+                'Table caption: write a Chinese description, get an English caption (LaTeX-escaped; for Word, delete the escaping line)'),
         ('5.5', '架构图：贴摘要和方法，得到一张方法架构图（要用能生成图片的模型）',
                 'Architecture diagram: paste the abstract and method, get a diagram (needs an image-generating model)'),
     ]),
@@ -77,14 +77,17 @@ GROUPS = [
 
 
 def primary_prompts(catalog_text):
-    """Return {scenario id: text of the first code block under its primary candidate}."""
+    """Return {scenario id: [every code block under its primary candidate]}.
+
+    Some primaries (4.1, 4.3-4.6) are several one-line prompts to pick from.
+    """
     found = {}
     for block in re.split(r'^## (?=\d+\.\d+)', catalog_text, flags=re.M)[1:]:
         sid = block.split()[0]
         primary = re.split(r'^### (?:替代候选|Alternative Candidate)', block, flags=re.M)[0]
-        code = re.search(r'^```[^\n]*\n(.*?)^```', primary, flags=re.S | re.M)
-        assert code, f'no prompt block under the primary candidate of {sid}'
-        found[sid] = code.group(1).rstrip('\n')
+        codes = re.findall(r'^```[^\n]*\n(.*?)^```', primary, flags=re.S | re.M)
+        assert codes, f'no prompt block under the primary candidate of {sid}'
+        found[sid] = [c.rstrip('\n') for c in codes]
     return found
 
 
@@ -95,13 +98,10 @@ def render(prompts, zh):
         for sid, zh_sum, en_sum in items:
             out += ['<details>',
                     f'<summary><b>{sid}</b> {zh_sum if zh else en_sum}</summary>',
-                    '',
-                    '```text',
-                    prompts[sid],
-                    '```',
-                    '',
-                    '</details>',
                     '']
+            for prompt in prompts[sid]:
+                out += ['```text', prompt, '```', '']
+            out += ['</details>', '']
     return '\n'.join(out)
 
 

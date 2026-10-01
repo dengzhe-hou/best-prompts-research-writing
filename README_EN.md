@@ -4,15 +4,15 @@
 
 <p align="center"><a href="README.md">中文</a> | 🇺🇸 English</p>
 
-Ready-made prompts for 24 common paper-writing tasks: translation, polishing, removing an AI tone, shortening and expanding, abstracts and conclusions, figure and table captions, reviewing and responding to reviewers. Open one, copy it, paste it into ChatGPT, Claude, Kimi or any other model.
+Ready-made prompts for 24 common paper-writing tasks. The recommended prompt for each task is below; an alternative for each is in the full catalog (48 in total). They cover translation, polishing, removing an AI tone, shortening and expanding, abstracts and conclusions, figure and table captions, reviewing and responding to reviewers. Open one, copy it, paste it into ChatGPT, Claude, Kimi or any other model.
 
-Most prompt texts are written in Chinese. Models follow them fine; if you want the answer in English, add "Reply in English" at the end.
+Most prompt texts are written in Chinese. Models follow them fine; if you want the answer in English, add "Reply in English" at the end. Several prompts (1.1, 2.1, 2.3, 3.1, 3.2, 5.1) also ask for a Chinese translation or change log; delete those output lines if you do not want them.
 
 ## How to use
 
 1. Find your task below and click to open it.
 2. Click the copy button in the top-right corner of the code box.
-3. Paste it into the model and replace the bracketed placeholders, such as `[在此处粘贴…]` ("paste here"), with your text.
+3. Paste it into the model and replace the bracketed input lines at the end of the prompt (under `# Input`, or the last line), such as `[在此处粘贴…]` ("paste here") or `[PARAGRAPH]`, with your text.
 
 Please read the [notes before use](#notes-before-use).
 
@@ -143,7 +143,7 @@ Please read the [notes before use](#notes-before-use).
 ### Polishing
 
 <details>
-<summary><b>2.1</b> English polish: paste English LaTeX, get the polished text, a Chinese translation and a change log</summary>
+<summary><b>2.1</b> English polish: paste English LaTeX, get the polished text plus a Chinese translation and a Chinese change log</summary>
 
 ```text
 # Role
@@ -236,7 +236,7 @@ Please read the [notes before use](#notes-before-use).
 </details>
 
 <details>
-<summary><b>2.3</b> De-AI English: paste English LaTeX; replaces words like delve and leverage, leaves natural text alone</summary>
+<summary><b>2.3</b> De-AI English: paste English LaTeX; replaces words like delve and leverage, leaves natural text alone (adds a Chinese translation and change log)</summary>
 
 ```text
 # Role
@@ -347,7 +347,7 @@ Underscore, Unveil, Vibrant
 ### Shorten, expand, check logic
 
 <details>
-<summary><b>3.1</b> Shorten: paste English LaTeX; removes only 5 to 15 words and keeps every parameter</summary>
+<summary><b>3.1</b> Shorten: paste English LaTeX; removes only 5 to 15 words and keeps every parameter (adds a Chinese translation and change log)</summary>
 
 ```text
 # Role
@@ -391,7 +391,7 @@ Underscore, Unveil, Vibrant
 </details>
 
 <details>
-<summary><b>3.2</b> Expand: paste English LaTeX; adds only 5 to 15 words that spell out implied reasoning</summary>
+<summary><b>3.2</b> Expand: paste English LaTeX; adds only 5 to 15 words that spell out implied reasoning (adds a Chinese translation and change log)</summary>
 
 ```text
 # Role
@@ -475,6 +475,18 @@ Underscore, Unveil, Vibrant
 Find a research topic for a PhD in the area of [TOPIC]
 ```
 
+```text
+Identify gaps in the literature on [TOPIC SENTENCE]
+```
+
+```text
+Generate 10 academic research questions about [PARAGRAPHS]
+```
+
+```text
+Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
+```
+
 </details>
 
 <details>
@@ -493,6 +505,14 @@ Generate an abstract for a scientific paper based on this information for: [PARA
 Conduct a literature review on [TOPIC SENTENCE] and provide review paper references
 ```
 
+```text
+Summarize the scholarly literature, including in text citations on [PARAGRAPHS]
+```
+
+```text
+Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]
+```
+
 </details>
 
 <details>
@@ -500,6 +520,14 @@ Conduct a literature review on [TOPIC SENTENCE] and provide review paper referen
 
 ```text
 Create objectives and methodology for [TOPIC SENTENCE]
+```
+
+```text
+Write a detailed methodology for the topic: [TOPIC SENTENCE]
+```
+
+```text
+Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 ```
 
 </details>
@@ -511,6 +539,10 @@ Create objectives and methodology for [TOPIC SENTENCE]
 Write a result section for the following paragraphs. Please write this in the third person. [PARAGRAPHS]
 ```
 
+```text
+Discuss these results: [RESULT PARAGRAPHS]
+```
+
 </details>
 
 <details>
@@ -518,6 +550,10 @@ Write a result section for the following paragraphs. Please write this in the th
 
 ```text
 Generate a conclusion for this: [PARAGRAPHS]
+```
+
+```text
+Give recommendations and conclusion for: [PARAGRAPHS]
 ```
 
 </details>
@@ -645,7 +681,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 </details>
 
 <details>
-<summary><b>5.3</b> Figure caption: write a Chinese description, get an English caption</summary>
+<summary><b>5.3</b> Figure caption: write a Chinese description, get an English caption (LaTeX-escaped; for Word, delete the escaping line)</summary>
 
 ```text
 # Role
@@ -676,7 +712,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 </details>
 
 <details>
-<summary><b>5.4</b> Table caption: write a Chinese description, get an English caption</summary>
+<summary><b>5.4</b> Table caption: write a Chinese description, get an English caption (LaTeX-escaped; for Word, delete the escaping line)</summary>
 
 ```text
 # Role
@@ -861,21 +897,21 @@ Each scenario also has an alternative candidate (shorter, or a different approac
 
 ## Using Claude Code, Codex or Cursor? Install a skill
 
-For single-step tasks the prompts above are enough. For multi-step work such as a literature review, finding research gaps or writing a rebuttal, install a skill once and call it whenever you need it. For example, to install `rebuttal`:
+For single-step tasks the prompts above are enough. For multi-step work such as a literature review, finding research gaps or writing a rebuttal, install a skill once and call it whenever you need it. For example, to install `research-gap`:
 
 ```bash
 git clone https://github.com/dengzhe-hou/best-prompts-research-writing.git
 mkdir -p ~/.claude/skills
-cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
+cp -R best-prompts-research-writing/skills/research-gap ~/.claude/skills/
 ```
 
-Then type `/rebuttal` in Claude Code.
+Then type `/research-gap` in Claude Code and paste your papers.
 
 | Skill | What it does |
 |---|---|
 | `research-lit` | Searches the literature and builds a comparison table |
 | `research-gap` | Finds methodological, theoretical, empirical and application gaps in a set of papers |
-| `idea-discovery` | Generates, novelty-checks and reviews research ideas from a broad direction |
+| `idea-discovery` | Generates, novelty-checks and reviews research ideas from a broad direction (calls sub-skills not included here) |
 | `paper-review` | Reviews a paper draft or research idea the way a reviewer would |
 | `rebuttal` | Breaks down reviewer comments and drafts a reply within the character limit, without making promises for you |
 | `humanizer` | Removes signs of AI writing from English text |
