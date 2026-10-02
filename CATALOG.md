@@ -1456,7 +1456,7 @@ Use only the revisions I listed. If a change or location is missing, write [TODO
 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
 | [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
 
-上游项目的许可和使用条款各不相同，转载、修改或再发布前请查看对应仓库。本仓库不替第三方内容重新授权。Skill 的来源和许可见 [Skill 目录](SKILLS.md)。
+上游项目的许可和使用条款各不相同，转载、修改或再发布前请查看对应仓库。本仓库不替第三方内容重新授权。
 
 # 维护与贡献
 

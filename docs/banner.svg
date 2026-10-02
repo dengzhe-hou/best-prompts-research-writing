@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img" aria-label="Research Writing Prompts: copy-ready prompts and agent skills for research writing">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img" aria-label="Research Writing Prompts: copy-ready prompts for research writing">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#F5F3FF"/>
@@ -27,7 +27,7 @@
   <text x="72" y="160" class="zh" font-size="54" font-weight="700" fill="#1E1B4B">科研写作 Prompt 合集</text>
   <rect x="72" y="182" width="120" height="6" rx="3" fill="url(#accent)"/>
   <text x="72" y="236" class="zh" font-size="26" fill="#334155">复制一条，粘贴到任何大模型，就能用</text>
-  <text x="72" y="276" class="en" font-size="19" fill="#64748B">Copy-ready prompts and agent skills for writing papers</text>
+  <text x="72" y="276" class="en" font-size="19" fill="#64748B">Copy-ready prompts for writing papers</text>
 
   <!-- stats -->
   <g class="zh">
@@ -37,9 +37,6 @@
     <rect x="236" y="306" width="150" height="62" rx="14" fill="#FFFFFF" stroke="#E0E7FF"/>
     <text x="311" y="336" text-anchor="middle" font-size="26" font-weight="700" fill="#4F46E5" class="en">22</text>
     <text x="311" y="358" text-anchor="middle" font-size="15" fill="#475569">个写作场景</text>
-    <rect x="400" y="306" width="150" height="62" rx="14" fill="#FFFFFF" stroke="#E0E7FF"/>
-    <text x="475" y="336" text-anchor="middle" font-size="26" font-weight="700" fill="#0891B2" class="en">8</text>
-    <text x="475" y="358" text-anchor="middle" font-size="15" fill="#475569">个 Agent Skill</text>
   </g>
   <text x="72" y="404" class="zh" font-size="15" fill="#64748B">翻译 · 润色 · 去 AI 味 · 缩写扩写 · 摘要到结论 · 图表标题 · 审稿与回复</text>
 

@@ -816,9 +816,14 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 - 模型可能编数据和文献，输出里的数字和引用要逐条核对。
 - 不少 prompt 的人设是计算机领域的审稿人或编辑，其他领域请把开头的 Role 改成自己的领域。1.1 要求全文用一般现在时，心理学、神经科学论文通常要改掉这一条。
 
-## Skill
+## 用 Claude Code、Codex 或 Cursor？
 
-用 Claude Code、Codex 或 Cursor 的，还可以装 8 个 skill，做文献综述、找研究空白、审稿回复这类多步任务。装法和说明见 [Skill 目录](SKILLS.md)。
+文献综述、写整篇论文、审稿回复这类多步任务，推荐直接装这些项目的 skill：
+
+- [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)：从找想法、查文献到写论文、审稿回复的一整套 skill，偏机器学习方向
+- [humanizer](https://github.com/blader/humanizer)：去掉英文文本里的 AI 痕迹
+- [humanizer-zh-academic](https://github.com/redbaronyyyyy-eng/humanizer-zh-academic)：中文学术写作去 AI 味
+- [academic-research-skills](https://github.com/Imbad0202/academic-research-skills)：研究、写作、审稿、修订、定稿全流程（CC BY-NC 4.0，仅限非商业使用）
 
 ## 来源
 
