@@ -277,7 +277,7 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（prompt 本体保留原文；附带词表移为可选参考）
 
 ```
 # Role
@@ -322,6 +322,14 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 
 # Input
 [在此处粘贴你的英文 LaTeX 代码]
+```
+
+💡 **亮点**：自审协议、修改阈值（"宁缺毋滥"）、拟人度检查。上游参考词表另存为可选参考。
+
+<details>
+<summary>可选参考词表</summary>
+
+以下为上游附带参考词表。词语需结合语境判断，不作机械替换依据。
 
 此处我们给出一些"ai味"较浓的单词，当出现下述单词时可考虑替换（仅供参考）：
 
@@ -333,9 +341,8 @@ Integrate, Interpolate, Intricate, Lasting, Leverage, Manifest, Mediate, Nurture
 Opt, Originates, Perceive, Perpetuate, Permeate, Pivotal, Ponder, Prescribe, Prevailing, Profound, Recapitulate,
 Reconcile, Rectify, Rekindle, Reimagine, Scrutinize, Substantiate, Tailor, Testament, Transcend, Traverse,
 Underscore, Unveil, Vibrant
-```
 
-💡 **亮点**：76 个 AI 高频词清单（独立参考资源）、自审协议、修改阈值（"宁缺毋滥"）、拟人度检查。
+</details>
 
 ### 替代候选
 
@@ -1304,9 +1311,11 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 3. 写作质量（1-10分）
 4. 理论扎实度（1-10分）
 5. 总体评分（1-10分）
-6. 主要优点（3条）
-7. 主要缺点（3条）
-8. 修改建议（3条具体可操作的建议）
+6. 主要优点（最多3条）
+7. 主要缺点（最多3条）
+8. 修改建议（最多3条具体可操作的建议）
+
+请按实际情况列出，不凑数；未发现问题时明确说明。
 
 论文：
 [在此处粘贴论文全文，或上传 PDF]

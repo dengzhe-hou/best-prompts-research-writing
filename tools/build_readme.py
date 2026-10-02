@@ -97,6 +97,12 @@ def render(prompts, zh):
                     '']
             for prompt in prompts[sid]:
                 out += ['```text', prompt, '```', '']
+            if sid == '2.3':
+                label, target = (
+                    ('可选参考词表', 'CATALOG.md#23-去-ai-味英文-de-ai-english') if zh else
+                    ('Optional word-list reference', 'CATALOG_EN.md#23-de-ai-english')
+                )
+                out += [f'[{label}]({target})', '']
             out += ['</details>', '']
     return '\n'.join(out)
 

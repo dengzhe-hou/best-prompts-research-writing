@@ -279,7 +279,7 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 
 ### Primary Candidate
 
-> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) (verbatim)
+> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) (prompt text retained verbatim; the accompanying word list was moved to optional reference)
 
 ```
 # Role
@@ -324,8 +324,16 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 
 # Input
 [在此处粘贴你的英文 LaTeX 代码]
+```
 
-此处我们给出一些"ai味"较浓的单词，当出现下述单词时可考虑替换（仅供参考）：
+💡 **Highlights**: Self-review protocol, modification threshold ("better to leave it than to change it"), human-likeness check. The upstream word list is kept separately as an optional reference.
+
+<details>
+<summary>Optional reference word list</summary>
+
+This is the upstream reference word list. Judge words in context; do not use it as a basis for mechanical replacement.
+
+The upstream repository lists the following words as potentially "AI-flavored" and worth considering for replacement (for reference only):
 
 Accentuate, Ador, Amass, Ameliorate, Amplify, Alleviate, Ascertain, Advocate, Articulate, Bear, Bolster,
 Bustling, Cherish, Conceptualize, Conjecture, Consolidate, Convey, Culminate, Decipher, Demonstrate,
@@ -335,9 +343,8 @@ Integrate, Interpolate, Intricate, Lasting, Leverage, Manifest, Mediate, Nurture
 Opt, Originates, Perceive, Perpetuate, Permeate, Pivotal, Ponder, Prescribe, Prevailing, Profound, Recapitulate,
 Reconcile, Rectify, Rekindle, Reimagine, Scrutinize, Substantiate, Tailor, Testament, Transcend, Traverse,
 Underscore, Unveil, Vibrant
-```
 
-💡 **Highlights**: a list of 76 AI-flavored words (standalone reference resource), self-review protocol, modification threshold ("better to leave it than to change it"), human-likeness check.
+</details>
 
 ### Alternative Candidate
 
@@ -1306,9 +1313,11 @@ See also: [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4
 3. 写作质量（1-10分）
 4. 理论扎实度（1-10分）
 5. 总体评分（1-10分）
-6. 主要优点（3条）
-7. 主要缺点（3条）
-8. 修改建议（3条具体可操作的建议）
+6. 主要优点（最多3条）
+7. 主要缺点（最多3条）
+8. 修改建议（最多3条具体可操作的建议）
+
+请按实际情况列出，不凑数；未发现问题时明确说明。
 
 论文：
 [在此处粘贴论文全文，或上传 PDF]
