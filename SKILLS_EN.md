@@ -1,4 +1,4 @@
-[Project home](README_EN.md) | [中文 Skill 目录](SKILLS.md) | 🇺🇸 English skill catalog
+[Project home](README_EN.md) | [中文 Skill 目录](SKILLS.md) | English skill catalog
 
 ---
 

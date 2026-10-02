@@ -1,18 +1,10 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="科研写作 Prompt 合集：48 条 prompt，24 个写作场景，8 个 agent skill" width="100%">
+  <img src="docs/banner.svg" alt="科研写作 Prompt 合集" width="100%">
 </p>
 
-<p align="center">🇨🇳 中文 | <a href="README_EN.md">English</a></p>
+<p align="center">中文 | <a href="README_EN.md">English</a></p>
 
-写论文常见的 24 类任务，每类的首选 prompt 都放在下面，另一条替代写法在完整目录里（合计 48 条）。覆盖翻译、润色、去 AI 味、缩写扩写、写摘要和结论、图表标题、审稿和回复审稿人。点开、复制、粘贴到 ChatGPT、Claude、Kimi 等任意大模型就能用。
-
-## 怎么用
-
-1. 在下面找到你的任务，点开。
-2. 点代码框右上角的复制按钮。
-3. 粘贴给大模型，把 `[在此处粘贴…]` 这类方括号换成你的内容。
-
-用之前请看一眼[注意事项](#用之前看一眼)。
+写论文常用的 24 类任务，每类的首选 prompt 都在下面。点开、复制、粘贴到任意大模型，把方括号里的内容换成你的就能用。
 
 ## Prompt
 
@@ -891,56 +883,17 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 </details>
 <!-- prompts:end -->
 
-每个场景另有一条替代候选（更短，或换一种做法），以及来源和适用情况说明，都在[完整目录](CATALOG.md)里。
-
-## 在 Claude Code、Codex 或 Cursor 里？装 Skill
-
-单步任务用上面的 prompt 就够。文献综述、找研究空白、审稿回复这类多步流程，可以装 skill，装一次就能反复调用。例如安装 `research-gap`：
-
-```bash
-git clone https://github.com/dengzhe-hou/best-prompts-research-writing.git
-mkdir -p ~/.claude/skills
-cp -R best-prompts-research-writing/skills/research-gap ~/.claude/skills/
-```
-
-装好后在 Claude Code 里输入 `/research-gap`，再贴上你的文献。
-
-| Skill | 做什么 |
-|---|---|
-| `research-lit` | 检索文献，整理成对比表 |
-| `research-gap` | 从文献里找方法、理论、实证、应用四类研究空白 |
-| `idea-discovery` | 从一个方向出发，生成、查新、评审研究想法（会调用本仓库没有的子 skill） |
-| `paper-review` | 按审稿人标准审论文稿或研究想法 |
-| `rebuttal` | 拆解审稿意见，在字数上限内起草回复，不替你做承诺 |
-| `humanizer` | 去掉英文文本里的 AI 痕迹 |
-| `humanizer-zh-academic` | 去掉中文学术文本里的 AI 腔 |
-| `paper-writing` | 论文写作流程提纲（要配合上游原版的子 skill） |
-
-这些 skill 大多是上游项目的精简版。各自删了什么、Codex 和 Cursor 的装法、与 ARIS 原版重名时怎么办，见 [Skill 目录](SKILLS.md)。
+每类另有一条替代写法（合计 48 条）和来源说明，见[完整目录](CATALOG.md)。
 
 ## 用之前看一眼
 
-- 不少 prompt 的人设是计算机顶会审稿人或《计算机学报》编辑。其他领域请把开头的 Role 改成你的领域和期刊。
-- 1.1 中译英规定“统一使用一般现在时”，这是机器学习论文的习惯。心理学、神经科学等领域的方法和结果通常用过去时，用之前改掉这一条。
-- 模型可能编数据、编文献。输出里的数字和引用要对照原文逐条核对。
-- prompt 正文大多是中文，有几条会用中文回答。想要纯英文输出，在末尾加一句“请用英文回答”。
+- 模型可能编数据和文献，输出里的数字和引用要逐条核对。
+- 不少 prompt 的人设是计算机领域的审稿人或编辑，其他领域请把开头的 Role 改成自己的领域。1.1 要求全文用一般现在时，心理学、神经科学论文通常要改掉这一条。
 
-## 来源与许可
+## Skill
 
-48 条 prompt 中，40 条整理或改编自以下公开项目，1 条是上游仓库的简介（5.2 替代候选，不是可直接粘贴的 prompt），7 条为本仓库编写。每条都在[完整目录](CATALOG.md)里注明是原文、改编还是本仓库编写。
+用 Claude Code、Codex 或 Cursor 的，还可以装 8 个 skill，做文献综述、找研究空白、审稿回复这类多步任务。装法和说明见 [Skill 目录](SKILLS.md)。
 
-| 来源 | 条数 | 上游许可 |
-|---|---|---|
-| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 16 | 仓库未声明 |
-| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 10 | 仓库未声明 |
-| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 13 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE)，Copyright (c) 2026 research-writing-skill contributors |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
-| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
+## 来源
 
-上游项目的许可和使用条款各不相同，转载、修改或再发布前请查看对应仓库。本仓库不替第三方内容重新授权。候选顺序是维护者的编辑判断，不是模型测试结果。Skill 的来源和许可见 [Skill 目录](SKILLS.md)。
-
-## 贡献
-
-欢迎补充新场景、替换现有候选或推荐新的 skill。提交 PR 时请附上原文、来源与使用条款，以及至少一组能看出差别的输入输出示例，格式见 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)。改了 `CATALOG.md` 里的首选 prompt 后，运行 `python tools/build_readme.py` 同步本页。
-
-最后审阅：2026-10-01
+大部分 prompt 整理或改编自 Leey21、ahmetbersoz、alfonso0512 等公开项目，7 条为本仓库编写。每条的出处和上游许可见[完整目录](CATALOG.md#来源与许可)。欢迎提 PR，格式见 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)。

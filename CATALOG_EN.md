@@ -1,4 +1,4 @@
-[Project home](README_EN.md) | [中文目录](CATALOG.md) | 🇺🇸 English catalog
+[Project home](README_EN.md) | [中文目录](CATALOG.md) | English catalog
 
 ---
 
@@ -1552,10 +1552,24 @@ Use only the revisions I listed. If a change or location is missing, write [TODO
 
 ---
 
+# Sources and Licenses
+
+Of the 48 candidates, 40 are taken or adapted from the projects below, 1 is a description of an upstream repository (the 5.2 alternative, not a paste-ready prompt), and 7 were written for this catalog. Each candidate's source line says whether it is verbatim, adapted, or written here.
+
+| Source | Entries | Upstream license |
+|---|---|---|
+| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 16 | None stated |
+| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 10 | None stated |
+| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 13 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE), Copyright (c) 2026 research-writing-skill contributors |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
+| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
+
+Upstream licenses and terms differ; check the linked repository before redistributing, modifying or republishing its material. This repository does not relicense third-party content. Skill sources and licenses are in the [skill catalog](SKILLS_EN.md).
+
 # Maintenance and Contributions
 
 Candidate order uses editorial judgment rather than weighted scores or community vote counts. Decisions should be grounded in the scenario, prompt text, and observable output differences.
 
-See the [project home](README_EN.md) for sources, usage boundaries, and contribution guidance.
+See the [PR template](.github/PULL_REQUEST_TEMPLATE.md) for contributions. After changing a primary prompt, run `python tools/build_readme.py` to update the READMEs.
 
-Last reviewed: 2026-09-30
+Last reviewed: 2026-10-03

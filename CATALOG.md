@@ -1,4 +1,4 @@
-[项目首页](README.md) | 🇨🇳 中文目录 | [English catalog](CATALOG_EN.md)
+[项目首页](README.md) | 中文目录 | [English catalog](CATALOG_EN.md)
 
 ---
 
@@ -1550,10 +1550,24 @@ Use only the revisions I listed. If a change or location is missing, write [TODO
 
 ---
 
+# 来源与许可
+
+48 条候选中，40 条整理或改编自以下公开项目，1 条是上游仓库的简介（5.2 替代候选，不是可直接粘贴的 prompt），7 条为本仓库编写。每条候选的来源行注明是原文、改编还是本仓库编写。
+
+| 来源 | 条数 | 上游许可 |
+|---|---|---|
+| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 16 | 仓库未声明 |
+| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 10 | 仓库未声明 |
+| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 13 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE)，Copyright (c) 2026 research-writing-skill contributors |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
+| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
+
+上游项目的许可和使用条款各不相同，转载、修改或再发布前请查看对应仓库。本仓库不替第三方内容重新授权。Skill 的来源和许可见 [Skill 目录](SKILLS.md)。
+
 # 维护与贡献
 
 候选顺序采用编辑判断，不使用加权评分或社区票数。选择理由以具体场景、Prompt 内容和可观察的输出差异为准。
 
-来源、使用边界和贡献方式见 [项目首页](README.md)。
+贡献格式见 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)。改了首选 prompt 后，运行 `python tools/build_readme.py`，把改动同步到 README。
 
-最后审阅：2026-09-30
+最后审阅：2026-10-03

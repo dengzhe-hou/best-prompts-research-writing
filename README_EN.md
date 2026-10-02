@@ -1,20 +1,12 @@
 <p align="center">
-  <img src="docs/banner_en.svg" alt="Prompts for Papers: 48 prompts, 24 writing scenarios, 8 agent skills" width="100%">
+  <img src="docs/banner_en.svg" alt="Prompts for Papers" width="100%">
 </p>
 
-<p align="center"><a href="README.md">中文</a> | 🇺🇸 English</p>
+<p align="center"><a href="README.md">中文</a> | English</p>
 
-Ready-made prompts for 24 common paper-writing tasks. The recommended prompt for each task is below; an alternative for each is in the full catalog (48 in total). They cover translation, polishing, removing an AI tone, shortening and expanding, abstracts and conclusions, figure and table captions, reviewing and responding to reviewers. Open one, copy it, paste it into ChatGPT, Claude, Kimi or any other model.
+Ready-made prompts for 24 common paper-writing tasks. Open a task below, copy the prompt, paste it into any LLM, and replace the bracketed input with your text.
 
-Most prompt texts are written in Chinese. Models follow them fine; if you want the answer in English, add "Reply in English" at the end. Several prompts (1.1, 2.1, 2.3, 3.1, 3.2, 5.1) also ask for a Chinese translation or change log; delete those output lines if you do not want them.
-
-## How to use
-
-1. Find your task below and click to open it.
-2. Click the copy button in the top-right corner of the code box.
-3. Paste it into the model and replace the bracketed input lines at the end of the prompt (under `# Input`, or the last line), such as `[在此处粘贴…]` ("paste here") or `[PARAGRAPH]`, with your text.
-
-Please read the [notes before use](#notes-before-use).
+Most prompts are written in Chinese. Models follow them fine; add "Reply in English" at the end for English output, and delete the Chinese translation or change-log lines that some prompts (1.1, 2.1, 2.3, 3.1, 3.2, 5.1) ask for.
 
 ## Prompts
 
@@ -893,56 +885,17 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 </details>
 <!-- prompts:end -->
 
-Each scenario also has an alternative candidate (shorter, or a different approach), plus notes on sources and when to use which, in the [full catalog](CATALOG_EN.md).
+Each task also has an alternative prompt (48 in total) and source notes in the [full catalog](CATALOG_EN.md).
 
-## Using Claude Code, Codex or Cursor? Install a skill
+## Before you use them
 
-For single-step tasks the prompts above are enough. For multi-step work such as a literature review, finding research gaps or writing a rebuttal, install a skill once and call it whenever you need it. For example, to install `research-gap`:
+- Models can invent numbers and references. Check every number and citation in the output.
+- Many prompts cast the model as a computer-science reviewer or editor; for other fields, change the opening Role. 1.1 also requires the present tense throughout, which psychology and neuroscience papers usually do not follow.
 
-```bash
-git clone https://github.com/dengzhe-hou/best-prompts-research-writing.git
-mkdir -p ~/.claude/skills
-cp -R best-prompts-research-writing/skills/research-gap ~/.claude/skills/
-```
+## Skills
 
-Then type `/research-gap` in Claude Code and paste your papers.
+If you use Claude Code, Codex or Cursor, 8 installable skills cover multi-step work such as literature reviews, research gaps and rebuttals. See the [skill catalog](SKILLS_EN.md).
 
-| Skill | What it does |
-|---|---|
-| `research-lit` | Searches the literature and builds a comparison table |
-| `research-gap` | Finds methodological, theoretical, empirical and application gaps in a set of papers |
-| `idea-discovery` | Generates, novelty-checks and reviews research ideas from a broad direction (calls sub-skills not included here) |
-| `paper-review` | Reviews a paper draft or research idea the way a reviewer would |
-| `rebuttal` | Breaks down reviewer comments and drafts a reply within the character limit, without making promises for you |
-| `humanizer` | Removes signs of AI writing from English text |
-| `humanizer-zh-academic` | Removes AI-style phrasing from Chinese academic text |
-| `paper-writing` | Outline of a paper-writing pipeline (needs the upstream sub-skills) |
+## Sources
 
-Most of these are short versions of upstream skills. What each one removed, how to install for Codex and Cursor, and what to do if you already have the ARIS originals with the same names: see the [skill catalog](SKILLS_EN.md).
-
-## Notes before use
-
-- Many prompts cast the model as a computer-science conference reviewer or a Chinese CS journal editor. For other fields, change the opening Role to your field and venue.
-- 1.1 (Chinese → English) requires the present tense throughout, a machine-learning convention. Psychology and neuroscience papers usually report methods and results in the past tense, so change that rule first.
-- Models can invent numbers and references. Check every number and citation in the output against your sources.
-- Some prompts answer in Chinese. The [full catalog](CATALOG_EN.md) lists which ones at the top.
-
-## Sources and licenses
-
-Of the 48 prompt candidates, 40 are taken or adapted from the projects below, 1 is a description of an upstream repository (the 5.2 alternative, not a paste-ready prompt), and 7 were written for this catalog. The [full catalog](CATALOG_EN.md) marks each one as verbatim, adapted, or written here.
-
-| Source | Entries | Upstream license |
-|---|---|---|
-| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 16 | None stated |
-| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 10 | None stated |
-| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 13 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE), Copyright (c) 2026 research-writing-skill contributors |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
-| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
-
-Upstream licenses and terms differ; check the linked repository before redistributing, modifying or republishing its material. This repository does not relicense third-party content. Candidate order is an editorial judgment, not a benchmark result. Skill sources and licenses are in the [skill catalog](SKILLS_EN.md).
-
-## Contributing
-
-New scenarios, better candidates and skill suggestions are welcome. A PR should include the text, its source and usage terms, and at least one input/output example that shows the difference; see the [PR template](.github/PULL_REQUEST_TEMPLATE.md). After changing a primary prompt in `CATALOG.md`, run `python tools/build_readme.py` to update this page.
-
-Last reviewed: 2026-10-01
+Most prompts are taken or adapted from public projects such as Leey21, ahmetbersoz and alfonso0512; 7 were written for this catalog. Each entry's source and upstream license are in the [full catalog](CATALOG_EN.md#sources-and-licenses). Pull requests are welcome; see the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
