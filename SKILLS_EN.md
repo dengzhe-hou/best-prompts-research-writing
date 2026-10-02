@@ -17,17 +17,17 @@
 **Claude Code**
 
 ```bash
-git clone https://github.com/dengzhe-hou/best-prompts-research-writing.git
+git clone https://github.com/dengzhe-hou/research-writing-prompts.git
 mkdir -p ~/.claude/skills
 
 # Install all
-for d in best-prompts-research-writing/skills/*/; do cp -R "${d%/}" ~/.claude/skills/; done
+for d in research-writing-prompts/skills/*/; do cp -R "${d%/}" ~/.claude/skills/; done
 
 # Already have ARIS: install only the four with different names
-for n in research-gap paper-review humanizer humanizer-zh-academic; do cp -R best-prompts-research-writing/skills/$n ~/.claude/skills/; done
+for n in research-gap paper-review humanizer humanizer-zh-academic; do cp -R research-writing-prompts/skills/$n ~/.claude/skills/; done
 
 # Install one, e.g. rebuttal
-cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
+cp -R research-writing-prompts/skills/rebuttal ~/.claude/skills/
 ```
 
 **Codex**: replace `~/.claude/skills` above with `~/.codex/skills`.

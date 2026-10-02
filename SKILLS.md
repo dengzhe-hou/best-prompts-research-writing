@@ -17,17 +17,17 @@
 **Claude Code**
 
 ```bash
-git clone https://github.com/dengzhe-hou/best-prompts-research-writing.git
+git clone https://github.com/dengzhe-hou/research-writing-prompts.git
 mkdir -p ~/.claude/skills
 
 # 全部安装
-for d in best-prompts-research-writing/skills/*/; do cp -R "${d%/}" ~/.claude/skills/; done
+for d in research-writing-prompts/skills/*/; do cp -R "${d%/}" ~/.claude/skills/; done
 
 # 已装 ARIS 原版的：只装不同名的 4 个
-for n in research-gap paper-review humanizer humanizer-zh-academic; do cp -R best-prompts-research-writing/skills/$n ~/.claude/skills/; done
+for n in research-gap paper-review humanizer humanizer-zh-academic; do cp -R research-writing-prompts/skills/$n ~/.claude/skills/; done
 
 # 只装一个，例如 rebuttal
-cp -R best-prompts-research-writing/skills/rebuttal ~/.claude/skills/
+cp -R research-writing-prompts/skills/rebuttal ~/.claude/skills/
 ```
 
 **Codex**：把上面的 `~/.claude/skills` 换成 `~/.codex/skills`。
