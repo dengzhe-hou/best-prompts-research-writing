@@ -809,7 +809,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 </details>
 <!-- prompts:end -->
 
-每类另有一条替代写法（合计 44 条）和来源说明，见[完整目录](CATALOG.md)。
+多数场景另有一条替代写法，合计 41 条 prompt；完整内容和来源说明见[完整目录](CATALOG.md)。
 
 ## 用之前看一眼
 

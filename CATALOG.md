@@ -4,7 +4,7 @@
 
 # Research Writing Prompt Catalog
 
-> 22 个科研写作场景，每个场景提供一个首选候选和一个替代候选，来源可追溯，复制即用。
+> 22 个科研写作场景，共 41 条 prompt 候选。每个场景提供一个首选候选，多数场景另有一条替代候选，来源可追溯，复制即用。
 
 > 候选顺序是编辑判断，不是基准测试排名。请根据自己的模型、材料和期刊要求检查输出。
 
@@ -1089,18 +1089,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 💡 **亮点**：19 种图表库完整收录、场景→图表映射、尺度适应性建议、视觉设计规范。
 
-### 替代候选
-
-> 来源：[ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers)（仓库内容简介，未收录其原文）
-
-该 repo 以**可直接运行的 Python 绘图脚本**为主（另有 prompt 模板和绘图 skill，本目录未收录），包含：
-- 分组柱状图（SOTA 对比）
-- 雷达图（多维评估）
-- 折线图（训练曲线）
-- 热力图（矩阵可视化）
-- 3D 球体图
-
-💡 **亮点**：以可运行代码为主，适合需要快速出图的场景。可配合首选候选的 prompt 使用。
+另见：[ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers)，以可直接运行的 Python 绘图脚本为主，另有 prompt 模板和绘图 skill（本目录未收录，不计入 prompt 候选；上游许可：[CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE)）。
 
 ---
 
@@ -1138,25 +1127,6 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 💡 **亮点**：Title Case/Sentence case 规则、去除冗余开头、去 AI 味。
 
-### 替代候选
-
-> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「图片标题说明」
-
-```
-# Role
-你是一位经验丰富的学术编辑，擅长撰写标准、规范的论文图片标题。
-
-# Task
-请将用户提供的{{中文图片描述}}转换为专业、简洁、规范的英文图片标题。
-
-# Constraints
-1. 格式规范：名词性结构用 Title Case，完整句子用 Sentence case
-2. 写作技巧：简洁原则，去除冗余开头，去 AI 味
-3. 输出格式：只输出最终的英文标题文本
-```
-
-💡 **亮点**：简洁版，适合快速生成场景。
-
 ---
 
 ## 5.4 表标题 (Table Caption)
@@ -1192,25 +1162,6 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ```
 
 💡 **亮点**：表格专用词汇（避免 showcase、depict，改用 show、compare、present）、标准学术表达推荐。
-
-### 替代候选
-
-> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「表格标题说明」
-
-```
-# Role
-你是一位经验丰富的学术编辑，擅长撰写标准、规范的论文表格标题。
-
-# Task
-请将用户提供的【中文表格描述】转换为专业、简洁、规范的【英文表格标题】。
-
-# Constraints
-1. 格式规范：名词性结构用 Title Case，完整句子用 Sentence case
-2. 写作技巧：使用 Comparison with, Ablation study on, Results on 等标准表达
-3. 输出格式：只输出最终的英文标题文本
-```
-
-💡 **亮点**：表格专用表达推荐、与图标题 prompt 配套使用。
 
 ---
 
@@ -1446,15 +1397,14 @@ Use only the revisions I listed. If a change or location is missing, write [TODO
 
 # 来源与许可
 
-44 条候选中，36 条整理或改编自以下公开项目，1 条是上游仓库的简介（5.2 替代候选，不是可直接粘贴的 prompt），7 条为本仓库编写。每条候选的来源行注明是原文、改编还是本仓库编写。
+41 条候选中，34 条整理或改编自以下公开项目，7 条为本仓库编写。每条候选的来源行注明是原文、改编还是本仓库编写。figures4papers 仅作为 5.2 的另见资源，不计入候选。
 
 | 来源 | 条数 | 上游许可 |
 |---|---|---|
 | [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 15 | 仓库未声明 |
 | [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 10 | 仓库未声明 |
-| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 10 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE)，Copyright (c) 2026 research-writing-skill contributors |
+| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 8 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE)，Copyright (c) 2026 research-writing-skill contributors |
 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
-| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
 
 上游项目的许可和使用条款各不相同，转载、修改或再发布前请查看对应仓库。本仓库不替第三方内容重新授权。
 
