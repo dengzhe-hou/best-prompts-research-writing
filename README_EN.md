@@ -4,7 +4,7 @@
 
 <p align="center"><a href="README.md">中文</a> | English</p>
 
-Ready-made prompts for 24 common paper-writing tasks. Open a task below, copy the prompt, paste it into any LLM, and replace the bracketed input with your text.
+Ready-made prompts for 22 common paper-writing tasks. Open a task below, copy the prompt, paste it into any LLM, and replace the bracketed input with your text.
 
 Most prompts are written in Chinese. Models follow them fine; add "Reply in English" at the end for English output, and delete the Chinese translation or change-log lines that some prompts (1.1, 2.1, 2.3, 3.1, 3.2, 5.1) ask for.
 
@@ -58,80 +58,6 @@ Most prompts are written in Chinese. Models follow them fine; add "Reply in Engl
 
 </details>
 
-<details>
-<summary><b>1.2</b> English → Chinese: paste English LaTeX, get a literal Chinese reading translation (citations and formula syntax removed)</summary>
-
-```text
-# Role
-你是一位资深的计算机科学领域的学术翻译官。你的任务是帮助科研人员快速理解复杂的英文论文段落。
-
-# Task
-请将我提供的【英文 LaTeX 代码片段】翻译为流畅、易读的【中文文本】。
-
-# Constraints
-1. 语法清洗：
-   - 忽略引用与标签：直接删除所有 \cite{...}、\ref{...}、\label{...} 等干扰阅读的索引命令，不要保留，也不要翻译。
-   - 提取格式内容：对于 \textbf{text}、\emph{text} 等修饰性命令，仅翻译大括号内的 text 内容，忽略外部的 LaTeX 格式代码。
-   - 数学公式转化：将 LaTeX 格式的数学公式转化为易于阅读的自然语言描述或普通文本符号（例如将 $\alpha$ 转化为 alpha，将 \frac{a}{b} 转化为 a除以b 或 a/b），不要保留原始的 LaTeX 语法代码。
-
-2. 翻译原则：
-   - 严格对应原文：请进行直译，不要进行任何润色、重写或逻辑优化。
-   - 保持句式结构：中文的语序应尽量与英文原句保持一致，以便我能快速对应回原来的英文表达。
-   - 不要为了通顺而随意增减词汇，如果原文有语法错误或表达生硬，请在翻译中如实反映，不要自动纠正。
-
-3. 输出格式：
-   - 只输出翻译后的纯中文文本段落。
-   - 不要包含任何 LaTeX 代码（包括数学公式的语法符号）。
-
-# Input
-[在此处粘贴你的英文 LaTeX 代码]
-```
-
-</details>
-
-<details>
-<summary><b>1.3</b> Chinese rewrite: paste rough notes, get a formal paragraph for Word plus how it was restructured</summary>
-
-```text
-# Role
-你是一位资深的中文学术期刊（如《计算机学报》、《软件学报》）编辑，同时也是顶尖会议的中文审稿人。你拥有极高的文字驾驭能力，擅长将碎片化、口语化的表达重构为逻辑严密、用词考究的学术文本。
-
-# Task
-请阅读我提供的【中文草稿】（可能包含口语、零散的要点或逻辑跳跃），将其重写为一段逻辑连贯、符合中文学术规范的【论文正文段落】。
-
-# Constraints
-1. 格式与排版（Word 适配）：
-   - 输出纯净的文本：严禁使用 Markdown 加粗、斜体或标题符号，以便我直接复制粘贴到 Word 中。
-   - 标点规范：严格使用中文全角标点符号（，。；：“”），数学符号或英文术语周围需保留合理的空格。
-
-2. 逻辑与结构（核心任务）：
-   - 逻辑重组：不要机械地逐句润色。先识别输入的逻辑主线，将松散的句子重新串联。必须将列表转化为连贯的段落。
-   - 核心聚焦：遵循"一个段落一个核心观点"的原则。确保段落内的所有句子都服务于同一个主题，避免多主题杂糅。
-   - 自然流向：根据内容属性选择逻辑顺序（如：从概括到细节、从原因到结果、或按时间演进），而非强制套用论证模板。句与句之间应通过语义自然衔接，避免跳跃。
-
-3. 语言风格：
-   - 极度正式：将口语转化为书面语（例如：将"不管是A还是B"改为"无论A抑或B"；将"效果变好了"改为"性能显著提升"）。
-   - 客观中立：使用客观陈述语气，避免主观情绪色彩。
-   - 术语规范：保留关键技术名词（如 Transformer, CNN, Few-shot），不要强行翻译业界通用的英文术语。
-
-4. 输出格式：
-   - Part 1 [Refined Text]：重写后的中文段落。
-   - Part 2 [Logic flow]：简要说明你的重构思路（例如：提取了中心句，合并了冗余描述，调整了叙述语序）。
-   - 除以上两部分外，不要输出任何多余的对话。
-
-# Execution Protocol
-在输出前，请自查：
-1. 这种表达是否像一篇高质量的中文核心期刊论文？
-2. 是否存在口语化残留？
-3. 是否存在Markdown 格式符号？
-3. 复制到 Word 里是否会有讨厌的格式符？（如有，请立即删除）
-
-# Input
-[在此处粘贴你的中文草稿、零散的想法或要点]
-```
-
-</details>
-
 ### Polishing
 
 <details>
@@ -179,7 +105,7 @@ Most prompts are written in Chinese. Models follow them fine; add "Reply in Engl
 </details>
 
 <details>
-<summary><b>2.2</b> Chinese polish: paste a Chinese paragraph; it only fixes real problems and returns good text unchanged</summary>
+<summary><b>2.2</b> Chinese polish: paste a Chinese paragraph; it only fixes real problems and returns good text unchanged (for rough notes, use the alternative in the full catalog)</summary>
 
 ```text
 # Role
@@ -885,7 +811,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 </details>
 <!-- prompts:end -->
 
-Each task also has an alternative prompt (48 in total) and source notes in the [full catalog](CATALOG_EN.md).
+Each task also has an alternative prompt (44 in total) and source notes in the [full catalog](CATALOG_EN.md).
 
 ## Before you use them
 

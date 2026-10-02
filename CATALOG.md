@@ -4,7 +4,7 @@
 
 # Research Writing Prompt Catalog
 
-> 24 个科研写作场景，每个场景提供一个首选候选和一个替代候选，来源可追溯，复制即用。
+> 22 个科研写作场景，每个场景提供一个首选候选和一个替代候选，来源可追溯，复制即用。
 
 > 候选顺序是编辑判断，不是基准测试排名。请根据自己的模型、材料和期刊要求检查输出。
 
@@ -16,7 +16,7 @@
 
 | 类别 | 场景 |
 |------|------|
-| [一、翻译类](#一翻译类-translation) | [1.1 中转英](#11-中转英-chinese--english) · [1.2 英转中](#12-英转中-english--chinese) · [1.3 中转中 Word](#13-中转中-word-版-chinese-refinement) |
+| [一、翻译类](#一翻译类-translation) | [1.1 中转英](#11-中转英-chinese--english) |
 | [二、润色类](#二润色类-polishing) | [2.1 英文润色](#21-英文润色-english-polish) · [2.2 中文润色](#22-中文润色-chinese-polish) · [2.3 去AI味英文](#23-去-ai-味英文-de-ai-english) · [2.4 去AI味中文](#24-去-ai-味中文-de-ai-chinese) |
 | [三、结构调整类](#三结构调整类-restructuring) | [3.1 缩写](#31-缩写-shorten) · [3.2 扩写](#32-扩写-expand) · [3.3 逻辑检查](#33-逻辑检查-logic-check) |
 | [四、论文 Section 生成](#四论文各-section-生成-paper-sections) | [4.1 研究选题](#41-研究选题-brainstorming) · [4.2 Abstract](#42-abstract) · [4.3 Literature Review](#43-literature-review) · [4.4 Methodology](#44-methodology) · [4.5 Results](#45-results--discussion) · [4.6 Conclusion](#46-conclusion) · [4.7 Future Works](#47-future-works) |
@@ -105,134 +105,6 @@
 ```
 
 💡 **亮点**：更简洁，适合快速翻译场景。含翻译决策说明，便于理解术语选择。
-
----
-
-## 1.2 英转中 (English → Chinese)
-
-### 首选候选
-
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
-
-```
-# Role
-你是一位资深的计算机科学领域的学术翻译官。你的任务是帮助科研人员快速理解复杂的英文论文段落。
-
-# Task
-请将我提供的【英文 LaTeX 代码片段】翻译为流畅、易读的【中文文本】。
-
-# Constraints
-1. 语法清洗：
-   - 忽略引用与标签：直接删除所有 \cite{...}、\ref{...}、\label{...} 等干扰阅读的索引命令，不要保留，也不要翻译。
-   - 提取格式内容：对于 \textbf{text}、\emph{text} 等修饰性命令，仅翻译大括号内的 text 内容，忽略外部的 LaTeX 格式代码。
-   - 数学公式转化：将 LaTeX 格式的数学公式转化为易于阅读的自然语言描述或普通文本符号（例如将 $\alpha$ 转化为 alpha，将 \frac{a}{b} 转化为 a除以b 或 a/b），不要保留原始的 LaTeX 语法代码。
-
-2. 翻译原则：
-   - 严格对应原文：请进行直译，不要进行任何润色、重写或逻辑优化。
-   - 保持句式结构：中文的语序应尽量与英文原句保持一致，以便我能快速对应回原来的英文表达。
-   - 不要为了通顺而随意增减词汇，如果原文有语法错误或表达生硬，请在翻译中如实反映，不要自动纠正。
-
-3. 输出格式：
-   - 只输出翻译后的纯中文文本段落。
-   - 不要包含任何 LaTeX 代码（包括数学公式的语法符号）。
-
-# Input
-[在此处粘贴你的英文 LaTeX 代码]
-```
-
-💡 **亮点**：反润色设计（直译不优化）、LaTeX 公式转自然语言、删除所有干扰索引命令。
-
-### 替代候选
-
-> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「英译中」
-
-```
-## 身份定位
-你是专业科学论文英译中翻译专家，隶属于学术翻译服务团队。
-
-## 规则约束
-1. 术语精准性：优先采用《科学技术名词审定委员会》公布的规范译名
-2. 逻辑完整性：完整保留原文的论证逻辑、实验数据、公式符号与引用标注
-3. 歧义处理：若原文存在歧义，需在译文后用 [注：原文歧义说明] 补充解释
-4. 保持句式结构，中文的语序应尽量与英文原句保持一致
-
-### 约束条件
-1. 禁止口语化表达
-2. 禁止过度意译
-3. 禁止遗漏关键信息
-```
-
-💡 **亮点**：术语优先用全国科学技术名词审定委员会公布的规范译名，歧义处加注。
-
----
-
-## 1.3 中转中 Word 版 (Chinese Refinement)
-
-### 首选候选
-
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
-
-```
-# Role
-你是一位资深的中文学术期刊（如《计算机学报》、《软件学报》）编辑，同时也是顶尖会议的中文审稿人。你拥有极高的文字驾驭能力，擅长将碎片化、口语化的表达重构为逻辑严密、用词考究的学术文本。
-
-# Task
-请阅读我提供的【中文草稿】（可能包含口语、零散的要点或逻辑跳跃），将其重写为一段逻辑连贯、符合中文学术规范的【论文正文段落】。
-
-# Constraints
-1. 格式与排版（Word 适配）：
-   - 输出纯净的文本：严禁使用 Markdown 加粗、斜体或标题符号，以便我直接复制粘贴到 Word 中。
-   - 标点规范：严格使用中文全角标点符号（，。；：“”），数学符号或英文术语周围需保留合理的空格。
-
-2. 逻辑与结构（核心任务）：
-   - 逻辑重组：不要机械地逐句润色。先识别输入的逻辑主线，将松散的句子重新串联。必须将列表转化为连贯的段落。
-   - 核心聚焦：遵循"一个段落一个核心观点"的原则。确保段落内的所有句子都服务于同一个主题，避免多主题杂糅。
-   - 自然流向：根据内容属性选择逻辑顺序（如：从概括到细节、从原因到结果、或按时间演进），而非强制套用论证模板。句与句之间应通过语义自然衔接，避免跳跃。
-
-3. 语言风格：
-   - 极度正式：将口语转化为书面语（例如：将"不管是A还是B"改为"无论A抑或B"；将"效果变好了"改为"性能显著提升"）。
-   - 客观中立：使用客观陈述语气，避免主观情绪色彩。
-   - 术语规范：保留关键技术名词（如 Transformer, CNN, Few-shot），不要强行翻译业界通用的英文术语。
-
-4. 输出格式：
-   - Part 1 [Refined Text]：重写后的中文段落。
-   - Part 2 [Logic flow]：简要说明你的重构思路（例如：提取了中心句，合并了冗余描述，调整了叙述语序）。
-   - 除以上两部分外，不要输出任何多余的对话。
-
-# Execution Protocol
-在输出前，请自查：
-1. 这种表达是否像一篇高质量的中文核心期刊论文？
-2. 是否存在口语化残留？
-3. 是否存在Markdown 格式符号？
-3. 复制到 Word 里是否会有讨厌的格式符？（如有，请立即删除）
-
-# Input
-[在此处粘贴你的中文草稿、零散的想法或要点]
-```
-
-💡 **亮点**：面向 Word 用户（非 LaTeX）、逻辑重组（非逐句润色）、口语→书面语转换、反 Markdown 检查。
-
-### 替代候选
-
-> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「中文润色」
-
-```
-## 角色
-你是一位专业的中文学术编辑，擅长对科学论文进行中文润色。
-
-## 润色标准：
-1. 准确性：确保专业术语使用正确
-2. 流畅性与简洁性：优化句子结构，去除冗余表述
-3. 专业性与一致性：保持术语、格式和风格的统一
-4. 逻辑性：识别并修复逻辑断层，将零散的句子整合成连贯的段落，将列表转换为流畅的叙述
-
-## 输出格式
-1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
-2. 标点符号严格使用中文全角标点
-3. 如果原文是段落形式，不要将其改写为 item 列表，必须保持原文的段落结构
-```
-
-💡 **亮点**：四项润色标准、Word 友好输出。
 
 ---
 
@@ -355,25 +227,47 @@ Paraphrase the text using more academic and scientific language. Use a neutral t
 
 ### 替代候选
 
-> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「中文润色」（与 1.3 替代候选为同一段）
+> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
 
 ```
-## 角色
-你是一位专业的中文学术编辑，擅长对科学论文进行中文润色。
+# Role
+你是一位资深的中文学术期刊（如《计算机学报》、《软件学报》）编辑，同时也是顶尖会议的中文审稿人。你拥有极高的文字驾驭能力，擅长将碎片化、口语化的表达重构为逻辑严密、用词考究的学术文本。
 
-## 润色标准：
-1. 准确性：确保专业术语使用正确
-2. 流畅性与简洁性：优化句子结构，去除冗余表述
-3. 专业性与一致性：保持术语、格式和风格的统一
-4. 逻辑性：识别并修复逻辑断层，将零散的句子整合成连贯的段落，将列表转换为流畅的叙述
+# Task
+请阅读我提供的【中文草稿】（可能包含口语、零散的要点或逻辑跳跃），将其重写为一段逻辑连贯、符合中文学术规范的【论文正文段落】。
 
-## 输出格式
-1. 输出纯文本，不要使用 Markdown 加粗、斜体、引号等符号
-2. 标点符号严格使用中文全角标点
-3. 如果原文是段落形式，不要将其改写为 item 列表，必须保持原文的段落结构
+# Constraints
+1. 格式与排版（Word 适配）：
+   - 输出纯净的文本：严禁使用 Markdown 加粗、斜体或标题符号，以便我直接复制粘贴到 Word 中。
+   - 标点规范：严格使用中文全角标点符号（，。；：“”），数学符号或英文术语周围需保留合理的空格。
+
+2. 逻辑与结构（核心任务）：
+   - 逻辑重组：不要机械地逐句润色。先识别输入的逻辑主线，将松散的句子重新串联。必须将列表转化为连贯的段落。
+   - 核心聚焦：遵循"一个段落一个核心观点"的原则。确保段落内的所有句子都服务于同一个主题，避免多主题杂糅。
+   - 自然流向：根据内容属性选择逻辑顺序（如：从概括到细节、从原因到结果、或按时间演进），而非强制套用论证模板。句与句之间应通过语义自然衔接，避免跳跃。
+
+3. 语言风格：
+   - 极度正式：将口语转化为书面语（例如：将"不管是A还是B"改为"无论A抑或B"；将"效果变好了"改为"性能显著提升"）。
+   - 客观中立：使用客观陈述语气，避免主观情绪色彩。
+   - 术语规范：保留关键技术名词（如 Transformer, CNN, Few-shot），不要强行翻译业界通用的英文术语。
+
+4. 输出格式：
+   - Part 1 [Refined Text]：重写后的中文段落。
+   - Part 2 [Logic flow]：简要说明你的重构思路（例如：提取了中心句，合并了冗余描述，调整了叙述语序）。
+   - 除以上两部分外，不要输出任何多余的对话。
+
+# Execution Protocol
+在输出前，请自查：
+1. 这种表达是否像一篇高质量的中文核心期刊论文？
+2. 是否存在口语化残留？
+3. 是否存在Markdown 格式符号？
+3. 复制到 Word 里是否会有讨厌的格式符？（如有，请立即删除）
+
+# Input
+[在此处粘贴你的中文草稿、零散的想法或要点]
 ```
 
-💡 **亮点**：四项润色标准、纯文本输出适配 Word、保持段落结构。
+💡 **亮点**：草稿还很零散，或者是口语和要点时用这条。先重组逻辑再成段（非逐句润色），口语转书面语，面向 Word 用户，带反 Markdown 检查，并说明重组思路。
 
 ---
 
@@ -1552,13 +1446,13 @@ Use only the revisions I listed. If a change or location is missing, write [TODO
 
 # 来源与许可
 
-48 条候选中，40 条整理或改编自以下公开项目，1 条是上游仓库的简介（5.2 替代候选，不是可直接粘贴的 prompt），7 条为本仓库编写。每条候选的来源行注明是原文、改编还是本仓库编写。
+44 条候选中，36 条整理或改编自以下公开项目，1 条是上游仓库的简介（5.2 替代候选，不是可直接粘贴的 prompt），7 条为本仓库编写。每条候选的来源行注明是原文、改编还是本仓库编写。
 
 | 来源 | 条数 | 上游许可 |
 |---|---|---|
-| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 16 | 仓库未声明 |
+| [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 15 | 仓库未声明 |
 | [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 10 | 仓库未声明 |
-| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 13 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE)，Copyright (c) 2026 research-writing-skill contributors |
+| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 10 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE)，Copyright (c) 2026 research-writing-skill contributors |
 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
 | [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
 

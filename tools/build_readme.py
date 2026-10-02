@@ -1,4 +1,4 @@
-"""Copy the primary prompts of the 24 scenarios from CATALOG.md into README.md and README_EN.md.
+"""Copy the primary prompts of every scenario from CATALOG.md into README.md and README_EN.md.
 
 Run after editing a primary prompt in CATALOG.md:
 
@@ -16,16 +16,12 @@ GROUPS = [
     ('翻译', 'Translation', [
         ('1.1', '中译英：贴中文草稿，得到能放进 LaTeX 的英文段落，附中文回译供核对',
                 'Chinese → English: paste a Chinese draft, get a LaTeX-ready English paragraph plus a Chinese back-translation'),
-        ('1.2', '英译中：贴英文 LaTeX，得到方便阅读的中文直译（引用和公式语法会去掉）',
-                'English → Chinese: paste English LaTeX, get a literal Chinese reading translation (citations and formula syntax removed)'),
-        ('1.3', '中文重写：贴口语稿或零散要点，得到能贴进 Word 的正式段落和重组思路',
-                'Chinese rewrite: paste rough notes, get a formal paragraph for Word plus how it was restructured'),
     ]),
     ('润色', 'Polishing', [
         ('2.1', '英文润色：贴英文 LaTeX，得到润色稿、中文直译和修改日志',
                 'English polish: paste English LaTeX, get the polished text plus a Chinese translation and a Chinese change log'),
-        ('2.2', '中文润色：贴中文段落，只改该改的地方；原文没问题就原样返回',
-                'Chinese polish: paste a Chinese paragraph; it only fixes real problems and returns good text unchanged'),
+        ('2.2', '中文润色：贴中文段落，只改该改的地方，原文没问题就原样返回；草稿还很零散的，用完整目录里的替代那条',
+                'Chinese polish: paste a Chinese paragraph; it only fixes real problems and returns good text unchanged (for rough notes, use the alternative in the full catalog)'),
         ('2.3', '英文去 AI 味：贴英文 LaTeX，换掉 delve、leverage 这类词；本来自然的段落原样通过',
                 'De-AI English: paste English LaTeX; replaces words like delve and leverage, leaves natural text alone (adds a Chinese translation and change log)'),
         ('2.4', '中文去 AI 味：贴中文段落，去掉空话大词和翻译腔，附修改日志',
