@@ -820,6 +820,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 文献综述、写整篇论文、审稿回复这类多步任务，推荐直接装这些项目的 skill：
 
+- [nature-skills](https://github.com/Yuan1z0825/nature-skills)：按 Nature 系期刊标准润色、写作、作图、审稿、回复审稿人等，共 19 个 skill
 - [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)：从找想法、查文献到写论文、审稿回复的一整套 skill，偏机器学习方向
 - [humanizer](https://github.com/blader/humanizer)：去掉英文文本里的 AI 痕迹
 - [humanizer-zh-academic](https://github.com/redbaronyyyyy-eng/humanizer-zh-academic)：中文学术写作去 AI 味
