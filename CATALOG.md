@@ -4,7 +4,9 @@
 
 # Research Writing Prompt Catalog
 
-> 22 个科研写作场景，共 41 条 prompt 候选。每个场景提供一个首选候选，多数场景另有一条替代候选，来源可追溯，复制即用。
+> 22 个科研写作场景，共 41 个候选模板。每个场景提供一个首选候选，多数场景另有一条替代候选，来源可追溯，复制即用。
+
+> 按候选分组计数；一个候选模板内可能有多条短 prompt，按任务任选一条使用。
 
 > 候选顺序是编辑判断，不是基准测试排名。请根据自己的模型、材料和期刊要求检查输出。
 
@@ -714,14 +716,15 @@ Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
 Generate an abstract for a scientific paper based on this information for: [PARAGRAPHS]
 ```
 
-💡 **亮点**：简洁直接，输入论文内容即可生成摘要。
-
 ### 替代候选
 
-> 来源：节选自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「摘要写作」的结构和约束部分
+> 来源：节选改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「摘要写作」的结构和约束部分；任务与输入为本仓库增补，句数修正为 4–6 句
 
 ```
-# Abstract 结构 (4-5 句话)
+# Task
+请根据我提供的论文内容，按以下结构写一份英文摘要。
+
+# Abstract 结构 (4–6 句话)
 1. **背景/动机** (1 句): 为什么这个问题重要？
 2. **问题/挑战** (1 句): 现有方法有什么局限？
 3. **方法/贡献** (1-2 句): 本文提出了什么方法？
@@ -733,9 +736,12 @@ Generate an abstract for a scientific paper based on this information for: [PARA
 - 时态: 一般现在时为主
 - 语态: 主动语态优先
 - 避免: 缩写、引用、模糊表述
+
+# Input
+[在此处粘贴论文内容，包括背景、方法和关键结果]
 ```
 
-💡 **亮点**：结构化模板（5 句话公式）、明确字数/时态/语态约束。只含结构和约束，使用时在前面加一句任务说明，例如“按以下结构为我的论文写摘要”。
+💡 **亮点**：结构化模板（4–6 句）、明确字数/时态/语态约束，含任务说明和输入位置。
 
 ---
 
@@ -801,9 +807,12 @@ Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 
 ### 替代候选
 
-> 来源：节选自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「论文大纲生成」的 Method 部分，后两项为本仓库增补
+> 来源：节选改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「论文大纲生成」的 Method 部分；后两项、任务与输入为本仓库增补
 
 ```
+# Task
+请根据我提供的方法描述，按以下条目生成 Method 详细大纲。
+
 ## 📋 详细大纲
 
 ### Method
@@ -812,9 +821,12 @@ Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 - [ ] 核心模块/技术细节
 - [ ] 算法伪代码（如适用）
 - [ ] 复杂度分析（如适用）
+
+# Input
+[在此处粘贴方法描述]
 ```
 
-💡 **亮点**：结构化大纲模板，适合从零搭建方法论章节。只含大纲条目，使用时在前面加一句任务说明并附上材料，例如“按以下条目为我的方法写 Method 章节：[方法描述]”。
+💡 **亮点**：根据方法描述生成 Method 详细大纲，含任务说明和输入位置。
 
 ---
 
@@ -911,8 +923,6 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 ```
 Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ```
-
-💡 **亮点**：指定数量（3 个方向），输出聚焦。
 
 ### 替代候选
 
@@ -1019,7 +1029,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 首选候选
 
-> 来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)（原文）
+> 来源：改编自 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) 的「实验绘图推荐」小节；修正帕累托前沿与雷达图说明，其余保留原文
 
 ```
 # Role
@@ -1031,8 +1041,8 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 一、数值与性能对比类
 1. 纵向分组柱状图：最标准的 SOTA 对比。适用于对比项数量适中且标签较短的情况。
 2. 横向条形图：当对比的方法名称较长，或者对比项非常多时强烈推荐，可避免 X 轴文字倾斜或重叠。
-3. 帕累托前沿图：用于展示两个相互制约指标的权衡关系。位于右上角或边界上的点代表最优模型。
-4. 雷达图：用于多维度的综合能力评估。证明模型在速度、精度、显存、鲁棒性等方面全面发展无短板。
+3. 帕累托前沿图：用于展示两个相互制约指标的权衡关系。按各指标的优化方向（越大越好或越小越好）识别非支配前沿。
+4. 雷达图：用于比较速度、精度、显存、鲁棒性等多维指标。明确指标尺度和优化方向，不凭雷达图宣称模型“全面无短板”。
 5. 堆叠柱状图：用于展示整体指标的细分构成，如将总时间拆解为加载、推理和后处理时间。
 
 二、趋势与收敛类
@@ -1214,11 +1224,14 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### 替代候选
 
-> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「绘制架构图」
+> 来源：删节改编自 [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md) v2.0 版「绘制架构图」；任务与输入为本仓库增补
 
 ```
 # Role
 你是一位顶尖的学术插画专家，专注于为中科院 TOP 期刊的论文绘制专业架构图。
+
+# Task
+请根据我提供的论文方法描述，设计并绘制一张专业的学术架构图。
 
 # Visual Constraints
 1. 风格要求：采用扁平化矢量插画风格，参考 DeepMind 或 OpenAI 论文中的插图美学
@@ -1226,6 +1239,9 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 3. 内容表现：将抽象的方法流程转化为可视化的模块、箭头和连接
 4. 文字规范：图像中的所有文字必须使用英文
 5. 禁止事项：严禁使用照片或图片拼贴、杂乱无章的布局、无法辨认的文字、过度的3D阴影或特效
+
+# Input Methodology
+[在此处粘贴你的论文摘要(Abs) + 方法部分描述]
 ```
 
 💡 **亮点**：莫兰迪色系；比首选多了"禁止图片拼贴、杂乱布局"两项，可以和首选合用。

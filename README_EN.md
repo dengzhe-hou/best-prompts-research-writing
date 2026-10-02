@@ -6,6 +6,8 @@
 
 Ready-made prompts for 22 common paper-writing tasks. Open a task below, copy the prompt, paste it into any LLM, and replace the bracketed input with your text.
 
+There are 41 candidate templates, with alternatives for most scenarios; see the [full catalog](CATALOG_EN.md) for all entries and source notes. The count is by candidate group; some groups contain several short prompts to choose from.
+
 Most prompts are written in Chinese. Models follow them fine; add "Reply in English" at the end for English output, and delete the Chinese translation or change-log lines that some prompts (1.1, 2.1, 2.3, 3.1, 3.2, 5.1) ask for.
 
 ## Prompts
@@ -540,8 +542,8 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 一、数值与性能对比类
 1. 纵向分组柱状图：最标准的 SOTA 对比。适用于对比项数量适中且标签较短的情况。
 2. 横向条形图：当对比的方法名称较长，或者对比项非常多时强烈推荐，可避免 X 轴文字倾斜或重叠。
-3. 帕累托前沿图：用于展示两个相互制约指标的权衡关系。位于右上角或边界上的点代表最优模型。
-4. 雷达图：用于多维度的综合能力评估。证明模型在速度、精度、显存、鲁棒性等方面全面发展无短板。
+3. 帕累托前沿图：用于展示两个相互制约指标的权衡关系。按各指标的优化方向（越大越好或越小越好）识别非支配前沿。
+4. 雷达图：用于比较速度、精度、显存、鲁棒性等多维指标。明确指标尺度和优化方向，不凭雷达图宣称模型“全面无短板”。
 5. 堆叠柱状图：用于展示整体指标的细分构成，如将总时间拆解为加载、推理和后处理时间。
 
 二、趋势与收敛类
@@ -810,8 +812,6 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 </details>
 <!-- prompts:end -->
-
-Most scenarios also have an alternative, for 41 prompt entries in total; see the [full catalog](CATALOG_EN.md) for all entries and source notes.
 
 ## Before you use them
 
