@@ -201,18 +201,9 @@ Most prompts are written in Chinese. Models follow them fine; add "Reply in Engl
 
 # Input
 [在此处粘贴你的英文 LaTeX 代码]
-
-此处我们给出一些"ai味"较浓的单词，当出现下述单词时可考虑替换（仅供参考）：
-
-Accentuate, Ador, Amass, Ameliorate, Amplify, Alleviate, Ascertain, Advocate, Articulate, Bear, Bolster,
-Bustling, Cherish, Conceptualize, Conjecture, Consolidate, Convey, Culminate, Decipher, Demonstrate,
-Depict, Devise, Delineate, Delve, Delve Into, Diverge, Disseminate, Elucidate, Endeavor, Engage, Enumerate,
-Envision, Enduring, Exacerbate, Expedite, Foster, Galvanize, Harmonize, Hone, Innovate, Inscription,
-Integrate, Interpolate, Intricate, Lasting, Leverage, Manifest, Mediate, Nurture, Nuance, Nuanced, Obscure,
-Opt, Originates, Perceive, Perpetuate, Permeate, Pivotal, Ponder, Prescribe, Prevailing, Profound, Recapitulate,
-Reconcile, Rectify, Rekindle, Reimagine, Scrutinize, Substantiate, Tailor, Testament, Transcend, Traverse,
-Underscore, Unveil, Vibrant
 ```
+
+[Optional word-list reference](CATALOG_EN.md#23-de-ai-english)
 
 </details>
 
