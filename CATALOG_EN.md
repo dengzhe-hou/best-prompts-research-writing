@@ -4,7 +4,9 @@
 
 # Research Writing Prompt Catalog
 
-> 22 research-writing scenarios and 41 prompt candidates. Each scenario has a primary candidate, and most also have an alternative, with traceable sources and copy-ready text.
+> 22 research-writing scenarios and 41 candidate templates. Each scenario has a primary candidate, and most also have an alternative, with traceable sources and copy-ready text.
+
+> Counts are based on candidate groups; a candidate template may contain several short prompts. Choose one that matches your task.
 
 > Candidate order is an editorial judgment, not a benchmark ranking. Check outputs against your model, materials, and venue requirements.
 
@@ -716,14 +718,15 @@ Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
 Generate an abstract for a scientific paper based on this information for: [PARAGRAPHS]
 ```
 
-💡 **Highlights**: Concise and direct — input paper content to generate abstract.
-
 ### Alternative Candidate
 
-> Source: excerpt (structure and constraints only) from [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md), v2.0 section "摘要写作"
+> Source: adapted excerpt of the structure and constraints from [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md), v2.0 section "摘要写作"; the task and input were added here, and the sentence count was corrected to 4–6
 
 ```
-# Abstract 结构 (4-5 句话)
+# Task
+请根据我提供的论文内容，按以下结构写一份英文摘要。
+
+# Abstract 结构 (4–6 句话)
 1. **背景/动机** (1 句): 为什么这个问题重要？
 2. **问题/挑战** (1 句): 现有方法有什么局限？
 3. **方法/贡献** (1-2 句): 本文提出了什么方法？
@@ -735,9 +738,12 @@ Generate an abstract for a scientific paper based on this information for: [PARA
 - 时态: 一般现在时为主
 - 语态: 主动语态优先
 - 避免: 缩写、引用、模糊表述
+
+# Input
+[在此处粘贴论文内容，包括背景、方法和关键结果]
 ```
 
-💡 **Highlights**: Structured template (5-sentence formula), explicit constraints on word count / tense / voice. It contains only the structure and constraints, so add a task line before it, e.g. "Write an abstract for my paper following this structure".
+💡 **Highlights**: Structured template (4–6 sentences), explicit constraints on word count / tense / voice, with a task line and input placeholder.
 
 ---
 
@@ -803,9 +809,12 @@ Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 
 ### Alternative Candidate
 
-> Source: excerpt from the Method part of [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md), v2.0 section "论文大纲生成"; the last two items were added here
+> Source: adapted excerpt from the Method part of [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md), v2.0 section "论文大纲生成"; the last two items, task and input were added here
 
 ```
+# Task
+请根据我提供的方法描述，按以下条目生成 Method 详细大纲。
+
 ## 📋 详细大纲
 
 ### Method
@@ -814,9 +823,12 @@ Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
 - [ ] 核心模块/技术细节
 - [ ] 算法伪代码（如适用）
 - [ ] 复杂度分析（如适用）
+
+# Input
+[在此处粘贴方法描述]
 ```
 
-💡 **Highlights**: Structured outline template, suitable for building methodology section from scratch. It contains only the outline items, so add a task line and your material before it, e.g. "Write the Method section for my approach following these items: [METHOD DESCRIPTION]".
+💡 **Highlights**: Generates a detailed Method outline from your method description, with a task line and input placeholder.
 
 ---
 
@@ -913,8 +925,6 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 ```
 Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ```
-
-💡 **Highlights**: Specified quantity (3 directions), focused output.
 
 ### Alternative Candidate
 
@@ -1021,7 +1031,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 ### Primary Candidate
 
-> Source: [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) (verbatim)
+> Source: adapted from [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing), section "实验绘图推荐"; the Pareto-front and radar-chart descriptions were corrected, with the rest retained verbatim
 
 ```
 # Role
@@ -1033,8 +1043,8 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 一、数值与性能对比类
 1. 纵向分组柱状图：最标准的 SOTA 对比。适用于对比项数量适中且标签较短的情况。
 2. 横向条形图：当对比的方法名称较长，或者对比项非常多时强烈推荐，可避免 X 轴文字倾斜或重叠。
-3. 帕累托前沿图：用于展示两个相互制约指标的权衡关系。位于右上角或边界上的点代表最优模型。
-4. 雷达图：用于多维度的综合能力评估。证明模型在速度、精度、显存、鲁棒性等方面全面发展无短板。
+3. 帕累托前沿图：用于展示两个相互制约指标的权衡关系。按各指标的优化方向（越大越好或越小越好）识别非支配前沿。
+4. 雷达图：用于比较速度、精度、显存、鲁棒性等多维指标。明确指标尺度和优化方向，不凭雷达图宣称模型“全面无短板”。
 5. 堆叠柱状图：用于展示整体指标的细分构成，如将总时间拆解为加载、推理和后处理时间。
 
 二、趋势与收敛类
@@ -1216,11 +1226,14 @@ See also: [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4
 
 ### Alternative Candidate
 
-> Source: abridged from [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md), v2.0 section "绘制架构图"
+> Source: adapted and abridged from [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md), v2.0 section "绘制架构图"; the task and input were added here
 
 ```
 # Role
 你是一位顶尖的学术插画专家，专注于为中科院 TOP 期刊的论文绘制专业架构图。
+
+# Task
+请根据我提供的论文方法描述，设计并绘制一张专业的学术架构图。
 
 # Visual Constraints
 1. 风格要求：采用扁平化矢量插画风格，参考 DeepMind 或 OpenAI 论文中的插图美学
@@ -1228,6 +1241,9 @@ See also: [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4
 3. 内容表现：将抽象的方法流程转化为可视化的模块、箭头和连接
 4. 文字规范：图像中的所有文字必须使用英文
 5. 禁止事项：严禁使用照片或图片拼贴、杂乱无章的布局、无法辨认的文字、过度的3D阴影或特效
+
+# Input Methodology
+[在此处粘贴你的论文摘要(Abs) + 方法部分描述]
 ```
 
 💡 **Highlights**: Morandi color palette; adds two bans the primary lacks (photo collage, cluttered layout), so the two can be combined.
