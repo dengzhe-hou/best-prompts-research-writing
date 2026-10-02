@@ -811,7 +811,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 </details>
 <!-- prompts:end -->
 
-Each task also has an alternative prompt (44 in total) and source notes in the [full catalog](CATALOG_EN.md).
+Most scenarios also have an alternative, for 41 prompt entries in total; see the [full catalog](CATALOG_EN.md) for all entries and source notes.
 
 ## Before you use them
 

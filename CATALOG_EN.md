@@ -4,7 +4,7 @@
 
 # Research Writing Prompt Catalog
 
-> 22 research-writing scenarios, each with a primary candidate and a meaningfully different alternative, with traceable sources and copy-ready text.
+> 22 research-writing scenarios and 41 prompt candidates. Each scenario has a primary candidate, and most also have an alternative, with traceable sources and copy-ready text.
 
 > Candidate order is an editorial judgment, not a benchmark ranking. Check outputs against your model, materials, and venue requirements.
 
@@ -1091,18 +1091,7 @@ Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 
 💡 **Highlights**: Complete 19-chart library, scenario → chart mapping, scale adaptability advice, visual design specifications.
 
-### Alternative Candidate
-
-> Source: [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) (summary of the repository; its text is not reproduced)
-
-This repo mainly provides **ready-to-use Python plotting scripts** (it also has a prompt template and a figure-making skill, not reproduced here), including:
-- Grouped bar charts (SOTA comparison)
-- Radar charts (multi-dimensional evaluation)
-- Line charts (training curves)
-- Heatmaps (matrix visualization)
-- 3D sphere plots
-
-💡 **Highlights**: Mainly runnable code, useful when you need figures quickly. Can be combined with the primary candidate's prompt.
+See also: [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers), mainly ready-to-use Python plotting scripts, plus a prompt template and a figure-making skill (not reproduced here or counted as prompt candidates; upstream license: [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE)).
 
 ---
 
@@ -1140,25 +1129,6 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 
 💡 **Highlights**: Turns a Chinese description into an English figure caption. Title Case / Sentence case rules, removes redundant openings, de-AI styling.
 
-### Alternative Candidate
-
-> Source: abridged from [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md), v2.0 section "图片标题说明"
-
-```
-# Role
-你是一位经验丰富的学术编辑，擅长撰写标准、规范的论文图片标题。
-
-# Task
-请将用户提供的{{中文图片描述}}转换为专业、简洁、规范的英文图片标题。
-
-# Constraints
-1. 格式规范：名词性结构用 Title Case，完整句子用 Sentence case
-2. 写作技巧：简洁原则，去除冗余开头，去 AI 味
-3. 输出格式：只输出最终的英文标题文本
-```
-
-💡 **Highlights**: Turns a Chinese description into an English figure caption. Concise version, suitable for quick generation scenarios.
-
 ---
 
 ## 5.4 Table Caption
@@ -1194,25 +1164,6 @@ This repo mainly provides **ready-to-use Python plotting scripts** (it also has 
 ```
 
 💡 **Highlights**: Turns a Chinese description into an English table caption. Table-specific vocabulary (avoid showcase and depict; use show, compare, present), standard academic expression recommendations.
-
-### Alternative Candidate
-
-> Source: abridged from [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill/blob/291ba9d673b90ad466924fc28956056b98048ad7/SKILL.md), v2.0 section "表格标题说明"
-
-```
-# Role
-你是一位经验丰富的学术编辑，擅长撰写标准、规范的论文表格标题。
-
-# Task
-请将用户提供的【中文表格描述】转换为专业、简洁、规范的【英文表格标题】。
-
-# Constraints
-1. 格式规范：名词性结构用 Title Case，完整句子用 Sentence case
-2. 写作技巧：使用 Comparison with, Ablation study on, Results on 等标准表达
-3. 输出格式：只输出最终的英文标题文本
-```
-
-💡 **Highlights**: Turns a Chinese description into an English table caption. Table-specific expression recommendations, designed to pair with the figure caption prompt.
 
 ---
 
@@ -1448,15 +1399,14 @@ Use only the revisions I listed. If a change or location is missing, write [TODO
 
 # Sources and Licenses
 
-Of the 44 candidates, 36 are taken or adapted from the projects below, 1 is a description of an upstream repository (the 5.2 alternative, not a paste-ready prompt), and 7 were written for this catalog. Each candidate's source line says whether it is verbatim, adapted, or written here.
+Of the 41 candidates, 34 are taken or adapted from the projects below and 7 were written for this catalog. Each candidate's source line says whether it is verbatim, adapted, or written here. figures4papers is a see-also resource for 5.2 and is not counted as a candidate.
 
 | Source | Entries | Upstream license |
 |---|---|---|
 | [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 15 | None stated |
 | [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 10 | None stated |
-| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 10 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE), Copyright (c) 2026 research-writing-skill contributors |
+| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 8 | [MIT](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE), Copyright (c) 2026 research-writing-skill contributors |
 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
-| [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
 
 Upstream licenses and terms differ; check the linked repository before redistributing, modifying or republishing its material. This repository does not relicense third-party content.
 

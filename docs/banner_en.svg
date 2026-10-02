@@ -32,7 +32,7 @@
   <!-- stats -->
   <g class="zh">
     <rect x="72" y="306" width="150" height="62" rx="14" fill="#FFFFFF" stroke="#E0E7FF"/>
-    <text x="147" y="336" text-anchor="middle" font-size="26" font-weight="700" fill="#4F46E5" class="en">44</text>
+    <text x="147" y="336" text-anchor="middle" font-size="26" font-weight="700" fill="#4F46E5" class="en">41</text>
     <text x="147" y="358" text-anchor="middle" font-size="15" fill="#475569" class="en">prompts</text>
     <rect x="236" y="306" width="150" height="62" rx="14" fill="#FFFFFF" stroke="#E0E7FF"/>
     <text x="311" y="336" text-anchor="middle" font-size="26" font-weight="700" fill="#4F46E5" class="en">22</text>
