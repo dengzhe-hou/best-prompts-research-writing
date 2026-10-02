@@ -822,6 +822,7 @@ Each task also has an alternative prompt (44 in total) and source notes in the [
 
 For multi-step work such as literature reviews, drafting a whole paper or rebuttals, install the skills from these projects:
 
+- [nature-skills](https://github.com/Yuan1z0825/nature-skills): 19 skills for Nature-style polishing, writing, figures, peer review, responses to reviewers and more
 - [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep): a full set of skills from idea discovery and literature review to paper writing, review and rebuttal, aimed at machine-learning research
 - [humanizer](https://github.com/blader/humanizer): removes signs of AI writing from English text
 - [humanizer-zh-academic](https://github.com/redbaronyyyyy-eng/humanizer-zh-academic): removes AI-style phrasing from Chinese academic text
