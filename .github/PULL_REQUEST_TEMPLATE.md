@@ -1,5 +1,3 @@
-填写与本次贡献对应的一节，另一节可以删掉。 / Fill in the section that matches your contribution and delete the other.
-
 ## Prompt 贡献 / Prompt contribution
 
 ### 场景 / Scenario
@@ -32,13 +30,3 @@
 ### 编辑理由 / Rationale
 
 说明现有候选的具体不足、建议候选带来的可观察变化，以及为什么适合这个场景。无需打分。
-
-## Skill 贡献 / Skill contribution
-
-- Skill 名称与文件夹 / Name and folder（`skills/<name>/SKILL.md`）：
-- 来源仓库与许可 / Source repository and license：
-- 原文、精简还是原创 / Verbatim, abridged, or original：
-- 相比上游删去了什么 / What was removed compared with upstream：
-- 调用但未收录的子 skill、脚本或 MCP / Sub-skills, scripts or MCP servers it calls that are not included：
-
-只有 MIT 或兼容许可的 skill 才复制进本仓库，其余只放链接。 / Only MIT or compatibly licensed skills are copied into this repository; others are linked.

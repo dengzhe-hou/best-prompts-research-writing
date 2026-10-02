@@ -818,9 +818,14 @@ Each task also has an alternative prompt (44 in total) and source notes in the [
 - Models can invent numbers and references. Check every number and citation in the output.
 - Many prompts cast the model as a computer-science reviewer or editor; for other fields, change the opening Role. 1.1 also requires the present tense throughout, which psychology and neuroscience papers usually do not follow.
 
-## Skills
+## Using Claude Code, Codex or Cursor?
 
-If you use Claude Code, Codex or Cursor, 8 installable skills cover multi-step work such as literature reviews, research gaps and rebuttals. See the [skill catalog](SKILLS_EN.md).
+For multi-step work such as literature reviews, drafting a whole paper or rebuttals, install the skills from these projects:
+
+- [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep): a full set of skills from idea discovery and literature review to paper writing, review and rebuttal, aimed at machine-learning research
+- [humanizer](https://github.com/blader/humanizer): removes signs of AI writing from English text
+- [humanizer-zh-academic](https://github.com/redbaronyyyyy-eng/humanizer-zh-academic): removes AI-style phrasing from Chinese academic text
+- [academic-research-skills](https://github.com/Imbad0202/academic-research-skills): research, writing, review, revision and finalization (CC BY-NC 4.0, non-commercial use only)
 
 ## Sources
 

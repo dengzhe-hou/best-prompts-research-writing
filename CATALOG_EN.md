@@ -1458,7 +1458,7 @@ Of the 44 candidates, 36 are taken or adapted from the projects below, 1 is a de
 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 1 | [CC BY-NC 4.0](https://github.com/Imbad0202/academic-research-skills/blob/main/LICENSE) |
 | [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 1 | [CC BY-NC 4.0](https://github.com/ChenLiu-1996/figures4papers/blob/main/LICENSE) |
 
-Upstream licenses and terms differ; check the linked repository before redistributing, modifying or republishing its material. This repository does not relicense third-party content. Skill sources and licenses are in the [skill catalog](SKILLS_EN.md).
+Upstream licenses and terms differ; check the linked repository before redistributing, modifying or republishing its material. This repository does not relicense third-party content.
 
 # Maintenance and Contributions
 
